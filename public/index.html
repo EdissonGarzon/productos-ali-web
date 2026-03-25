@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos Ali</title>
+  <meta
+    name="description"
+    content="Catálogo comercial de productos para hogar, vinagres y desechables para restaurantes."
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-tag">Catálogo comercial</span>
+        <h1>Productos Ali</h1>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a
+        id="headerWhatsapp"
+        class="btn btn-whatsapp"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="pill">Sitio básico para comenzar</span>
+          <h2>Un catálogo simple para mostrar productos y vender por WhatsApp.</h2>
+          <p>
+            Esta es una versión inicial pensada para que veas cómo funcionaría la página:
+            categorías claras, productos con precio, botón de WhatsApp y una base lista
+            para conectar luego tu Excel real.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#catalogo">Ver catálogo</a>
+            <a class="btn btn-light" href="#categorias">Ver categorías</a>
+          </div>
+        </div>
+
+        <div class="hero-cards">
+          <article class="stat-card">
+            <span>Secciones</span>
+            <strong>3</strong>
+            <p>categorías principales</p>
+          </article>
+
+          <article class="stat-card">
+            <span>Canal</span>
+            <strong>24/7</strong>
+            <p>atención por WhatsApp</p>
+          </article>
+
+          <article class="stat-card stat-card-wide">
+            <span>Siguiente paso</span>
+            <strong>Excel → catálogo real</strong>
+            <p>
+              Luego reemplazamos estos productos de prueba por los tuyos, con categoría,
+              presentación, precio e imagen.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="categorias" class="section section-white">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Estructura inicial</span>
+          <h2>La página queda dividida en estas 3 partes</h2>
+          <p>
+            Dejé una estructura comercial clara para arrancar y luego afinar nombres,
+            productos e imágenes.
+          </p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card">
+            <div class="category-icon"></div>
+            <h3>Hogar</h3>
+            <p>Productos de limpieza y uso frecuente para casa.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon"></div>
+            <h3>Vinagres</h3>
+            <p>Línea separada para que no se mezcle con el resto del catálogo.</p>
+          </article>
+
+          <article class="category-card">
+            <div class="category-icon"></div>
+            <h3>Desechables y restaurantes</h3>
+            <p>Icopor, vasos, empaques y referencias pensadas para negocio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="section">
+      <div class="container">
+        <div class="section-head section-head-row">
+          <div>
+            <span class="section-tag">Catálogo de prueba</span>
+            <h2>Así se vería funcionando</h2>
+          </div>
+
+          <div class="search-wrap">
+            <input
+              id="searchInput"
+              type="text"
+              placeholder="Buscar producto..."
+              aria-label="Buscar producto"
+            />
+          </div>
+        </div>
+
+        <div class="filters" id="categoryFilters">
+          <button class="filter-btn active" data-category="todos">Todos</button>
+          <button class="filter-btn" data-category="hogar">Hogar</button>
+          <button class="filter-btn" data-category="vinagres">Vinagres</button>
+          <button class="filter-btn" data-category="restaurantes">Desechables y restaurantes</button>
+        </div>
+
+        <div class="result-bar">
+          <span id="resultText">Mostrando 0 productos</span>
+        </div>
+
+        <div id="productsGrid" class="products-grid"></div>
+
+        <div id="emptyState" class="empty-state hidden">
+          No se encontraron productos con ese filtro.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container cta-grid">
+        <div>
+          <span class="section-tag section-tag-dark">Implementación recomendada</span>
+          <h2>Primero la web. Después el catálogo real. Luego el bot.</h2>
+          <p>
+            No hace falta complicarse al principio. Primero publicamos esta base,
+            luego conectamos tus productos reales y después sí armamos el flujo de
+            WhatsApp con respuestas automáticas.
+          </p>
+        </div>
+
+        <div class="dark-box">
+          <ul>
+            <li>Página principal con categorías</li>
+            <li>Tarjetas con precio y botón de WhatsApp</li>
+            <li>Buscador simple</li>
+            <li>Luego: carga desde Excel/JSON</li>
+            <li>Después: bot para ventas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Productos Ali</h3>
+        <p>Catálogo demo para ventas por WhatsApp y web básica.</p>
+      </div>
+
+      <div class="footer-actions">
+        <a
+          id="footerWhatsapp"
+          class="btn btn-whatsapp"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Escribir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    id="floatingWhatsapp"
+    class="floating-wa"
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escribir por WhatsApp"
+  >
+    WhatsApp
+  </a>
+
+  <script>
+    const WHATSAPP_NUMBER = "573175948469";
+
+    const products = [
+      {
+        id: 1,
+        name: "Lavaloza líquido",
+        category: "hogar",
+        presentation: "500 ml",
+        price: "$4.500",
+        tag: "Uso diario",
+        description: "Ideal para cocina, platos, ollas y limpieza diaria."
+      },
+      {
+        id: 2,
+        name: "Detergente líquido",
+        category: "hogar",
+        presentation: "1 litro",
+        price: "$8.900",
+        tag: "Más vendido",
+        description: "Pensado para lavado de ropa y limpieza general."
+      },
+      {
+        id: 3,
+        name: "Multiusos",
+        category: "hogar",
+        presentation: "500 ml",
+        price: "$5.900",
+        tag: "Rápido",
+        description: "Para baños, cocina y superficies del hogar."
+      },
+      {
+        id: 4,
+        name: "Vinagre blanco",
+        category: "vinagres",
+        presentation: "500 ml",
+        price: "$3.200",
+        tag: "Clásico",
+        description: "Apto para cocina, limpieza y uso general."
+      },
+      {
+        id: 5,
+        name: "Vinagre de manzana",
+        category: "vinagres",
+        presentation: "500 ml",
+        price: "$4.100",
+        tag: "Natural",
+        description: "Presentación práctica para hogar y negocio."
+      },
+      {
+        id: 6,
+        name: "Vinagre familiar",
+        category: "vinagres",
+        presentation: "1 litro",
+        price: "$5.800",
+        tag: "Ahorro",
+        description: "Mayor rendimiento para consumo frecuente."
+      },
+      {
+        id: 7,
+        name: "Vasos desechables",
+        category: "restaurantes",
+        presentation: "Paquete x 25",
+        price: "$6.500",
+        tag: "Negocio",
+        description: "Para bebidas frías o calientes en negocio o eventos."
+      },
+      {
+        id: 8,
+        name: "Recipiente de icopor",
+        category: "restaurantes",
+        presentation: "Paquete x 20",
+        price: "$7.900",
+        tag: "Domicilios",
+        description: "Útil para domicilios y comida para llevar."
+      },
+      {
+        id: 9,
+        name: "Bolsas y empaques",
+        category: "restaurantes",
+        presentation: "Paquete",
+        price: "$9.500",
+        tag: "Empaque",
+        description: "Empaques prácticos para tiendas, comidas y restaurantes."
+      }
+    ];
+
+    let activeCategory = "todos";
+    let searchText = "";
+
+    const productsGrid = document.getElementById("productsGrid");
+    const searchInput = document.getElementById("searchInput");
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const resultText = document.getElementById("resultText");
+    const emptyState = document.getElementById("emptyState");
+
+    function buildWhatsAppLink(message) {
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    }
+
+    function setupStaticWhatsAppLinks() {
+      const generalMessage = "Hola, quiero información sobre sus productos";
+      document.getElementById("headerWhatsapp").href = buildWhatsAppLink(generalMessage);
+      document.getElementById("footerWhatsapp").href = buildWhatsAppLink("Hola, quiero cotizar productos");
+      document.getElementById("floatingWhatsapp").href = buildWhatsAppLink(generalMessage);
+    }
+
+    function createProductCard(product) {
+      const article = document.createElement("article");
+      article.className = "product-card";
+
+      const waMessage = `Hola, quiero información sobre ${product.name}`;
+
+      article.innerHTML = `
+        <div class="product-top">
+          <span class="product-tag">${product.tag}</span>
+          <span class="product-price">${product.price}</span>
+        </div>
+
+        <div class="product-image">Imagen de referencia</div>
+
+        <h3>${product.name}</h3>
+        <p class="product-presentation">${product.presentation}</p>
+        <p class="product-description">${product.description}</p>
+
+        <div class="product-actions">
+          <a
+            class="btn btn-whatsapp btn-small"
+            href="${buildWhatsAppLink(waMessage)}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pedir por WhatsApp
+          </a>
+          <button class="btn btn-light btn-small" type="button">Ver más</button>
+        </div>
+      `;
+
+      return article;
+    }
+
+    function getFilteredProducts() {
+      return products.filter((product) => {
+        const inCategory =
+          activeCategory === "todos" || product.category === activeCategory;
+
+        const fullText = [
+          product.name,
+          product.presentation,
+          product.description,
+          product.category
+        ]
+          .join(" ")
+          .toLowerCase();
+
+        const matchesSearch = fullText.includes(searchText.toLowerCase());
+
+        return inCategory && matchesSearch;
+      });
+    }
+
+    function renderProducts() {
+      const filtered = getFilteredProducts();
+      productsGrid.innerHTML = "";
+
+      if (filtered.length === 0) {
+        emptyState.classList.remove("hidden");
+      } else {
+        emptyState.classList.add("hidden");
+        filtered.forEach((product) => {
+          productsGrid.appendChild(createProductCard(product));
+        });
+      }
+
+      const categoryText =
+        activeCategory === "todos"
+          ? ""
+          : ` en la categoría ${getCategoryLabel(activeCategory)}`;
+
+      resultText.textContent = `Mostrando ${filtered.length} producto(s)${categoryText}`;
+    }
+
+    function getCategoryLabel(category) {
+      switch (category) {
+        case "hogar":
+          return "Hogar";
+        case "vinagres":
+          return "Vinagres";
+        case "restaurantes":
+          return "Desechables y restaurantes";
+        default:
+          return "Todos";
+      }
+    }
+
+    searchInput.addEventListener("input", (e) => {
+      searchText = e.target.value.trim();
+      renderProducts();
+    });
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+        activeCategory = button.dataset.category;
+        renderProducts();
+      });
+    });
+
+    setupStaticWhatsAppLinks();
+    renderProducts();
+  </script>
+</body>
+</html>
