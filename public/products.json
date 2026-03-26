@@ -1,0 +1,4434 @@
+[
+  {
+    "name": "BLANQUEADOR",
+    "presentation": "500 ML",
+    "price_cop_thousands": 2.332,
+    "category": "detergentes-liquidos",
+    "id": 1,
+    "search_name": "blanqueador"
+  },
+  {
+    "name": "HOGAR: hipoclorito al 3%",
+    "presentation": "1000 ML",
+    "price_cop_thousands": 3.71,
+    "category": "detergentes-liquidos",
+    "id": 2,
+    "search_name": "hogar  hipoclorito al 3"
+  },
+  {
+    "name": "HOGAR: hipoclorito al 3%",
+    "presentation": "2000 ML",
+    "price_cop_thousands": 5.618,
+    "category": "detergentes-liquidos",
+    "id": 3,
+    "search_name": "hogar  hipoclorito al 3"
+  },
+  {
+    "name": "HOGAR: hipoclorito al 3%",
+    "presentation": "3800 ML",
+    "price_cop_thousands": 8.639,
+    "category": "detergentes-liquidos",
+    "id": 4,
+    "search_name": "hogar  hipoclorito al 3"
+  },
+  {
+    "name": "HOGAR: hipoclorito al 3%",
+    "presentation": "20 LT",
+    "price_cop_thousands": 36.04,
+    "category": "detergentes-liquidos",
+    "id": 5,
+    "search_name": "hogar  hipoclorito al 3"
+  },
+  {
+    "name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%",
+    "presentation": "500 ML",
+    "price_cop_thousands": 2.65,
+    "category": "detergentes-liquidos",
+    "id": 6,
+    "search_name": "blanqueador industrial  hipoclorito al 5 25"
+  },
+  {
+    "name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%",
+    "presentation": "1000 ML",
+    "price_cop_thousands": 4.452,
+    "category": "detergentes-liquidos",
+    "id": 7,
+    "search_name": "blanqueador industrial  hipoclorito al 5 25"
+  },
+  {
+    "name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%",
+    "presentation": "2000 ML",
+    "price_cop_thousands": 6.996,
+    "category": "detergentes-liquidos",
+    "id": 8,
+    "search_name": "blanqueador industrial  hipoclorito al 5 25"
+  },
+  {
+    "name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%",
+    "presentation": "3800 ML",
+    "price_cop_thousands": 11.236,
+    "category": "detergentes-liquidos",
+    "id": 9,
+    "search_name": "blanqueador industrial  hipoclorito al 5 25"
+  },
+  {
+    "name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%",
+    "presentation": "20 LT",
+    "price_cop_thousands": 48.23,
+    "category": "detergentes-liquidos",
+    "id": 10,
+    "search_name": "blanqueador industrial  hipoclorito al 5 25"
+  },
+  {
+    "name": "HIPOCLORITO 13%",
+    "presentation": "3800 ML",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 11,
+    "search_name": "hipoclorito 13"
+  },
+  {
+    "name": "HIPOCLORITO 13%",
+    "presentation": "10 LT",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 12,
+    "search_name": "hipoclorito 13"
+  },
+  {
+    "name": "HIPOCLORITO 13%",
+    "presentation": "20 LT",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 13,
+    "search_name": "hipoclorito 13"
+  },
+  {
+    "name": "DESMANCHADOR",
+    "presentation": "1000 ML",
+    "price_cop_thousands": 4.028,
+    "category": "detergentes-liquidos",
+    "id": 14,
+    "search_name": "desmanchador"
+  },
+  {
+    "name": "ROPA COLOR SIN CLORO",
+    "presentation": "2000 ML",
+    "price_cop_thousands": 6.148,
+    "category": "detergentes-liquidos",
+    "id": 15,
+    "search_name": "ropa color sin cloro"
+  },
+  {
+    "name": "ROPA COLOR SIN CLORO",
+    "presentation": "3800 ML",
+    "price_cop_thousands": 9.752,
+    "category": "detergentes-liquidos",
+    "id": 16,
+    "search_name": "ropa color sin cloro"
+  },
+  {
+    "name": "ROPA COLOR SIN CLORO",
+    "presentation": "20 LT",
+    "price_cop_thousands": 41.34,
+    "category": "detergentes-liquidos",
+    "id": 17,
+    "search_name": "ropa color sin cloro"
+  },
+  {
+    "name": "LIMPIADOR",
+    "presentation": "1000 ML",
+    "price_cop_thousands": 5.088,
+    "category": "detergentes-liquidos",
+    "id": 18,
+    "search_name": "limpiador"
+  },
+  {
+    "name": "AROMATIZANTE ANTIBACTERIAL",
+    "presentation": "2000 ML",
+    "price_cop_thousands": 8.586,
+    "category": "detergentes-liquidos",
+    "id": 19,
+    "search_name": "aromatizante antibacterial"
+  },
+  {
+    "name": "LAVANDA - FLORAL",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 15.37,
+    "category": "detergentes-liquidos",
+    "id": 20,
+    "search_name": "lavanda   floral"
+  },
+  {
+    "name": "CANELA-LIMÓN",
+    "presentation": "5000 ML",
+    "price_cop_thousands": 19.08,
+    "category": "detergentes-liquidos",
+    "id": 21,
+    "search_name": "canela limón"
+  },
+  {
+    "name": "CANELA-LIMÓN",
+    "presentation": "20 LT",
+    "price_cop_thousands": 64.66,
+    "category": "detergentes-liquidos",
+    "id": 22,
+    "search_name": "canela limón"
+  },
+  {
+    "name": "LIMPIAVIDRIOS",
+    "presentation": "500 ML T ROSCA",
+    "price_cop_thousands": 4.028,
+    "category": "detergentes-liquidos",
+    "id": 23,
+    "search_name": "limpiavidrios"
+  },
+  {
+    "name": "LIMPIAVIDRIOS",
+    "presentation": "500 ML PISTOLA",
+    "price_cop_thousands": 2.65,
+    "category": "detergentes-liquidos",
+    "id": 24,
+    "search_name": "limpiavidrios"
+  },
+  {
+    "name": "LIMPIAVIDRIOS",
+    "presentation": "500 ML DUO: TR + PISTOL",
+    "price_cop_thousands": 6.36,
+    "category": "detergentes-liquidos",
+    "id": 25,
+    "search_name": "limpiavidrios"
+  },
+  {
+    "name": "LIMPIAVIDRIOS",
+    "presentation": "1000 ML PISTOLA",
+    "price_cop_thousands": 5.3,
+    "category": "detergentes-liquidos",
+    "id": 26,
+    "search_name": "limpiavidrios"
+  },
+  {
+    "name": "LIMPIAVIDRIOS",
+    "presentation": "1000 ML T ROSCA",
+    "price_cop_thousands": 4.028,
+    "category": "detergentes-liquidos",
+    "id": 27,
+    "search_name": "limpiavidrios"
+  },
+  {
+    "name": "LIMPIAVIDRIOS",
+    "presentation": "2000 ML",
+    "price_cop_thousands": 6.36,
+    "category": "detergentes-liquidos",
+    "id": 28,
+    "search_name": "limpiavidrios"
+  },
+  {
+    "name": "LIMPIAVIDRIOS",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 9.54,
+    "category": "detergentes-liquidos",
+    "id": 29,
+    "search_name": "limpiavidrios"
+  },
+  {
+    "name": "LIMPIAVIDRIOS",
+    "presentation": "20 LT",
+    "price_cop_thousands": 40.81,
+    "category": "detergentes-liquidos",
+    "id": 30,
+    "search_name": "limpiavidrios"
+  },
+  {
+    "name": "DESENGRASANTE HOGAR - VERDE",
+    "presentation": "500 ML T ROSCA",
+    "price_cop_thousands": 3.18,
+    "category": "detergentes-liquidos",
+    "id": 31,
+    "search_name": "desengrasante hogar   verde"
+  },
+  {
+    "name": "DESENGRASANTE HOGAR - VERDE",
+    "presentation": "500 ML T PISTOLA",
+    "price_cop_thousands": 4.134,
+    "category": "detergentes-liquidos",
+    "id": 32,
+    "search_name": "desengrasante hogar   verde"
+  },
+  {
+    "name": "DESENGRASANTE HOGAR - VERDE",
+    "presentation": "1000 ML PISTOLA",
+    "price_cop_thousands": 5.3,
+    "category": "detergentes-liquidos",
+    "id": 33,
+    "search_name": "desengrasante hogar   verde"
+  },
+  {
+    "name": "DESENGRASANTE HOGAR - VERDE",
+    "presentation": "1000 ML T ROSCA",
+    "price_cop_thousands": 4.24,
+    "category": "detergentes-liquidos",
+    "id": 34,
+    "search_name": "desengrasante hogar   verde"
+  },
+  {
+    "name": "DESENGRASANTE HOGAR - VERDE",
+    "presentation": "2000 ML",
+    "price_cop_thousands": 6.36,
+    "category": "detergentes-liquidos",
+    "id": 35,
+    "search_name": "desengrasante hogar   verde"
+  },
+  {
+    "name": "DESENGRASANTE HOGAR - VERDE",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 9.54,
+    "category": "detergentes-liquidos",
+    "id": 36,
+    "search_name": "desengrasante hogar   verde"
+  },
+  {
+    "name": "DESENGRASANTE HOGAR - VERDE",
+    "presentation": "20 LT",
+    "price_cop_thousands": 38.16,
+    "category": "detergentes-liquidos",
+    "id": 37,
+    "search_name": "desengrasante hogar   verde"
+  },
+  {
+    "name": "DESENGRASANTE",
+    "presentation": "500 ML T ROSCA",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 38,
+    "search_name": "desengrasante"
+  },
+  {
+    "name": "HOGAR - ESPESO",
+    "presentation": "500 ML DOSIFICADOR",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 39,
+    "search_name": "hogar   espeso"
+  },
+  {
+    "name": "BLANCO",
+    "presentation": "1000 ML DOSIFICADOR",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 40,
+    "search_name": "blanco"
+  },
+  {
+    "name": "BLANCO",
+    "presentation": "1000 ML T ROSCA",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 41,
+    "search_name": "blanco"
+  },
+  {
+    "name": "BLANCO",
+    "presentation": "2000 ML",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 42,
+    "search_name": "blanco"
+  },
+  {
+    "name": "BLANCO",
+    "presentation": "3750 ML",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 43,
+    "search_name": "blanco"
+  },
+  {
+    "name": "BLANCO",
+    "presentation": "20 LT",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 44,
+    "search_name": "blanco"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL",
+    "presentation": "500 ML T ROSCA",
+    "price_cop_thousands": 3.18,
+    "category": "detergentes-liquidos",
+    "id": 45,
+    "search_name": "desengrasante industrial"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL",
+    "presentation": "500 ML DOSIFICADOR",
+    "price_cop_thousands": 3.922,
+    "category": "detergentes-liquidos",
+    "id": 46,
+    "search_name": "desengrasante industrial"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL",
+    "presentation": "1000 ML T ROSCA",
+    "price_cop_thousands": 4.982,
+    "category": "detergentes-liquidos",
+    "id": 47,
+    "search_name": "desengrasante industrial"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL",
+    "presentation": "1000 ML DOSIFICADOR",
+    "price_cop_thousands": 5.83,
+    "category": "detergentes-liquidos",
+    "id": 48,
+    "search_name": "desengrasante industrial"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL",
+    "presentation": "2000 ML",
+    "price_cop_thousands": 8.268,
+    "category": "detergentes-liquidos",
+    "id": 49,
+    "search_name": "desengrasante industrial"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 13.78,
+    "category": "detergentes-liquidos",
+    "id": 50,
+    "search_name": "desengrasante industrial"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL",
+    "presentation": "20 LT",
+    "price_cop_thousands": 56.18,
+    "category": "detergentes-liquidos",
+    "id": 51,
+    "search_name": "desengrasante industrial"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL FUERTE",
+    "presentation": "500 ML T. ROSCA",
+    "price_cop_thousands": 3.71,
+    "category": "detergentes-liquidos",
+    "id": 52,
+    "search_name": "desengrasante industrial fuerte"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL FUERTE",
+    "presentation": "500 ML DOSIFICADOR",
+    "price_cop_thousands": 3.975,
+    "category": "detergentes-liquidos",
+    "id": 53,
+    "search_name": "desengrasante industrial fuerte"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL FUERTE",
+    "presentation": "1000 ML T. ROSCA",
+    "price_cop_thousands": 5.3,
+    "category": "detergentes-liquidos",
+    "id": 54,
+    "search_name": "desengrasante industrial fuerte"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL FUERTE",
+    "presentation": "1000 ML DOSIFICADOR",
+    "price_cop_thousands": 6.36,
+    "category": "detergentes-liquidos",
+    "id": 55,
+    "search_name": "desengrasante industrial fuerte"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL FUERTE",
+    "presentation": "2000 ML",
+    "price_cop_thousands": 9.01,
+    "category": "detergentes-liquidos",
+    "id": 56,
+    "search_name": "desengrasante industrial fuerte"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL FUERTE",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 14.84,
+    "category": "detergentes-liquidos",
+    "id": 57,
+    "search_name": "desengrasante industrial fuerte"
+  },
+  {
+    "name": "DESENGRASANTE INDUSTRIAL FUERTE",
+    "presentation": "20 LT",
+    "price_cop_thousands": 63.6,
+    "category": "detergentes-liquidos",
+    "id": 58,
+    "search_name": "desengrasante industrial fuerte"
+  },
+  {
+    "name": "JABÓN LIQ MANOS ANTIBACTERIAL",
+    "presentation": "300 ML PUSH PULL",
+    "price_cop_thousands": 2.968,
+    "category": "detergentes-liquidos",
+    "id": 59,
+    "search_name": "jabón liq manos antibacterial"
+  },
+  {
+    "name": "AVENA - VAINILLA",
+    "presentation": "500 ML CREMERA",
+    "price_cop_thousands": 4.028,
+    "category": "detergentes-liquidos",
+    "id": 60,
+    "search_name": "avena   vainilla"
+  },
+  {
+    "name": "FRUTOS ROJOS",
+    "presentation": "500 ML PUSH PULL",
+    "price_cop_thousands": 3.604,
+    "category": "detergentes-liquidos",
+    "id": 61,
+    "search_name": "frutos rojos"
+  },
+  {
+    "name": "MANZANA",
+    "presentation": "500 ML T. ROSCA",
+    "price_cop_thousands": 3.286,
+    "category": "detergentes-liquidos",
+    "id": 62,
+    "search_name": "manzana"
+  },
+  {
+    "name": "MANZANA",
+    "presentation": "1000 ML CREMERA",
+    "price_cop_thousands": 6.095,
+    "category": "detergentes-liquidos",
+    "id": 63,
+    "search_name": "manzana"
+  },
+  {
+    "name": "MANZANA",
+    "presentation": "1000 ML PUSH PULL",
+    "price_cop_thousands": 5.671,
+    "category": "detergentes-liquidos",
+    "id": 64,
+    "search_name": "manzana"
+  },
+  {
+    "name": "MANZANA",
+    "presentation": "1000 ML T. ROSCA",
+    "price_cop_thousands": 5.406,
+    "category": "detergentes-liquidos",
+    "id": 65,
+    "search_name": "manzana"
+  },
+  {
+    "name": "MANZANA",
+    "presentation": "2000 ML CREMERA",
+    "price_cop_thousands": 10.07,
+    "category": "detergentes-liquidos",
+    "id": 66,
+    "search_name": "manzana"
+  },
+  {
+    "name": "MANZANA",
+    "presentation": "2000 ML T ROSCA",
+    "price_cop_thousands": 9.222,
+    "category": "detergentes-liquidos",
+    "id": 67,
+    "search_name": "manzana"
+  },
+  {
+    "name": "MANZANA",
+    "presentation": "3000 ML",
+    "price_cop_thousands": 13.038,
+    "category": "detergentes-liquidos",
+    "id": 68,
+    "search_name": "manzana"
+  },
+  {
+    "name": "MANZANA",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 15.37,
+    "category": "detergentes-liquidos",
+    "id": 69,
+    "search_name": "manzana"
+  },
+  {
+    "name": "MANZANA",
+    "presentation": "20 LT",
+    "price_cop_thousands": 66.78,
+    "category": "detergentes-liquidos",
+    "id": 70,
+    "search_name": "manzana"
+  },
+  {
+    "name": "JABÓN LIQ LAVALOZA",
+    "presentation": "500 ML CREMERA",
+    "price_cop_thousands": 3.922,
+    "category": "detergentes-liquidos",
+    "id": 71,
+    "search_name": "jabón liq lavaloza"
+  },
+  {
+    "name": "JABÓN LIQ LAVALOZA",
+    "presentation": "500 ML PUSH PULL",
+    "price_cop_thousands": 3.392,
+    "category": "detergentes-liquidos",
+    "id": 72,
+    "search_name": "jabón liq lavaloza"
+  },
+  {
+    "name": "JABÓN LIQ LAVALOZA",
+    "presentation": "500 ML T ROSCA",
+    "price_cop_thousands": 3.392,
+    "category": "detergentes-liquidos",
+    "id": 73,
+    "search_name": "jabón liq lavaloza"
+  },
+  {
+    "name": "JABÓN LIQ LAVALOZA",
+    "presentation": "1000 ML CREMERA",
+    "price_cop_thousands": 5.83,
+    "category": "detergentes-liquidos",
+    "id": 74,
+    "search_name": "jabón liq lavaloza"
+  },
+  {
+    "name": "JABÓN LIQ LAVALOZA",
+    "presentation": "1000 ML PUSH PULL",
+    "price_cop_thousands": 5.512,
+    "category": "detergentes-liquidos",
+    "id": 75,
+    "search_name": "jabón liq lavaloza"
+  },
+  {
+    "name": "ANTIBACTERIAL LIMÓN",
+    "presentation": "1000 ML T ROSCA",
+    "price_cop_thousands": 5.3,
+    "category": "detergentes-liquidos",
+    "id": 76,
+    "search_name": "antibacterial limón"
+  },
+  {
+    "name": "ANTIBACTERIAL LIMÓN",
+    "presentation": "2000 ML T ROSCA",
+    "price_cop_thousands": 9.01,
+    "category": "detergentes-liquidos",
+    "id": 77,
+    "search_name": "antibacterial limón"
+  },
+  {
+    "name": "ANTIBACTERIAL LIMÓN",
+    "presentation": "2000 ML CREMERA",
+    "price_cop_thousands": 9.54,
+    "category": "detergentes-liquidos",
+    "id": 78,
+    "search_name": "antibacterial limón"
+  },
+  {
+    "name": "ANTIBACTERIAL LIMÓN",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 14.84,
+    "category": "detergentes-liquidos",
+    "id": 79,
+    "search_name": "antibacterial limón"
+  },
+  {
+    "name": "ANTIBACTERIAL LIMÓN",
+    "presentation": "20 LT",
+    "price_cop_thousands": 63.6,
+    "category": "detergentes-liquidos",
+    "id": 80,
+    "search_name": "antibacterial limón"
+  },
+  {
+    "name": "JABÓN LIQ",
+    "presentation": "500 ML PUSH PULL",
+    "price_cop_thousands": 4.24,
+    "category": "detergentes-liquidos",
+    "id": 81,
+    "search_name": "jabón liq"
+  },
+  {
+    "name": "LAVALOZA",
+    "presentation": "500 ML T ROSCA",
+    "price_cop_thousands": 3.71,
+    "category": "detergentes-liquidos",
+    "id": 82,
+    "search_name": "lavaloza"
+  },
+  {
+    "name": "INDUSTRIAL",
+    "presentation": "1000 ML T ROSCA",
+    "price_cop_thousands": 6.36,
+    "category": "detergentes-liquidos",
+    "id": 83,
+    "search_name": "industrial"
+  },
+  {
+    "name": "ANTIBACTERIAL",
+    "presentation": "1000 ML PUSH PULL",
+    "price_cop_thousands": 6.678,
+    "category": "detergentes-liquidos",
+    "id": 84,
+    "search_name": "antibacterial"
+  },
+  {
+    "name": "ANTIBACTERIAL",
+    "presentation": "1000 ML CREMERA",
+    "price_cop_thousands": 6.996,
+    "category": "detergentes-liquidos",
+    "id": 85,
+    "search_name": "antibacterial"
+  },
+  {
+    "name": "ANTIBACTERIAL",
+    "presentation": "2000 ML T ROSCA",
+    "price_cop_thousands": 9.54,
+    "category": "detergentes-liquidos",
+    "id": 86,
+    "search_name": "antibacterial"
+  },
+  {
+    "name": "ANTIBACTERIAL",
+    "presentation": "2000 ML CREMERA",
+    "price_cop_thousands": 10.282,
+    "category": "detergentes-liquidos",
+    "id": 87,
+    "search_name": "antibacterial"
+  },
+  {
+    "name": "ANTIBACTERIAL",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 16.96,
+    "category": "detergentes-liquidos",
+    "id": 88,
+    "search_name": "antibacterial"
+  },
+  {
+    "name": "ANTIBACTERIAL",
+    "presentation": "20 LT",
+    "price_cop_thousands": 79.5,
+    "category": "detergentes-liquidos",
+    "id": 89,
+    "search_name": "antibacterial"
+  },
+  {
+    "name": "DETERGENTE LIQUIDO",
+    "presentation": "1000 MLT MEDIDORA",
+    "price_cop_thousands": 8.48,
+    "category": "detergentes-liquidos",
+    "id": 90,
+    "search_name": "detergente liquido"
+  },
+  {
+    "name": "LAVADORA",
+    "presentation": "2000 ML T MEDIDORA",
+    "price_cop_thousands": 13.78,
+    "category": "detergentes-liquidos",
+    "id": 91,
+    "search_name": "lavadora"
+  },
+  {
+    "name": "CONCENTRADO",
+    "presentation": "37500 ML",
+    "price_cop_thousands": 16.96,
+    "category": "detergentes-liquidos",
+    "id": 92,
+    "search_name": "concentrado"
+  },
+  {
+    "name": "CONCENTRADO",
+    "presentation": "4000 ML",
+    "price_cop_thousands": 22.26,
+    "category": "detergentes-liquidos",
+    "id": 93,
+    "search_name": "concentrado"
+  },
+  {
+    "name": "CONCENTRADO",
+    "presentation": "20 LT",
+    "price_cop_thousands": 74.2,
+    "category": "detergentes-liquidos",
+    "id": 94,
+    "search_name": "concentrado"
+  },
+  {
+    "name": "J LÍQUIDO TIPO REY",
+    "presentation": "1000 ML T MEDIDORA",
+    "price_cop_thousands": 8.056,
+    "category": "detergentes-liquidos",
+    "id": 95,
+    "search_name": "j líquido tipo rey"
+  },
+  {
+    "name": "J LÍQUIDO TIPO REY",
+    "presentation": "2000 ML T MEDIDORA",
+    "price_cop_thousands": 13.038,
+    "category": "detergentes-liquidos",
+    "id": 96,
+    "search_name": "j líquido tipo rey"
+  },
+  {
+    "name": "J LÍQUIDO TIPO REY",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 15.37,
+    "category": "detergentes-liquidos",
+    "id": 97,
+    "search_name": "j líquido tipo rey"
+  },
+  {
+    "name": "J LÍQUIDO TIPO REY",
+    "presentation": "4000 ML",
+    "price_cop_thousands": 21.73,
+    "category": "detergentes-liquidos",
+    "id": 98,
+    "search_name": "j líquido tipo rey"
+  },
+  {
+    "name": "J LÍQUIDO TIPO REY",
+    "presentation": "20 LT",
+    "price_cop_thousands": 69.96,
+    "category": "detergentes-liquidos",
+    "id": 99,
+    "search_name": "j líquido tipo rey"
+  },
+  {
+    "name": "DETERGENTE LIQUIDO MULTIUSOS",
+    "presentation": "500 ML MULTIMODAL",
+    "price_cop_thousands": 4.028,
+    "category": "detergentes-liquidos",
+    "id": 100,
+    "search_name": "detergente liquido multiusos"
+  },
+  {
+    "name": "DETERGENTE LIQUIDO MULTIUSOS",
+    "presentation": "1000 ML MULTIMODAL",
+    "price_cop_thousands": 7.208,
+    "category": "detergentes-liquidos",
+    "id": 101,
+    "search_name": "detergente liquido multiusos"
+  },
+  {
+    "name": "DETERGENTE LIQUIDO MULTIUSOS",
+    "presentation": "2000 ML",
+    "price_cop_thousands": 9.858,
+    "category": "detergentes-liquidos",
+    "id": 102,
+    "search_name": "detergente liquido multiusos"
+  },
+  {
+    "name": "DETERGENTE LIQUIDO MULTIUSOS",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 15.9,
+    "category": "detergentes-liquidos",
+    "id": 103,
+    "search_name": "detergente liquido multiusos"
+  },
+  {
+    "name": "DETERGENTE LIQUIDO MULTIUSOS",
+    "presentation": "20 LT",
+    "price_cop_thousands": 69.96,
+    "category": "detergentes-liquidos",
+    "id": 104,
+    "search_name": "detergente liquido multiusos"
+  },
+  {
+    "name": "SUAVIZANTE PARA ROPA",
+    "presentation": "1000 ML T. MEDIDORA",
+    "price_cop_thousands": 6.996,
+    "category": "detergentes-liquidos",
+    "id": 105,
+    "search_name": "suavizante para ropa"
+  },
+  {
+    "name": "SUAVIZANTE PARA ROPA",
+    "presentation": "2000 ML T. MEDIDORA",
+    "price_cop_thousands": 11.236,
+    "category": "detergentes-liquidos",
+    "id": 106,
+    "search_name": "suavizante para ropa"
+  },
+  {
+    "name": "SUAVIZANTE PARA ROPA",
+    "presentation": "3750 ML",
+    "price_cop_thousands": 12.72,
+    "category": "detergentes-liquidos",
+    "id": 107,
+    "search_name": "suavizante para ropa"
+  },
+  {
+    "name": "SUAVIZANTE PARA ROPA",
+    "presentation": "4000 ML",
+    "price_cop_thousands": 17.49,
+    "category": "detergentes-liquidos",
+    "id": 108,
+    "search_name": "suavizante para ropa"
+  },
+  {
+    "name": "SUAVIZANTE PARA ROPA",
+    "presentation": "20LT",
+    "price_cop_thousands": 56.18,
+    "category": "detergentes-liquidos",
+    "id": 109,
+    "search_name": "suavizante para ropa"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "300 ML T ROSCA",
+    "price_cop_thousands": 4.24,
+    "category": "detergentes-liquidos",
+    "id": 110,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "500 ML PISTOLA",
+    "price_cop_thousands": 6.89,
+    "category": "detergentes-liquidos",
+    "id": 111,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "500 ML T ROSCA",
+    "price_cop_thousands": 5.724,
+    "category": "detergentes-liquidos",
+    "id": 112,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "1000 ML PISTOLA",
+    "price_cop_thousands": 11.66,
+    "category": "detergentes-liquidos",
+    "id": 113,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "1000 ML T ROSCA",
+    "price_cop_thousands": 10.176,
+    "category": "detergentes-liquidos",
+    "id": 114,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "2000 ML T ROSCA",
+    "price_cop_thousands": 18.974,
+    "category": "detergentes-liquidos",
+    "id": 115,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "3000 ML",
+    "price_cop_thousands": 27.454,
+    "category": "detergentes-liquidos",
+    "id": 116,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "3800 ML",
+    "price_cop_thousands": 35.192,
+    "category": "detergentes-liquidos",
+    "id": 117,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "5000 ML",
+    "price_cop_thousands": 56.18,
+    "category": "detergentes-liquidos",
+    "id": 118,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL ANTISÉPTICO AL 70 %",
+    "presentation": "20 LT",
+    "price_cop_thousands": 153.7,
+    "category": "detergentes-liquidos",
+    "id": 119,
+    "search_name": "alcohol antiséptico al 70"
+  },
+  {
+    "name": "ALCOHOL AL 80 %",
+    "presentation": "1000 ML TR",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 120,
+    "search_name": "alcohol al 80"
+  },
+  {
+    "name": "ALCOHOL AL 80 %",
+    "presentation": "3800 ML",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 121,
+    "search_name": "alcohol al 80"
+  },
+  {
+    "name": "ALCOHOL AL 80 %",
+    "presentation": "20 LT",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 122,
+    "search_name": "alcohol al 80"
+  },
+  {
+    "name": "ALCOHOL INDUSTRIAL 96%",
+    "presentation": "3800 ML",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 123,
+    "search_name": "alcohol industrial 96"
+  },
+  {
+    "name": "ALCOHOL INDUSTRIAL 96%",
+    "presentation": "20 LT",
+    "price_cop_thousands": NaN,
+    "category": "detergentes-liquidos",
+    "id": 124,
+    "search_name": "alcohol industrial 96"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "300 ML PUSH PULL",
+    "price_cop_thousands": 4.982,
+    "category": "detergentes-liquidos",
+    "id": 125,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "500 ML V. DOSIFICADOR",
+    "price_cop_thousands": 7.42,
+    "category": "detergentes-liquidos",
+    "id": 126,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "500 ML V. PUSH PULL",
+    "price_cop_thousands": 6.89,
+    "category": "detergentes-liquidos",
+    "id": 127,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "500 ML T. ROSCA",
+    "price_cop_thousands": 6.572,
+    "category": "detergentes-liquidos",
+    "id": 128,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "1000 ML V. DOSIFICADO",
+    "price_cop_thousands": 12.19,
+    "category": "detergentes-liquidos",
+    "id": 129,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "1000 ML V. PUSH PULL",
+    "price_cop_thousands": 11.66,
+    "category": "detergentes-liquidos",
+    "id": 130,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "1000 ML T. ROSCA",
+    "price_cop_thousands": 11.66,
+    "category": "detergentes-liquidos",
+    "id": 131,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "2000 ML T ROSCA",
+    "price_cop_thousands": 20.67,
+    "category": "detergentes-liquidos",
+    "id": 132,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "3800 ML T ROSCA",
+    "price_cop_thousands": 37.1,
+    "category": "detergentes-liquidos",
+    "id": 133,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "GEL ANTIBACTERIAL",
+    "presentation": "20LT",
+    "price_cop_thousands": 180.2,
+    "category": "detergentes-liquidos",
+    "id": 134,
+    "search_name": "gel antibacterial"
+  },
+  {
+    "name": "AL. AROMÁTICA PANELA INSTANTÁ SANTANDER HERBAR",
+    "presentation": "",
+    "price_cop_thousands": 4.672,
+    "category": "varios-desechables",
+    "id": 135,
+    "search_name": "al  aromática panela instantá santander herbar"
+  },
+  {
+    "name": "AL. AROMÁTICA TISANA - YERBAS SANTANDER HERBAR",
+    "presentation": "",
+    "price_cop_thousands": 2.311,
+    "category": "varios-desechables",
+    "id": 136,
+    "search_name": "al  aromática tisana   yerbas santander herbar"
+  },
+  {
+    "name": "AL. AROMÁTICA PANELA INSTANTÁ ZUIN",
+    "presentation": "",
+    "price_cop_thousands": 3.819,
+    "category": "varios-desechables",
+    "id": 137,
+    "search_name": "al  aromática panela instantá zuin"
+  },
+  {
+    "name": "AL. AROMÁTICA PANELA INSTANTÁ ZUIN x KILO",
+    "presentation": "",
+    "price_cop_thousands": 18.75,
+    "category": "varios-desechables",
+    "id": 138,
+    "search_name": "al  aromática panela instantá zuin x kilo"
+  },
+  {
+    "name": "AL. AROMÁTICA PANELA INSTANTÁ ZUIN PQT X 50 U",
+    "presentation": "",
+    "price_cop_thousands": 4.861,
+    "category": "varios-desechables",
+    "id": 139,
+    "search_name": "al  aromática panela instantá zuin pqt x 50 u"
+  },
+  {
+    "name": "AL. PANELA PULVERIZADA SOBRECITOS",
+    "presentation": "",
+    "price_cop_thousands": 5.417,
+    "category": "varios-desechables",
+    "id": 140,
+    "search_name": "al  panela pulverizada sobrecitos"
+  },
+  {
+    "name": "AL. AZÚCAR SOBRECITO",
+    "presentation": "",
+    "price_cop_thousands": 5.833,
+    "category": "varios-desechables",
+    "id": 141,
+    "search_name": "al  azúcar sobrecito"
+  },
+  {
+    "name": "AL. AZÚCAR TUBITO",
+    "presentation": "",
+    "price_cop_thousands": 6.597,
+    "category": "varios-desechables",
+    "id": 142,
+    "search_name": "al  azúcar tubito"
+  },
+  {
+    "name": "AL. BICARBONATO DE SODIO 500 GR MAXSODA",
+    "presentation": "",
+    "price_cop_thousands": 4.077,
+    "category": "varios-desechables",
+    "id": 143,
+    "search_name": "al  bicarbonato de sodio 500 gr maxsoda"
+  },
+  {
+    "name": "AL. SOPA MR NOODLES SOBRE 85 GR",
+    "presentation": "",
+    "price_cop_thousands": 2.478,
+    "category": "varios-desechables",
+    "id": 144,
+    "search_name": "al  sopa mr noodles sobre 85 gr"
+  },
+  {
+    "name": "AL. CAFÉ TOSTADO Y MOLIDO UNO A 500 GR",
+    "presentation": "",
+    "price_cop_thousands": 18.409,
+    "category": "varios-desechables",
+    "id": 145,
+    "search_name": "al  café tostado y molido uno a 500 gr"
+  },
+  {
+    "name": "AL. CAFÉ TOSTADO Y MOLIDO UNO A 250 GR",
+    "presentation": "",
+    "price_cop_thousands": 9.545,
+    "category": "varios-desechables",
+    "id": 146,
+    "search_name": "al  café tostado y molido uno a 250 gr"
+  },
+  {
+    "name": "AL. CAFÉ TOSTADO Y MOLIDO UNO A 125 GR",
+    "presentation": "",
+    "price_cop_thousands": 5.0,
+    "category": "varios-desechables",
+    "id": 147,
+    "search_name": "al  café tostado y molido uno a 125 gr"
+  },
+  {
+    "name": "AL. CAFÉ TOSTADO Y MOLIDO UNO A 2500 GR",
+    "presentation": "",
+    "price_cop_thousands": 97.955,
+    "category": "varios-desechables",
+    "id": 148,
+    "search_name": "al  café tostado y molido uno a 2500 gr"
+  },
+  {
+    "name": "AL. CAFÉ TOSTADO EN GRANO EXCELSO 2500 GR",
+    "presentation": "",
+    "price_cop_thousands": 136.364,
+    "category": "varios-desechables",
+    "id": 149,
+    "search_name": "al  café tostado en grano excelso 2500 gr"
+  },
+  {
+    "name": "AL. CAFÉ TOSTADO EN GRANO EXCELSO 500 GR",
+    "presentation": "",
+    "price_cop_thousands": 34.091,
+    "category": "varios-desechables",
+    "id": 150,
+    "search_name": "al  café tostado en grano excelso 500 gr"
+  },
+  {
+    "name": "AL. CAFÉ TOSTADO MOLIDO EXCELSO 500 GR",
+    "presentation": "",
+    "price_cop_thousands": 3.409,
+    "category": "varios-desechables",
+    "id": 151,
+    "search_name": "al  café tostado molido excelso 500 gr"
+  },
+  {
+    "name": "AL. CAFÉ TOSTADO CONSUMO GRANO GRANEL",
+    "presentation": "",
+    "price_cop_thousands": 25.0,
+    "category": "varios-desechables",
+    "id": 152,
+    "search_name": "al  café tostado consumo grano granel"
+  },
+  {
+    "name": "AL. CAFÉ TOSTADO MOLIDO AL GRANEL",
+    "presentation": "",
+    "price_cop_thousands": 18.75,
+    "category": "varios-desechables",
+    "id": 153,
+    "search_name": "al  café tostado molido al granel"
+  },
+  {
+    "name": "AL. TÉ CHAI LATTE DOYPACK 380 GR",
+    "presentation": "",
+    "price_cop_thousands": 28.097,
+    "category": "varios-desechables",
+    "id": 154,
+    "search_name": "al  té chai latte doypack 380 gr"
+  },
+  {
+    "name": "B. PAPEL PARA CUBIERTOS UNIBOL",
+    "presentation": "",
+    "price_cop_thousands": 20.407,
+    "category": "varios-desechables",
+    "id": 155,
+    "search_name": "b  papel para cubiertos unibol"
+  },
+  {
+    "name": "B. PAPEL PAN BAGUETTE IMPRESA UNIBOL",
+    "presentation": "",
+    "price_cop_thousands": 14.62,
+    "category": "varios-desechables",
+    "id": 156,
+    "search_name": "b  papel pan baguette impresa unibol"
+  },
+  {
+    "name": "B.PAPEL KRAFT 1/2 LB 100*100",
+    "presentation": "",
+    "price_cop_thousands": 12.38,
+    "category": "varios-desechables",
+    "id": 157,
+    "search_name": "b papel kraft 1 2 lb 100 100"
+  },
+  {
+    "name": "B.PAPEL KRAFT 1 LB 80*100",
+    "presentation": "",
+    "price_cop_thousands": 15.106,
+    "category": "varios-desechables",
+    "id": 158,
+    "search_name": "b papel kraft 1 lb 80 100"
+  },
+  {
+    "name": "B.PAPEL KRAFT 2 LB 60*100",
+    "presentation": "",
+    "price_cop_thousands": 20.141,
+    "category": "varios-desechables",
+    "id": 159,
+    "search_name": "b papel kraft 2 lb 60 100"
+  },
+  {
+    "name": "B.PAPEL KRAFT 3 LB 50*100",
+    "presentation": "",
+    "price_cop_thousands": 24.54,
+    "category": "varios-desechables",
+    "id": 160,
+    "search_name": "b papel kraft 3 lb 50 100"
+  },
+  {
+    "name": "B.PAPEL KRAPF 4 LB 40*100",
+    "presentation": "",
+    "price_cop_thousands": 30.868,
+    "category": "varios-desechables",
+    "id": 161,
+    "search_name": "b papel krapf 4 lb 40 100"
+  },
+  {
+    "name": "B.PAPEL KRAFT 6 LB 30*100",
+    "presentation": "",
+    "price_cop_thousands": 41.775,
+    "category": "varios-desechables",
+    "id": 162,
+    "search_name": "b papel kraft 6 lb 30 100"
+  },
+  {
+    "name": "B.PAPEL KRAFT 12 LB 20* 100",
+    "presentation": "",
+    "price_cop_thousands": 61.413,
+    "category": "varios-desechables",
+    "id": 163,
+    "search_name": "b papel kraft 12 lb 20  100"
+  },
+  {
+    "name": "B.PAPEL KRAFT 6 LB FONDO CUADRADO",
+    "presentation": "",
+    "price_cop_thousands": 10.32,
+    "category": "varios-desechables",
+    "id": 164,
+    "search_name": "b papel kraft 6 lb fondo cuadrado"
+  },
+  {
+    "name": "B.PAPEL KRAFT 12 LB FONDO CUADRADO",
+    "presentation": "",
+    "price_cop_thousands": 15.153,
+    "category": "varios-desechables",
+    "id": 165,
+    "search_name": "b papel kraft 12 lb fondo cuadrado"
+  },
+  {
+    "name": "B. PAPEL DOMICILIOS PREMIUM REF BIO 35",
+    "presentation": "",
+    "price_cop_thousands": 27.728,
+    "category": "varios-desechables",
+    "id": 166,
+    "search_name": "b  papel domicilios premium ref bio 35"
+  },
+  {
+    "name": "B. PAPEL DOMICILIOS PREMIUM REF BIO 60",
+    "presentation": "",
+    "price_cop_thousands": 31.997,
+    "category": "varios-desechables",
+    "id": 167,
+    "search_name": "b  papel domicilios premium ref bio 60"
+  },
+  {
+    "name": "B. PAPEL DOMICILIOS MANIGUETA # 30 (25+12x32)cm",
+    "presentation": "",
+    "price_cop_thousands": 36.848,
+    "category": "varios-desechables",
+    "id": 168,
+    "search_name": "b  papel domicilios manigueta   30  25 12x32 cm"
+  },
+  {
+    "name": "B. PAPEL DOMICILIOS MANIGUETA # 35 (25,5+17x35)cm",
+    "presentation": "",
+    "price_cop_thousands": 38.681,
+    "category": "varios-desechables",
+    "id": 169,
+    "search_name": "b  papel domicilios manigueta   35  25 5 17x35 cm"
+  },
+  {
+    "name": "B. PAPEL DOMICILIOS MANIGUETA # 40 (33+17x33)cm",
+    "presentation": "",
+    "price_cop_thousands": 43.139,
+    "category": "varios-desechables",
+    "id": 170,
+    "search_name": "b  papel domicilios manigueta   40  33 17x33 cm"
+  },
+  {
+    "name": "B. PAPEL DOMICILIOS MANIGUETA # 60 (30+18x42,5)",
+    "presentation": "",
+    "price_cop_thousands": 41.65,
+    "category": "varios-desechables",
+    "id": 171,
+    "search_name": "b  papel domicilios manigueta   60  30 18x42 5"
+  },
+  {
+    "name": "B. PAPEL DOMICILIOS MANIGUETA # 65 (30+23x40,5)cm",
+    "presentation": "",
+    "price_cop_thousands": 47.604,
+    "category": "varios-desechables",
+    "id": 172,
+    "search_name": "b  papel domicilios manigueta   65  30 23x40 5 cm"
+  },
+  {
+    "name": "B. PAPEL DOMICILIOS MANIGUETA # 75 (36+25x41,5)cm",
+    "presentation": "",
+    "price_cop_thousands": 39.573,
+    "category": "varios-desechables",
+    "id": 173,
+    "search_name": "b  papel domicilios manigueta   75  36 25x41 5 cm"
+  },
+  {
+    "name": "BANDEJA ICOPOR No 1 X 500U",
+    "presentation": "",
+    "price_cop_thousands": 47.931,
+    "category": "varios-desechables",
+    "id": 174,
+    "search_name": "bandeja icopor no 1 x 500u"
+  },
+  {
+    "name": "BANDEJA ICOPOR No 3 X 500U",
+    "presentation": "",
+    "price_cop_thousands": 60.988,
+    "category": "varios-desechables",
+    "id": 175,
+    "search_name": "bandeja icopor no 3 x 500u"
+  },
+  {
+    "name": "BANDEJA ICOPOR No 7 X 500U",
+    "presentation": "",
+    "price_cop_thousands": 91.068,
+    "category": "varios-desechables",
+    "id": 176,
+    "search_name": "bandeja icopor no 7 x 500u"
+  },
+  {
+    "name": "BANDEJA ICOPOR No 17 X 500U",
+    "presentation": "",
+    "price_cop_thousands": 74.375,
+    "category": "varios-desechables",
+    "id": 177,
+    "search_name": "bandeja icopor no 17 x 500u"
+  },
+  {
+    "name": "BOLSA ALUMINIO P-25",
+    "presentation": "",
+    "price_cop_thousands": 4.236,
+    "category": "varios-desechables",
+    "id": 178,
+    "search_name": "bolsa aluminio p 25"
+  },
+  {
+    "name": "BOLSA ALUMINIO R-17 (15x15) cm",
+    "presentation": "",
+    "price_cop_thousands": 1.778,
+    "category": "varios-desechables",
+    "id": 179,
+    "search_name": "bolsa aluminio r 17  15x15  cm"
+  },
+  {
+    "name": "BOLSA ALUMINIO R-19 (17,5x20) cm",
+    "presentation": "",
+    "price_cop_thousands": 2.854,
+    "category": "varios-desechables",
+    "id": 180,
+    "search_name": "bolsa aluminio r 19  17 5x20  cm"
+  },
+  {
+    "name": "BOLSA ALUMINIO R-21 (17,5x25) cm",
+    "presentation": "",
+    "price_cop_thousands": 3.569,
+    "category": "varios-desechables",
+    "id": 181,
+    "search_name": "bolsa aluminio r 21  17 5x25  cm"
+  },
+  {
+    "name": "BOLSA ALUMINIO R-23 (20x25) cm",
+    "presentation": "",
+    "price_cop_thousands": 3.847,
+    "category": "varios-desechables",
+    "id": 182,
+    "search_name": "bolsa aluminio r 23  20x25  cm"
+  },
+  {
+    "name": "BOLSA ALUMINIO R-25 (22,5x30) cm",
+    "presentation": "",
+    "price_cop_thousands": 5.583,
+    "category": "varios-desechables",
+    "id": 183,
+    "search_name": "bolsa aluminio r 25  22 5x30  cm"
+  },
+  {
+    "name": "BOLSA ALUMINIO R-35 (28x35,5)cm",
+    "presentation": "",
+    "price_cop_thousands": 7.924,
+    "category": "varios-desechables",
+    "id": 184,
+    "search_name": "bolsa aluminio r 35  28x35 5 cm"
+  },
+  {
+    "name": "BOLSA BASURA PAPELERA NEGRA 16 X 24",
+    "presentation": "",
+    "price_cop_thousands": 1.111,
+    "category": "varios-desechables",
+    "id": 185,
+    "search_name": "bolsa basura papelera negra 16 x 24"
+  },
+  {
+    "name": "BOLSA BASURA PAPELERA COLORES y BLANCA 16 X 24",
+    "presentation": "",
+    "price_cop_thousands": 1.319,
+    "category": "varios-desechables",
+    "id": 186,
+    "search_name": "bolsa basura papelera colores y blanca 16 x 24"
+  },
+  {
+    "name": "BOLSA BASURA NEGRA PEQUEÑA 22x30",
+    "presentation": "",
+    "price_cop_thousands": 1.667,
+    "category": "varios-desechables",
+    "id": 187,
+    "search_name": "bolsa basura negra pequeña 22x30"
+  },
+  {
+    "name": "BOLSA BASURA BLANCA PEQUEÑA 22x30",
+    "presentation": "",
+    "price_cop_thousands": 2.639,
+    "category": "varios-desechables",
+    "id": 188,
+    "search_name": "bolsa basura blanca pequeña 22x30"
+  },
+  {
+    "name": "BOLSA BASURA NEGRA MEDIANA 26X36",
+    "presentation": "",
+    "price_cop_thousands": 1.667,
+    "category": "varios-desechables",
+    "id": 189,
+    "search_name": "bolsa basura negra mediana 26x36"
+  },
+  {
+    "name": "BOLSA BASURA NEGRA MEDIANA 28X39",
+    "presentation": "",
+    "price_cop_thousands": 2.083,
+    "category": "varios-desechables",
+    "id": 190,
+    "search_name": "bolsa basura negra mediana 28x39"
+  },
+  {
+    "name": "BOLSA BASURA BLANCA MEDIANA 28X39",
+    "presentation": "",
+    "price_cop_thousands": 2.847,
+    "category": "varios-desechables",
+    "id": 191,
+    "search_name": "bolsa basura blanca mediana 28x39"
+  },
+  {
+    "name": "BOLSA BASURA NEGRA GRANDE 32X42",
+    "presentation": "",
+    "price_cop_thousands": 3.125,
+    "category": "varios-desechables",
+    "id": 192,
+    "search_name": "bolsa basura negra grande 32x42"
+  },
+  {
+    "name": "BOLSA BASURA NEGRA JUMBO 39X50",
+    "presentation": "",
+    "price_cop_thousands": 5.833,
+    "category": "varios-desechables",
+    "id": 193,
+    "search_name": "bolsa basura negra jumbo 39x50"
+  },
+  {
+    "name": "BOLSA BASURA 26 X 36 BLANCA",
+    "presentation": "",
+    "price_cop_thousands": 2.639,
+    "category": "varios-desechables",
+    "id": 194,
+    "search_name": "bolsa basura 26 x 36 blanca"
+  },
+  {
+    "name": "BOLSA BASURA 26 X 36 GRIS -VDE- ROJA- AZUL",
+    "presentation": "",
+    "price_cop_thousands": 2.639,
+    "category": "varios-desechables",
+    "id": 195,
+    "search_name": "bolsa basura 26 x 36 gris  vde  roja  azul"
+  },
+  {
+    "name": "BOLSA BASURA 32 X 44 BLANCA",
+    "presentation": "",
+    "price_cop_thousands": 4.375,
+    "category": "varios-desechables",
+    "id": 196,
+    "search_name": "bolsa basura 32 x 44 blanca"
+  },
+  {
+    "name": "BOLSA BASURA 32 X 44 GRIS -VDE- ROJA- AZUL",
+    "presentation": "",
+    "price_cop_thousands": 4.375,
+    "category": "varios-desechables",
+    "id": 197,
+    "search_name": "bolsa basura 32 x 44 gris  vde  roja  azul"
+  },
+  {
+    "name": "BOLSA BASURA JUMB 39X50 GRIS -VDE- ROJ- AZU - BCA",
+    "presentation": "",
+    "price_cop_thousands": 6.25,
+    "category": "varios-desechables",
+    "id": 198,
+    "search_name": "bolsa basura jumb 39x50 gris  vde  roj  azu   bca"
+  },
+  {
+    "name": "BOLSA BASURA DE COLORES Y BLANCA X KILO",
+    "presentation": "",
+    "price_cop_thousands": 9.722,
+    "category": "varios-desechables",
+    "id": 199,
+    "search_name": "bolsa basura de colores y blanca x kilo"
+  },
+  {
+    "name": "BOLSA BASURA NEGRA EN PQTS X KILO",
+    "presentation": "",
+    "price_cop_thousands": 7.222,
+    "category": "varios-desechables",
+    "id": 200,
+    "search_name": "bolsa basura negra en pqts x kilo"
+  },
+  {
+    "name": "BOLSA BASURA NEGR AL GRANEL X KILO",
+    "presentation": "",
+    "price_cop_thousands": 6.806,
+    "category": "varios-desechables",
+    "id": 201,
+    "search_name": "bolsa basura negr al granel x kilo"
+  },
+  {
+    "name": "BOLSA BASURA NEGRA EN ROLLO PRECORTE",
+    "presentation": "",
+    "price_cop_thousands": 7.917,
+    "category": "varios-desechables",
+    "id": 202,
+    "search_name": "bolsa basura negra en rollo precorte"
+  },
+  {
+    "name": "BOLSA BASURA BLANCA Y COLOR ROLLO PRECOR",
+    "presentation": "",
+    "price_cop_thousands": 9.722,
+    "category": "varios-desechables",
+    "id": 203,
+    "search_name": "bolsa basura blanca y color rollo precor"
+  },
+  {
+    "name": "BOLSA MANIJA BIODEGR 1.5 KG BCA -RAY-NEGR-BEIG",
+    "presentation": "",
+    "price_cop_thousands": 2.264,
+    "category": "varios-desechables",
+    "id": 204,
+    "search_name": "bolsa manija biodegr 1 5 kg bca  ray negr beig"
+  },
+  {
+    "name": "BOLSA MANIJA BIODEGR 2 KG BCA -RAY-NEGR-BEIG",
+    "presentation": "",
+    "price_cop_thousands": 2.764,
+    "category": "varios-desechables",
+    "id": 205,
+    "search_name": "bolsa manija biodegr 2 kg bca  ray negr beig"
+  },
+  {
+    "name": "BOLSA MANIJA BIODEGR 3 KG BCA -RAY-NEGR-BEIG",
+    "presentation": "",
+    "price_cop_thousands": 3.292,
+    "category": "varios-desechables",
+    "id": 206,
+    "search_name": "bolsa manija biodegr 3 kg bca  ray negr beig"
+  },
+  {
+    "name": "BOLSA MANIJA BIODEGR 5 KG BCA -RAY-NEGR-BEIG",
+    "presentation": "",
+    "price_cop_thousands": 4.688,
+    "category": "varios-desechables",
+    "id": 207,
+    "search_name": "bolsa manija biodegr 5 kg bca  ray negr beig"
+  },
+  {
+    "name": "BOLSA MANIJA BIODEGR 10 KG BCA -RAY-NEGR-BEIG",
+    "presentation": "",
+    "price_cop_thousands": 6.215,
+    "category": "varios-desechables",
+    "id": 208,
+    "search_name": "bolsa manija biodegr 10 kg bca  ray negr beig"
+  },
+  {
+    "name": "BOLSA MANIJA BIODEGR 15 KG BCA -RAY-NEGR-BEIG",
+    "presentation": "",
+    "price_cop_thousands": 7.326,
+    "category": "varios-desechables",
+    "id": 209,
+    "search_name": "bolsa manija biodegr 15 kg bca  ray negr beig"
+  },
+  {
+    "name": "BOLSA MANIJA BIODEGR 20 KG BCA -RAY-NEGR-BEIG",
+    "presentation": "",
+    "price_cop_thousands": 9.389,
+    "category": "varios-desechables",
+    "id": 210,
+    "search_name": "bolsa manija biodegr 20 kg bca  ray negr beig"
+  },
+  {
+    "name": "BOLSA MANIJA BIODEGR 25 KG BCA -RAY-NEGR-BEIG",
+    "presentation": "",
+    "price_cop_thousands": 11.146,
+    "category": "varios-desechables",
+    "id": 211,
+    "search_name": "bolsa manija biodegr 25 kg bca  ray negr beig"
+  },
+  {
+    "name": "BOLSA MANIJA BIODEGR 30 KG BCA-NEGR-BEIG",
+    "presentation": "",
+    "price_cop_thousands": 16.681,
+    "category": "varios-desechables",
+    "id": 212,
+    "search_name": "bolsa manija biodegr 30 kg bca negr beig"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 3X10 CUBIERTOS",
+    "presentation": "",
+    "price_cop_thousands": 1.042,
+    "category": "varios-desechables",
+    "id": 213,
+    "search_name": "bolsa transparente pe 3x10 cubiertos"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 4X8 = 1/2 LB",
+    "presentation": "",
+    "price_cop_thousands": 1.042,
+    "category": "varios-desechables",
+    "id": 214,
+    "search_name": "bolsa transparente pe 4x8   1 2 lb"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 3 1/2 X 16 FRUVER",
+    "presentation": "",
+    "price_cop_thousands": 2.153,
+    "category": "varios-desechables",
+    "id": 215,
+    "search_name": "bolsa transparente pe 3 1 2 x 16 fruver"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 4 X 16 FRUVER",
+    "presentation": "",
+    "price_cop_thousands": 2.222,
+    "category": "varios-desechables",
+    "id": 216,
+    "search_name": "bolsa transparente pe 4 x 16 fruver"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 4 1/2 X 16 FRUVER",
+    "presentation": "",
+    "price_cop_thousands": 2.361,
+    "category": "varios-desechables",
+    "id": 217,
+    "search_name": "bolsa transparente pe 4 1 2 x 16 fruver"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 5 X 16 FRUVER",
+    "presentation": "",
+    "price_cop_thousands": 2.5,
+    "category": "varios-desechables",
+    "id": 218,
+    "search_name": "bolsa transparente pe 5 x 16 fruver"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 4X18 FRUVER",
+    "presentation": "",
+    "price_cop_thousands": 2.5,
+    "category": "varios-desechables",
+    "id": 219,
+    "search_name": "bolsa transparente pe 4x18 fruver"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 5X9 = 1 LB",
+    "presentation": "",
+    "price_cop_thousands": 1.667,
+    "category": "varios-desechables",
+    "id": 220,
+    "search_name": "bolsa transparente pe 5x9   1 lb"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 5X18 = FRUTAS",
+    "presentation": "",
+    "price_cop_thousands": 3.194,
+    "category": "varios-desechables",
+    "id": 221,
+    "search_name": "bolsa transparente pe 5x18   frutas"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 6X11 = 2 LB",
+    "presentation": "",
+    "price_cop_thousands": 2.292,
+    "category": "varios-desechables",
+    "id": 222,
+    "search_name": "bolsa transparente pe 6x11   2 lb"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 6X16",
+    "presentation": "",
+    "price_cop_thousands": 0.0,
+    "category": "varios-desechables",
+    "id": 223,
+    "search_name": "bolsa transparente pe 6x16"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 7X14",
+    "presentation": "",
+    "price_cop_thousands": 0.0,
+    "category": "varios-desechables",
+    "id": 224,
+    "search_name": "bolsa transparente pe 7x14"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 8X12 = 4 LB",
+    "presentation": "",
+    "price_cop_thousands": 3.611,
+    "category": "varios-desechables",
+    "id": 225,
+    "search_name": "bolsa transparente pe 8x12   4 lb"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 9X14 = 6 LB",
+    "presentation": "",
+    "price_cop_thousands": 4.375,
+    "category": "varios-desechables",
+    "id": 226,
+    "search_name": "bolsa transparente pe 9x14   6 lb"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 10X16 = 8 LB",
+    "presentation": "",
+    "price_cop_thousands": 5.208,
+    "category": "varios-desechables",
+    "id": 227,
+    "search_name": "bolsa transparente pe 10x16   8 lb"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 12X16 = 8 - 10 LB",
+    "presentation": "",
+    "price_cop_thousands": 6.25,
+    "category": "varios-desechables",
+    "id": 228,
+    "search_name": "bolsa transparente pe 12x16   8   10 lb"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 12X18",
+    "presentation": "",
+    "price_cop_thousands": 7.639,
+    "category": "varios-desechables",
+    "id": 229,
+    "search_name": "bolsa transparente pe 12x18"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 14X20 DELGADA = 12 LB",
+    "presentation": "",
+    "price_cop_thousands": 11.806,
+    "category": "varios-desechables",
+    "id": 230,
+    "search_name": "bolsa transparente pe 14x20 delgada   12 lb"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 14X20 GRUESA",
+    "presentation": "",
+    "price_cop_thousands": 22.708,
+    "category": "varios-desechables",
+    "id": 231,
+    "search_name": "bolsa transparente pe 14x20 gruesa"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 16X24 DELGADA = 20 LB",
+    "presentation": "",
+    "price_cop_thousands": 13.194,
+    "category": "varios-desechables",
+    "id": 232,
+    "search_name": "bolsa transparente pe 16x24 delgada   20 lb"
+  },
+  {
+    "name": "BOLSA TRANSPARENTE PE 16X24 GRUESA = 25 LB",
+    "presentation": "",
+    "price_cop_thousands": 34.722,
+    "category": "varios-desechables",
+    "id": 233,
+    "search_name": "bolsa transparente pe 16x24 gruesa   25 lb"
+  },
+  {
+    "name": "BOLSA PE TRANSPARENTE POR KG",
+    "presentation": "",
+    "price_cop_thousands": 12.5,
+    "category": "varios-desechables",
+    "id": 234,
+    "search_name": "bolsa pe transparente por kg"
+  },
+  {
+    "name": "BOLSA LECHOSA EMPACADA POR KG",
+    "presentation": "",
+    "price_cop_thousands": 13.194,
+    "category": "varios-desechables",
+    "id": 235,
+    "search_name": "bolsa lechosa empacada por kg"
+  },
+  {
+    "name": "BOLSA TRANSP PERFORADA PARA FRUVER 4X18",
+    "presentation": "",
+    "price_cop_thousands": 2.361,
+    "category": "varios-desechables",
+    "id": 236,
+    "search_name": "bolsa transp perforada para fruver 4x18"
+  },
+  {
+    "name": "BOLSA TRANSP PERFORADA PARA FRUVER 5X18",
+    "presentation": "",
+    "price_cop_thousands": 2.917,
+    "category": "varios-desechables",
+    "id": 237,
+    "search_name": "bolsa transp perforada para fruver 5x18"
+  },
+  {
+    "name": "BOLSA TRANSP PERFORADA PARA FRUVER 6X18",
+    "presentation": "",
+    "price_cop_thousands": 3.403,
+    "category": "varios-desechables",
+    "id": 238,
+    "search_name": "bolsa transp perforada para fruver 6x18"
+  },
+  {
+    "name": "BOLSA TRANSP PERFORADA PARA FRUVER 7X18",
+    "presentation": "",
+    "price_cop_thousands": 3.958,
+    "category": "varios-desechables",
+    "id": 239,
+    "search_name": "bolsa transp perforada para fruver 7x18"
+  },
+  {
+    "name": "BOLSA TRANSP PERFORADA PARA FRUVER X KG",
+    "presentation": "",
+    "price_cop_thousands": 13.611,
+    "category": "varios-desechables",
+    "id": 240,
+    "search_name": "bolsa transp perforada para fruver x kg"
+  },
+  {
+    "name": "BOLSA RESELLABLE ZIPLOC 14 X 14",
+    "presentation": "",
+    "price_cop_thousands": 6.944,
+    "category": "varios-desechables",
+    "id": 241,
+    "search_name": "bolsa resellable ziploc 14 x 14"
+  },
+  {
+    "name": "BOLSA RESELLABLE ZIPLOC 18 X 14",
+    "presentation": "",
+    "price_cop_thousands": 8.333,
+    "category": "varios-desechables",
+    "id": 242,
+    "search_name": "bolsa resellable ziploc 18 x 14"
+  },
+  {
+    "name": "BOLSA RESELLABLE ZIPLOC 22 X 14",
+    "presentation": "",
+    "price_cop_thousands": 9.375,
+    "category": "varios-desechables",
+    "id": 243,
+    "search_name": "bolsa resellable ziploc 22 x 14"
+  },
+  {
+    "name": "BOLSA RESELLABLE ZIPLOC 22 X 18",
+    "presentation": "",
+    "price_cop_thousands": 12.222,
+    "category": "varios-desechables",
+    "id": 244,
+    "search_name": "bolsa resellable ziploc 22 x 18"
+  },
+  {
+    "name": "BOLSA RESELLABLE ZIPLOC 24 X 20",
+    "presentation": "",
+    "price_cop_thousands": 15.972,
+    "category": "varios-desechables",
+    "id": 245,
+    "search_name": "bolsa resellable ziploc 24 x 20"
+  },
+  {
+    "name": "BOLSA PE LECHOSA 4X8",
+    "presentation": "",
+    "price_cop_thousands": 764.0,
+    "category": "varios-desechables",
+    "id": 246,
+    "search_name": "bolsa pe lechosa 4x8"
+  },
+  {
+    "name": "BOLSA PE LECHOSA 5X9",
+    "presentation": "",
+    "price_cop_thousands": 903.0,
+    "category": "varios-desechables",
+    "id": 247,
+    "search_name": "bolsa pe lechosa 5x9"
+  },
+  {
+    "name": "BOLSA PE LECHOSA 7X10",
+    "presentation": "",
+    "price_cop_thousands": 1.472,
+    "category": "varios-desechables",
+    "id": 248,
+    "search_name": "bolsa pe lechosa 7x10"
+  },
+  {
+    "name": "BOLSA PE LECHOSA 8X12",
+    "presentation": "",
+    "price_cop_thousands": 1.806,
+    "category": "varios-desechables",
+    "id": 249,
+    "search_name": "bolsa pe lechosa 8x12"
+  },
+  {
+    "name": "BOLSA PE LECHOSA 9X14",
+    "presentation": "",
+    "price_cop_thousands": 2.639,
+    "category": "varios-desechables",
+    "id": 250,
+    "search_name": "bolsa pe lechosa 9x14"
+  },
+  {
+    "name": "BOLSA PE LECHOSA 10X16",
+    "presentation": "",
+    "price_cop_thousands": 2.917,
+    "category": "varios-desechables",
+    "id": 251,
+    "search_name": "bolsa pe lechosa 10x16"
+  },
+  {
+    "name": "BOLSA PRECORTE BCO LECHOSO ROLLO 7X10",
+    "presentation": "",
+    "price_cop_thousands": 10.0,
+    "category": "varios-desechables",
+    "id": 252,
+    "search_name": "bolsa precorte bco lechoso rollo 7x10"
+  },
+  {
+    "name": "BOLSA PRECORTE BCO LECHOSO ROLLO 8X12",
+    "presentation": "",
+    "price_cop_thousands": 10.0,
+    "category": "varios-desechables",
+    "id": 253,
+    "search_name": "bolsa precorte bco lechoso rollo 8x12"
+  },
+  {
+    "name": "BOLSA PRECORTE BCO LECHOSO ROLLO 9X14",
+    "presentation": "",
+    "price_cop_thousands": 10.0,
+    "category": "varios-desechables",
+    "id": 254,
+    "search_name": "bolsa precorte bco lechoso rollo 9x14"
+  },
+  {
+    "name": "BOLSA PRECORTE BCO LECHOSO ROLLO 10X16",
+    "presentation": "",
+    "price_cop_thousands": 10.0,
+    "category": "varios-desechables",
+    "id": 255,
+    "search_name": "bolsa precorte bco lechoso rollo 10x16"
+  },
+  {
+    "name": "BOLSA PRECORTE BCO LECHOSO ROLLO 12X18",
+    "presentation": "",
+    "price_cop_thousands": 10.0,
+    "category": "varios-desechables",
+    "id": 256,
+    "search_name": "bolsa precorte bco lechoso rollo 12x18"
+  },
+  {
+    "name": "BOLSA PRECORTE SP EN ROLLO 7X10",
+    "presentation": "",
+    "price_cop_thousands": 9.861,
+    "category": "varios-desechables",
+    "id": 257,
+    "search_name": "bolsa precorte sp en rollo 7x10"
+  },
+  {
+    "name": "BOLSA PRECORTE SP EN ROLLO 8X12",
+    "presentation": "",
+    "price_cop_thousands": NaN,
+    "category": "varios-desechables",
+    "id": 258,
+    "search_name": "bolsa precorte sp en rollo 8x12"
+  },
+  {
+    "name": "BOLSA PRECORTE SP EN ROLLO 9X14",
+    "presentation": "",
+    "price_cop_thousands": 9.861,
+    "category": "varios-desechables",
+    "id": 259,
+    "search_name": "bolsa precorte sp en rollo 9x14"
+  },
+  {
+    "name": "BOLSA PRECORTE SP EN ROLLO 10X16",
+    "presentation": "",
+    "price_cop_thousands": 9.861,
+    "category": "varios-desechables",
+    "id": 260,
+    "search_name": "bolsa precorte sp en rollo 10x16"
+  },
+  {
+    "name": "BOLSA PRECORTE SP EN ROLLO 12X18",
+    "presentation": "",
+    "price_cop_thousands": 9.861,
+    "category": "varios-desechables",
+    "id": 261,
+    "search_name": "bolsa precorte sp en rollo 12x18"
+  },
+  {
+    "name": "BOLSA PRECORTE SP EN ROLLO 20X30",
+    "presentation": "",
+    "price_cop_thousands": 9.861,
+    "category": "varios-desechables",
+    "id": 262,
+    "search_name": "bolsa precorte sp en rollo 20x30"
+  },
+  {
+    "name": "BOLSA PRECORTE PE TRANSP RECUP B 8X12",
+    "presentation": "",
+    "price_cop_thousands": 10.139,
+    "category": "varios-desechables",
+    "id": 263,
+    "search_name": "bolsa precorte pe transp recup b 8x12"
+  },
+  {
+    "name": "BOLSA PRECORTE PE TRANSP RECUP B 9X14",
+    "presentation": "",
+    "price_cop_thousands": 10.139,
+    "category": "varios-desechables",
+    "id": 264,
+    "search_name": "bolsa precorte pe transp recup b 9x14"
+  },
+  {
+    "name": "BOLSA PRECORTE PE TRANSP RECUP B 10X16",
+    "presentation": "",
+    "price_cop_thousands": 10.139,
+    "category": "varios-desechables",
+    "id": 265,
+    "search_name": "bolsa precorte pe transp recup b 10x16"
+  },
+  {
+    "name": "BOLSA PRECORTE PE TRANSP RECUP B 14X20",
+    "presentation": "",
+    "price_cop_thousands": 10.139,
+    "category": "varios-desechables",
+    "id": 266,
+    "search_name": "bolsa precorte pe transp recup b 14x20"
+  },
+  {
+    "name": "BOLSA PRECORTE PE TRANSP RECUP B 16X24",
+    "presentation": "",
+    "price_cop_thousands": 10.139,
+    "category": "varios-desechables",
+    "id": 267,
+    "search_name": "bolsa precorte pe transp recup b 16x24"
+  },
+  {
+    "name": "BOMBILLO LED 5 W STARLITE",
+    "presentation": "",
+    "price_cop_thousands": 13.785,
+    "category": "varios-desechables",
+    "id": 268,
+    "search_name": "bombillo led 5 w starlite"
+  },
+  {
+    "name": "BOMBILLO LED 7 W STARLITE",
+    "presentation": "",
+    "price_cop_thousands": 13.208,
+    "category": "varios-desechables",
+    "id": 269,
+    "search_name": "bombillo led 7 w starlite"
+  },
+  {
+    "name": "BOMBILLO LED 9 W STARLITE",
+    "presentation": "",
+    "price_cop_thousands": 29.306,
+    "category": "varios-desechables",
+    "id": 270,
+    "search_name": "bombillo led 9 w starlite"
+  },
+  {
+    "name": "BOMBILLO LED 12 W STARLITE",
+    "presentation": "",
+    "price_cop_thousands": 43.556,
+    "category": "varios-desechables",
+    "id": 271,
+    "search_name": "bombillo led 12 w starlite"
+  },
+  {
+    "name": "BOMBILLO LED 15 W STARLITE",
+    "presentation": "",
+    "price_cop_thousands": 53.847,
+    "category": "varios-desechables",
+    "id": 272,
+    "search_name": "bombillo led 15 w starlite"
+  },
+  {
+    "name": "CABUYA O HILO PARA AMARRAR x 1500 MTS",
+    "presentation": "",
+    "price_cop_thousands": 18.542,
+    "category": "varios-desechables",
+    "id": 273,
+    "search_name": "cabuya o hilo para amarrar x 1500 mts"
+  },
+  {
+    "name": "CEPILLO DE MANO T. PLANCHITA ECONÓMICO",
+    "presentation": "",
+    "price_cop_thousands": 2.315,
+    "category": "varios-desechables",
+    "id": 274,
+    "search_name": "cepillo de mano t  planchita económico"
+  },
+  {
+    "name": "CEPILLO DE MANO T. PLANCHITA RD",
+    "presentation": "",
+    "price_cop_thousands": 3.819,
+    "category": "varios-desechables",
+    "id": 275,
+    "search_name": "cepillo de mano t  planchita rd"
+  },
+  {
+    "name": "CEPILLO DE PISO",
+    "presentation": "",
+    "price_cop_thousands": 6.944,
+    "category": "varios-desechables",
+    "id": 276,
+    "search_name": "cepillo de piso"
+  },
+  {
+    "name": "CEPILLO LAVA CARRO RD",
+    "presentation": "",
+    "price_cop_thousands": 15.625,
+    "category": "varios-desechables",
+    "id": 277,
+    "search_name": "cepillo lava carro rd"
+  },
+  {
+    "name": "CHUPA ECONÓMICA",
+    "presentation": "",
+    "price_cop_thousands": 3.819,
+    "category": "varios-desechables",
+    "id": 278,
+    "search_name": "chupa económica"
+  },
+  {
+    "name": "CHUPA RD",
+    "presentation": "",
+    "price_cop_thousands": 5.208,
+    "category": "varios-desechables",
+    "id": 279,
+    "search_name": "chupa rd"
+  },
+  {
+    "name": "CHURRUSCO PARA SANITARIO ECONÓMICO",
+    "presentation": "",
+    "price_cop_thousands": 4.861,
+    "category": "varios-desechables",
+    "id": 280,
+    "search_name": "churrusco para sanitario económico"
+  },
+  {
+    "name": "CHURRUSCO PARA SANITARIO PLUS",
+    "presentation": "",
+    "price_cop_thousands": 5.324,
+    "category": "varios-desechables",
+    "id": 281,
+    "search_name": "churrusco para sanitario plus"
+  },
+  {
+    "name": "CINTA ADHESIVA TRANSP 48 MM X 50 M AMAR - VERD",
+    "presentation": "",
+    "price_cop_thousands": 15.458,
+    "category": "varios-desechables",
+    "id": 282,
+    "search_name": "cinta adhesiva transp 48 mm x 50 m amar   verd"
+  },
+  {
+    "name": "CINTA ADHESIVA TRANSP 48 MM X 100 M AMAR - VERD",
+    "presentation": "",
+    "price_cop_thousands": 28.333,
+    "category": "varios-desechables",
+    "id": 283,
+    "search_name": "cinta adhesiva transp 48 mm x 100 m amar   verd"
+  },
+  {
+    "name": "CINTA ADHESIVA TRANSP 48 MM X 200 M AMAR - VERD",
+    "presentation": "",
+    "price_cop_thousands": 56.667,
+    "category": "varios-desechables",
+    "id": 284,
+    "search_name": "cinta adhesiva transp 48 mm x 200 m amar   verd"
+  },
+  {
+    "name": "CINTA DE ENMASCARAR 24 MM X 30 M",
+    "presentation": "",
+    "price_cop_thousands": 39.0,
+    "category": "varios-desechables",
+    "id": 285,
+    "search_name": "cinta de enmascarar 24 mm x 30 m"
+  },
+  {
+    "name": "CONTENEDOR ICOP. DARNEL 8 OZ T.PLAST",
+    "presentation": "",
+    "price_cop_thousands": 12.448,
+    "category": "varios-desechables",
+    "id": 286,
+    "search_name": "contenedor icop  darnel 8 oz t plast"
+  },
+  {
+    "name": "CONTENEDOR ICOP. DARNEL 12 OZ T. PLAST",
+    "presentation": "",
+    "price_cop_thousands": 17.514,
+    "category": "varios-desechables",
+    "id": 287,
+    "search_name": "contenedor icop  darnel 12 oz t  plast"
+  },
+  {
+    "name": "CONTENEDOR ICOP. DARNEL 16 OZ T.PLAST",
+    "presentation": "",
+    "price_cop_thousands": 20.629,
+    "category": "varios-desechables",
+    "id": 288,
+    "search_name": "contenedor icop  darnel 16 oz t plast"
+  },
+  {
+    "name": "CONTENEDOR ICOP. DARNEL 16 OZ T.ICOP",
+    "presentation": "",
+    "price_cop_thousands": 20.629,
+    "category": "varios-desechables",
+    "id": 289,
+    "search_name": "contenedor icop  darnel 16 oz t icop"
+  },
+  {
+    "name": "CONTENEDOR ICOP. DARNEL 24 OZ T. PLAST",
+    "presentation": "",
+    "price_cop_thousands": 24.46,
+    "category": "varios-desechables",
+    "id": 290,
+    "search_name": "contenedor icop  darnel 24 oz t  plast"
+  },
+  {
+    "name": "CONTENEDOR ICOP. DARNEL 24 OZ T. ICOP",
+    "presentation": "",
+    "price_cop_thousands": 24.468,
+    "category": "varios-desechables",
+    "id": 291,
+    "search_name": "contenedor icop  darnel 24 oz t  icop"
+  },
+  {
+    "name": "CONTENEDOR ICOP. WAU 16 OZ T.ICOP CJA X 400 U",
+    "presentation": "",
+    "price_cop_thousands": 13.086,
+    "category": "varios-desechables",
+    "id": 292,
+    "search_name": "contenedor icop  wau 16 oz t icop cja x 400 u"
+  },
+  {
+    "name": "CONTENEDOR ICOP. WAU 24 OZ T.ICOP CJA X 300 U",
+    "presentation": "",
+    "price_cop_thousands": 11.99,
+    "category": "varios-desechables",
+    "id": 293,
+    "search_name": "contenedor icop  wau 24 oz t icop cja x 300 u"
+  },
+  {
+    "name": "CONTENEDOR TRANSPARENTE DELI OPAL 16 OZ CJA X 225 U",
+    "presentation": "",
+    "price_cop_thousands": 18.131,
+    "category": "varios-desechables",
+    "id": 294,
+    "search_name": "contenedor transparente deli opal 16 oz cja x 225 u"
+  },
+  {
+    "name": "CONTENEDOR TRANSPARENTE DELI OPAL 24 OZ CJA X 225 U",
+    "presentation": "",
+    "price_cop_thousands": 23.744,
+    "category": "varios-desechables",
+    "id": 295,
+    "search_name": "contenedor transparente deli opal 24 oz cja x 225 u"
+  },
+  {
+    "name": "CONTENEDOR TRANSPARENTE ACMELEON 16 OZ CJA X 320 U",
+    "presentation": "",
+    "price_cop_thousands": 13.014,
+    "category": "varios-desechables",
+    "id": 296,
+    "search_name": "contenedor transparente acmeleon 16 oz cja x 320 u"
+  },
+  {
+    "name": "CONTENEDOR TRANSPARENTE ACMELEON 24 OZ CJA X 320 U",
+    "presentation": "",
+    "price_cop_thousands": 14.386,
+    "category": "varios-desechables",
+    "id": 297,
+    "search_name": "contenedor transparente acmeleon 24 oz cja x 320 u"
+  },
+  {
+    "name": "COPA 1/2 ONZ TRANSP ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 2.253,
+    "category": "varios-desechables",
+    "id": 298,
+    "search_name": "copa 1 2 onz transp acmeleon"
+  },
+  {
+    "name": "COPA 1 OZ OPAL AGUARDIENTERA LÌDER",
+    "presentation": "",
+    "price_cop_thousands": 1.663,
+    "category": "varios-desechables",
+    "id": 299,
+    "search_name": "copa 1 oz opal aguardientera l der"
+  },
+  {
+    "name": "COPA 1 OZ OPAL ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 2.286,
+    "category": "varios-desechables",
+    "id": 300,
+    "search_name": "copa 1 oz opal acmeleon"
+  },
+  {
+    "name": "COPA 1,5 TRANSP ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 2.922,
+    "category": "varios-desechables",
+    "id": 301,
+    "search_name": "copa 1 5 transp acmeleon"
+  },
+  {
+    "name": "COPA 2 TRANSP ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 2.971,
+    "category": "varios-desechables",
+    "id": 302,
+    "search_name": "copa 2 transp acmeleon"
+  },
+  {
+    "name": "COPA FLAUTA",
+    "presentation": "",
+    "price_cop_thousands": 12.778,
+    "category": "varios-desechables",
+    "id": 303,
+    "search_name": "copa flauta"
+  },
+  {
+    "name": "CUBIERT CUCHARA SOPERA HONDA CUBI X 100",
+    "presentation": "",
+    "price_cop_thousands": 3.528,
+    "category": "varios-desechables",
+    "id": 304,
+    "search_name": "cubiert cuchara sopera honda cubi x 100"
+  },
+  {
+    "name": "CUBIERT CUCHARA SOPERA PANDA CUBI X 100",
+    "presentation": "",
+    "price_cop_thousands": 3.472,
+    "category": "varios-desechables",
+    "id": 305,
+    "search_name": "cubiert cuchara sopera panda cubi x 100"
+  },
+  {
+    "name": "CUBIERT CUCHILLO CUBI X 100",
+    "presentation": "",
+    "price_cop_thousands": 3.528,
+    "category": "varios-desechables",
+    "id": 306,
+    "search_name": "cubiert cuchillo cubi x 100"
+  },
+  {
+    "name": "CUBIERT TENEDOR DURO CUBIX 100",
+    "presentation": "",
+    "price_cop_thousands": 3.528,
+    "category": "varios-desechables",
+    "id": 307,
+    "search_name": "cubiert tenedor duro cubix 100"
+  },
+  {
+    "name": "CUBIERT CUCHARA CUDECOL X 100",
+    "presentation": "",
+    "price_cop_thousands": 3.694,
+    "category": "varios-desechables",
+    "id": 308,
+    "search_name": "cubiert cuchara cudecol x 100"
+  },
+  {
+    "name": "CUBIERT CUCHILLO CUDECOL X 100",
+    "presentation": "",
+    "price_cop_thousands": 3.694,
+    "category": "varios-desechables",
+    "id": 309,
+    "search_name": "cubiert cuchillo cudecol x 100"
+  },
+  {
+    "name": "CUBIERT TENEDOR CUDECOLX 100",
+    "presentation": "",
+    "price_cop_thousands": 3.694,
+    "category": "varios-desechables",
+    "id": 310,
+    "search_name": "cubiert tenedor cudecolx 100"
+  },
+  {
+    "name": "CUBIERT CUCHARA Colind X 100",
+    "presentation": "",
+    "price_cop_thousands": 3.528,
+    "category": "varios-desechables",
+    "id": 311,
+    "search_name": "cubiert cuchara colind x 100"
+  },
+  {
+    "name": "CUBIERT CUCHILLO Colind X 100",
+    "presentation": "",
+    "price_cop_thousands": 3.528,
+    "category": "varios-desechables",
+    "id": 312,
+    "search_name": "cubiert cuchillo colind x 100"
+  },
+  {
+    "name": "CUBIERT TENEDOR ColindX 100",
+    "presentation": "",
+    "price_cop_thousands": 3.528,
+    "category": "varios-desechables",
+    "id": 313,
+    "search_name": "cubiert tenedor colindx 100"
+  },
+  {
+    "name": "CUBIERT CUCHARITA X 100",
+    "presentation": "",
+    "price_cop_thousands": 2.444,
+    "category": "varios-desechables",
+    "id": 314,
+    "search_name": "cubiert cucharita x 100"
+  },
+  {
+    "name": "CUBIERT TENEDORCITO X 100",
+    "presentation": "",
+    "price_cop_thousands": 2.444,
+    "category": "varios-desechables",
+    "id": 315,
+    "search_name": "cubiert tenedorcito x 100"
+  },
+  {
+    "name": "CUBIERT CUCHARA GDE X 20",
+    "presentation": "",
+    "price_cop_thousands": 1.075,
+    "category": "varios-desechables",
+    "id": 316,
+    "search_name": "cubiert cuchara gde x 20"
+  },
+  {
+    "name": "CUBIERT CUCHILLO GDE X 20",
+    "presentation": "",
+    "price_cop_thousands": 1.075,
+    "category": "varios-desechables",
+    "id": 317,
+    "search_name": "cubiert cuchillo gde x 20"
+  },
+  {
+    "name": "CUBIERT TENEDOR GDE X 20",
+    "presentation": "",
+    "price_cop_thousands": 1.075,
+    "category": "varios-desechables",
+    "id": 318,
+    "search_name": "cubiert tenedor gde x 20"
+  },
+  {
+    "name": "CUBIERTO CUCHARITA X 20",
+    "presentation": "",
+    "price_cop_thousands": 639.0,
+    "category": "varios-desechables",
+    "id": 319,
+    "search_name": "cubierto cucharita x 20"
+  },
+  {
+    "name": "CUBIERT TENEDORCITO X 20",
+    "presentation": "",
+    "price_cop_thousands": 639.0,
+    "category": "varios-desechables",
+    "id": 320,
+    "search_name": "cubiert tenedorcito x 20"
+  },
+  {
+    "name": "DELANTAL PLÁSTICO PE BCO",
+    "presentation": "",
+    "price_cop_thousands": 5.833,
+    "category": "varios-desechables",
+    "id": 321,
+    "search_name": "delantal plástico pe bco"
+  },
+  {
+    "name": "ESPONJILLA MULTIUSOS ACERADA PARRILLERA",
+    "presentation": "",
+    "price_cop_thousands": 1.538,
+    "category": "varios-desechables",
+    "id": 322,
+    "search_name": "esponjilla multiusos acerada parrillera"
+  },
+  {
+    "name": "ESPONJILLA MULTIUSOS: COLORES Y ORO - PLATA",
+    "presentation": "",
+    "price_cop_thousands": 667.0,
+    "category": "varios-desechables",
+    "id": 323,
+    "search_name": "esponjilla multiusos  colores y oro   plata"
+  },
+  {
+    "name": "ESPONJILLA ACERO INOXIDABL ESPIRAL MATRIX X 12 U",
+    "presentation": "",
+    "price_cop_thousands": 506.0,
+    "category": "varios-desechables",
+    "id": 324,
+    "search_name": "esponjilla acero inoxidabl espiral matrix x 12 u"
+  },
+  {
+    "name": "ESPONJILLA DOBLE USO ESPUMA - ABRASIVO",
+    "presentation": "",
+    "price_cop_thousands": 393.0,
+    "category": "varios-desechables",
+    "id": 325,
+    "search_name": "esponjilla doble uso espuma   abrasivo"
+  },
+  {
+    "name": "ESPONJILLA ABRASIVA VERDE TIPO SABRA",
+    "presentation": "",
+    "price_cop_thousands": 264.0,
+    "category": "varios-desechables",
+    "id": 326,
+    "search_name": "esponjilla abrasiva verde tipo sabra"
+  },
+  {
+    "name": "ESCOBA ZULIA ECONÓMICA; SUAVE Y DURA",
+    "presentation": "",
+    "price_cop_thousands": 6.019,
+    "category": "varios-desechables",
+    "id": 327,
+    "search_name": "escoba zulia económica  suave y dura"
+  },
+  {
+    "name": "ESCOBA SUPERIOR, SUAVE Y DURA",
+    "presentation": "",
+    "price_cop_thousands": 6.481,
+    "category": "varios-desechables",
+    "id": 328,
+    "search_name": "escoba superior  suave y dura"
+  },
+  {
+    "name": "ESCOBA ZC SUAVE Y DURA",
+    "presentation": "",
+    "price_cop_thousands": 7.755,
+    "category": "varios-desechables",
+    "id": 329,
+    "search_name": "escoba zc suave y dura"
+  },
+  {
+    "name": "ESCOBA WM SUAVE Y DURA",
+    "presentation": "",
+    "price_cop_thousands": 8.681,
+    "category": "varios-desechables",
+    "id": 330,
+    "search_name": "escoba wm suave y dura"
+  },
+  {
+    "name": "ESCOBA ZULIA - ZULTANA SUAVE",
+    "presentation": "",
+    "price_cop_thousands": 8.565,
+    "category": "varios-desechables",
+    "id": 331,
+    "search_name": "escoba zulia   zultana suave"
+  },
+  {
+    "name": "ESCOBA SUPERDANA SUAVE",
+    "presentation": "",
+    "price_cop_thousands": 10.301,
+    "category": "varios-desechables",
+    "id": 332,
+    "search_name": "escoba superdana suave"
+  },
+  {
+    "name": "ESCOBA ZAMORA",
+    "presentation": "",
+    "price_cop_thousands": 10.417,
+    "category": "varios-desechables",
+    "id": 333,
+    "search_name": "escoba zamora"
+  },
+  {
+    "name": "ESCURRIDOR Ó ARAGÁN 40 cm",
+    "presentation": "",
+    "price_cop_thousands": 8.797,
+    "category": "varios-desechables",
+    "id": 334,
+    "search_name": "escurridor ó aragán 40 cm"
+  },
+  {
+    "name": "ENCENDEDOR BENGALA TIPO RASTRILLO",
+    "presentation": "",
+    "price_cop_thousands": 17.778,
+    "category": "varios-desechables",
+    "id": 335,
+    "search_name": "encendedor bengala tipo rastrillo"
+  },
+  {
+    "name": "ENCENDEDOR BENGALA TIPO RASTRILLO DISEÑOS",
+    "presentation": "",
+    "price_cop_thousands": 20.726,
+    "category": "varios-desechables",
+    "id": 336,
+    "search_name": "encendedor bengala tipo rastrillo diseños"
+  },
+  {
+    "name": "FÓSFORO BENGALA CERILLA PEQUEÑO DISPLAY 10 U",
+    "presentation": "",
+    "price_cop_thousands": 21.528,
+    "category": "varios-desechables",
+    "id": 337,
+    "search_name": "fósforo bengala cerilla pequeño display 10 u"
+  },
+  {
+    "name": "FÓSFORO BENGALA CERILLA DISPLAY 2 U",
+    "presentation": "",
+    "price_cop_thousands": 28.264,
+    "category": "varios-desechables",
+    "id": 338,
+    "search_name": "fósforo bengala cerilla display 2 u"
+  },
+  {
+    "name": "FÓSFORO BENGALA MADERA DISPLAY 2 U",
+    "presentation": "",
+    "price_cop_thousands": 28.431,
+    "category": "varios-desechables",
+    "id": 339,
+    "search_name": "fósforo bengala madera display 2 u"
+  },
+  {
+    "name": "FILTRO PARA CAFÉ PAPEL melitta CÓNICO # 2",
+    "presentation": "",
+    "price_cop_thousands": 6.546,
+    "category": "varios-desechables",
+    "id": 340,
+    "search_name": "filtro para café papel melitta cónico   2"
+  },
+  {
+    "name": "FILTRO PARA CAFÉ PAPEL malitta CÓNICO # 4",
+    "presentation": "",
+    "price_cop_thousands": 7.868,
+    "category": "varios-desechables",
+    "id": 341,
+    "search_name": "filtro para café papel malitta cónico   4"
+  },
+  {
+    "name": "FILTRO PARA CAFÉ PAPEL melitta CANASTA",
+    "presentation": "",
+    "price_cop_thousands": 13.222,
+    "category": "varios-desechables",
+    "id": 342,
+    "search_name": "filtro para café papel melitta canasta"
+  },
+  {
+    "name": "GORRO TIPO ORUGA PQT X 100 UND HOUSE",
+    "presentation": "",
+    "price_cop_thousands": 12.615,
+    "category": "varios-desechables",
+    "id": 343,
+    "search_name": "gorro tipo oruga pqt x 100 und house"
+  },
+  {
+    "name": "GORRO MALLA INVISIBLE PARA EL CABELLO",
+    "presentation": "",
+    "price_cop_thousands": 30.769,
+    "category": "varios-desechables",
+    "id": 344,
+    "search_name": "gorro malla invisible para el cabello"
+  },
+  {
+    "name": "GUANTE MANIPULAC PE BAJA ARAPLAST",
+    "presentation": "",
+    "price_cop_thousands": 2.639,
+    "category": "varios-desechables",
+    "id": 345,
+    "search_name": "guante manipulac pe baja araplast"
+  },
+  {
+    "name": "GTE DOMÉSTICO C. 20 AMAR-ROJ-AZUL VERDE LATEXQUIM",
+    "presentation": "",
+    "price_cop_thousands": 4.157,
+    "category": "varios-desechables",
+    "id": 346,
+    "search_name": "gte doméstico c  20 amar roj azul verde latexquim"
+  },
+  {
+    "name": "GTE DOMÉSTICO C.14 ECONÓ AMARARILLO - NEGRO",
+    "presentation": "",
+    "price_cop_thousands": 2.665,
+    "category": "varios-desechables",
+    "id": 347,
+    "search_name": "gte doméstico c 14 econó amararillo   negro"
+  },
+  {
+    "name": "GTE NEGRO C. 25 LATEXQUIM",
+    "presentation": "",
+    "price_cop_thousands": 4.238,
+    "category": "varios-desechables",
+    "id": 348,
+    "search_name": "gte negro c  25 latexquim"
+  },
+  {
+    "name": "GTE NEGRO C. 35 LATEXQUIM",
+    "presentation": "",
+    "price_cop_thousands": 6.063,
+    "category": "varios-desechables",
+    "id": 349,
+    "search_name": "gte negro c  35 latexquim"
+  },
+  {
+    "name": "GTE NEGRO FORTEX C. 25",
+    "presentation": "",
+    "price_cop_thousands": 4.792,
+    "category": "varios-desechables",
+    "id": 350,
+    "search_name": "gte negro fortex c  25"
+  },
+  {
+    "name": "GTE NEGRO FORTEX C. 35",
+    "presentation": "",
+    "price_cop_thousands": 5.847,
+    "category": "varios-desechables",
+    "id": 351,
+    "search_name": "gte negro fortex c  35"
+  },
+  {
+    "name": "GUANTE NITRILO AZUL TS TM TL",
+    "presentation": "",
+    "price_cop_thousands": 23.611,
+    "category": "varios-desechables",
+    "id": 352,
+    "search_name": "guante nitrilo azul ts tm tl"
+  },
+  {
+    "name": "GUANTE NITRILO NEGRO TS TM TL",
+    "presentation": "",
+    "price_cop_thousands": 23.611,
+    "category": "varios-desechables",
+    "id": 353,
+    "search_name": "guante nitrilo negro ts tm tl"
+  },
+  {
+    "name": "GUANTE NITRILO HD C.12 AZUL TS TM TL",
+    "presentation": "",
+    "price_cop_thousands": 40.278,
+    "category": "varios-desechables",
+    "id": 354,
+    "search_name": "guante nitrilo hd c 12 azul ts tm tl"
+  },
+  {
+    "name": "GUANTE NITRILO HD C.12 NEGRO TS TM TL",
+    "presentation": "",
+    "price_cop_thousands": 40.278,
+    "category": "varios-desechables",
+    "id": 355,
+    "search_name": "guante nitrilo hd c 12 negro ts tm tl"
+  },
+  {
+    "name": "GUANTE CAUCHO SUPERFLEX C. 11 TS TM TL AZUL Y NEGRO",
+    "presentation": "",
+    "price_cop_thousands": 44.625,
+    "category": "varios-desechables",
+    "id": 356,
+    "search_name": "guante caucho superflex c  11 ts tm tl azul y negro"
+  },
+  {
+    "name": "JABÓN EN POLVO TIPO AK",
+    "presentation": "",
+    "price_cop_thousands": 5.0,
+    "category": "varios-desechables",
+    "id": 357,
+    "search_name": "jabón en polvo tipo ak"
+  },
+  {
+    "name": "LIMPIADOR DE VIDRIOS CON MANGO CORTO",
+    "presentation": "",
+    "price_cop_thousands": 5.556,
+    "category": "varios-desechables",
+    "id": 358,
+    "search_name": "limpiador de vidrios con mango corto"
+  },
+  {
+    "name": "MEZCLADOR BAMBÚ REDONDO FESTIVAL 11 CM",
+    "presentation": "",
+    "price_cop_thousands": 4.382,
+    "category": "varios-desechables",
+    "id": 359,
+    "search_name": "mezclador bambú redondo festival 11 cm"
+  },
+  {
+    "name": "MEZCLADORES PALITOS MADERA FESTIVAL 11 CM",
+    "presentation": "",
+    "price_cop_thousands": 4.46,
+    "category": "varios-desechables",
+    "id": 360,
+    "search_name": "mezcladores palitos madera festival 11 cm"
+  },
+  {
+    "name": "MEZCLADORES PALITOS MADERA FESTIVAL 14 CM",
+    "presentation": "",
+    "price_cop_thousands": 5.042,
+    "category": "varios-desechables",
+    "id": 361,
+    "search_name": "mezcladores palitos madera festival 14 cm"
+  },
+  {
+    "name": "MEZCLADOR PLÁSTICO BIODEGRADABLE",
+    "presentation": "",
+    "price_cop_thousands": 1.667,
+    "category": "varios-desechables",
+    "id": 362,
+    "search_name": "mezclador plástico biodegradable"
+  },
+  {
+    "name": "MOLDE LAGSAÑA JUNIOR 8 OZ EMP X 20 = 236 ML",
+    "presentation": "",
+    "price_cop_thousands": 4.566,
+    "category": "varios-desechables",
+    "id": 363,
+    "search_name": "molde lagsaña junior 8 oz emp x 20   236 ml"
+  },
+  {
+    "name": "MOLDE LAGSAÑA NORMAL 16 OZ EMP X 20 = 474 ML",
+    "presentation": "",
+    "price_cop_thousands": 5.566,
+    "category": "varios-desechables",
+    "id": 364,
+    "search_name": "molde lagsaña normal 16 oz emp x 20   474 ml"
+  },
+  {
+    "name": "MOLDE ESPAGUETTI 24 OZ EMPX 20 = 711 ML",
+    "presentation": "",
+    "price_cop_thousands": 7.94,
+    "category": "varios-desechables",
+    "id": 365,
+    "search_name": "molde espaguetti 24 oz empx 20   711 ml"
+  },
+  {
+    "name": "MOLDE ALUMINIO 64 OZ EMP X 20 = 1896 ML",
+    "presentation": "",
+    "price_cop_thousands": 30.163,
+    "category": "varios-desechables",
+    "id": 366,
+    "search_name": "molde aluminio 64 oz emp x 20   1896 ml"
+  },
+  {
+    "name": "MOLDE ALUMINIO 104 OZ EMP X 2O = 3081 ML",
+    "presentation": "",
+    "price_cop_thousands": 39.236,
+    "category": "varios-desechables",
+    "id": 367,
+    "search_name": "molde aluminio 104 oz emp x 2o   3081 ml"
+  },
+  {
+    "name": "TAPA MOLDE LAGSAÑA 16 OZ TRANSPARENTE AL GRANEL",
+    "presentation": "",
+    "price_cop_thousands": 289.0,
+    "category": "varios-desechables",
+    "id": 368,
+    "search_name": "tapa molde lagsaña 16 oz transparente al granel"
+  },
+  {
+    "name": "TAPA MOLDE LAGSAÑA 16 OZ TRANSPARENT EMPAQ X 20",
+    "presentation": "",
+    "price_cop_thousands": NaN,
+    "category": "varios-desechables",
+    "id": 369,
+    "search_name": "tapa molde lagsaña 16 oz transparent empaq x 20"
+  },
+  {
+    "name": "OXÍGENO ACTIVO",
+    "presentation": "",
+    "price_cop_thousands": 5.147,
+    "category": "varios-desechables",
+    "id": 370,
+    "search_name": "oxígeno activo"
+  },
+  {
+    "name": "OXÍGENO ACTIVO",
+    "presentation": "",
+    "price_cop_thousands": 9.632,
+    "category": "varios-desechables",
+    "id": 371,
+    "search_name": "oxígeno activo"
+  },
+  {
+    "name": "OXÍGENO ACTIVO PREMIUM",
+    "presentation": "",
+    "price_cop_thousands": 10.221,
+    "category": "varios-desechables",
+    "id": 372,
+    "search_name": "oxígeno activo premium"
+  },
+  {
+    "name": "PASTILLAS DE CLORO 20 GR",
+    "presentation": "",
+    "price_cop_thousands": 6.618,
+    "category": "varios-desechables",
+    "id": 373,
+    "search_name": "pastillas de cloro 20 gr"
+  },
+  {
+    "name": "PASTILLAS DE CLORO 20 GR",
+    "presentation": "",
+    "price_cop_thousands": 12.794,
+    "category": "varios-desechables",
+    "id": 374,
+    "search_name": "pastillas de cloro 20 gr"
+  },
+  {
+    "name": "P.ALUMINIO 7MT EN CAJITA BLUE",
+    "presentation": "",
+    "price_cop_thousands": 3.334,
+    "category": "varios-desechables",
+    "id": 375,
+    "search_name": "p aluminio 7mt en cajita blue"
+  },
+  {
+    "name": "P.ALUMINIO 7MT EN ROLLO BLUE",
+    "presentation": "",
+    "price_cop_thousands": 2.431,
+    "category": "varios-desechables",
+    "id": 376,
+    "search_name": "p aluminio 7mt en rollo blue"
+  },
+  {
+    "name": "P.ALUMINIO 16MT EN CAJITA BLUE",
+    "presentation": "",
+    "price_cop_thousands": 5.514,
+    "category": "varios-desechables",
+    "id": 377,
+    "search_name": "p aluminio 16mt en cajita blue"
+  },
+  {
+    "name": "P.ALUMINIO 16MT EN ROLLO BLUE",
+    "presentation": "",
+    "price_cop_thousands": 4.549,
+    "category": "varios-desechables",
+    "id": 378,
+    "search_name": "p aluminio 16mt en rollo blue"
+  },
+  {
+    "name": "P.ALUMINIO 40MT EN CAJITA BLUE",
+    "presentation": "",
+    "price_cop_thousands": 11.736,
+    "category": "varios-desechables",
+    "id": 379,
+    "search_name": "p aluminio 40mt en cajita blue"
+  },
+  {
+    "name": "P.ALUMINIO 40MT EN ROLLO BLUE",
+    "presentation": "",
+    "price_cop_thousands": 10.653,
+    "category": "varios-desechables",
+    "id": 380,
+    "search_name": "p aluminio 40mt en rollo blue"
+  },
+  {
+    "name": "P.ALUMINIO 100 MT EN CAJA BLUE",
+    "presentation": "",
+    "price_cop_thousands": 27.25,
+    "category": "varios-desechables",
+    "id": 381,
+    "search_name": "p aluminio 100 mt en caja blue"
+  },
+  {
+    "name": "P.ALUMINIO 300MT EN CAJA BLUE",
+    "presentation": "",
+    "price_cop_thousands": 78.333,
+    "category": "varios-desechables",
+    "id": 382,
+    "search_name": "p aluminio 300mt en caja blue"
+  },
+  {
+    "name": "P.ALUMINIO 300MT EN CAJA VIMOTT",
+    "presentation": "",
+    "price_cop_thousands": 79.167,
+    "category": "varios-desechables",
+    "id": 383,
+    "search_name": "p aluminio 300mt en caja vimott"
+  },
+  {
+    "name": "P.ALUMINIO 300MT EN CAJA REPUESTO VIMOTT",
+    "presentation": "",
+    "price_cop_thousands": 77.083,
+    "category": "varios-desechables",
+    "id": 384,
+    "search_name": "p aluminio 300mt en caja repuesto vimott"
+  },
+  {
+    "name": "P. ALMINIO 100 MT SALID",
+    "presentation": "",
+    "price_cop_thousands": 26.389,
+    "category": "varios-desechables",
+    "id": 385,
+    "search_name": "p  alminio 100 mt salid"
+  },
+  {
+    "name": "P. ALMINIO 300 MT SALID",
+    "presentation": "",
+    "price_cop_thousands": 76.25,
+    "category": "varios-desechables",
+    "id": 386,
+    "search_name": "p  alminio 300 mt salid"
+  },
+  {
+    "name": "PAPEL SULFITO PARA ENVOLVER",
+    "presentation": "",
+    "price_cop_thousands": 9.195,
+    "category": "varios-desechables",
+    "id": 387,
+    "search_name": "papel sulfito para envolver"
+  },
+  {
+    "name": "PAPEL PARAFINADO EN ROLLO 20 M",
+    "presentation": "",
+    "price_cop_thousands": 5.556,
+    "category": "varios-desechables",
+    "id": 388,
+    "search_name": "papel parafinado en rollo 20 m"
+  },
+  {
+    "name": "PAPEL PARAFINADO EN ROLLO 50 M",
+    "presentation": "",
+    "price_cop_thousands": 10.417,
+    "category": "varios-desechables",
+    "id": 389,
+    "search_name": "papel parafinado en rollo 50 m"
+  },
+  {
+    "name": "PAPEL PARAFINADO EN ROLLO 100 M",
+    "presentation": "",
+    "price_cop_thousands": 17.222,
+    "category": "varios-desechables",
+    "id": 390,
+    "search_name": "papel parafinado en rollo 100 m"
+  },
+  {
+    "name": "PAPEL PARAFINADO LÁMINA 30X30",
+    "presentation": "",
+    "price_cop_thousands": 9.722,
+    "category": "varios-desechables",
+    "id": 391,
+    "search_name": "papel parafinado lámina 30x30"
+  },
+  {
+    "name": "PAPEL PARAFINADO LÁMINA 30X40",
+    "presentation": "",
+    "price_cop_thousands": 11.111,
+    "category": "varios-desechables",
+    "id": 392,
+    "search_name": "papel parafinado lámina 30x40"
+  },
+  {
+    "name": "PAPEL PLASTIFICAD OXOBIOD CÓMID RÁPIDAS 30X30",
+    "presentation": "",
+    "price_cop_thousands": 9.028,
+    "category": "varios-desechables",
+    "id": 393,
+    "search_name": "papel plastificad oxobiod cómid rápidas 30x30"
+  },
+  {
+    "name": "PAPEL PLASTIFICAD OXOBIOD CÓMID RÁPIDAS 30X40",
+    "presentation": "",
+    "price_cop_thousands": 9.722,
+    "category": "varios-desechables",
+    "id": 394,
+    "search_name": "papel plastificad oxobiod cómid rápidas 30x40"
+  },
+  {
+    "name": "PAPEL HIG JUMBO NUBE BCO 2H 250 M",
+    "presentation": "",
+    "price_cop_thousands": 24.599,
+    "category": "varios-desechables",
+    "id": 395,
+    "search_name": "papel hig jumbo nube bco 2h 250 m"
+  },
+  {
+    "name": "PAPEL HIG JUMBO MIO BCO 2H 250 M",
+    "presentation": "",
+    "price_cop_thousands": 11.711,
+    "category": "varios-desechables",
+    "id": 396,
+    "search_name": "papel hig jumbo mio bco 2h 250 m"
+  },
+  {
+    "name": "PAPEL HIG MAX NUBE ECONOM 2H (27 M) EMP IND",
+    "presentation": "",
+    "price_cop_thousands": 16.9,
+    "category": "varios-desechables",
+    "id": 397,
+    "search_name": "papel hig max nube econom 2h  27 m  emp ind"
+  },
+  {
+    "name": "PAPEL HIG MEGA NUBE 3H 48 R (30 M) EMP. IND.",
+    "presentation": "",
+    "price_cop_thousands": 23.558,
+    "category": "varios-desechables",
+    "id": 398,
+    "search_name": "papel hig mega nube 3h 48 r  30 m  emp  ind"
+  },
+  {
+    "name": "PAPEL HIG MEGA NUBE 3H 12 PQT X 4 R (30 M)",
+    "presentation": "",
+    "price_cop_thousands": 7.61,
+    "category": "varios-desechables",
+    "id": 399,
+    "search_name": "papel hig mega nube 3h 12 pqt x 4 r  30 m"
+  },
+  {
+    "name": "PAPEL HIG NUBE BÁSICO 2H 12 PQT X 4 R (19,2 M)",
+    "presentation": "",
+    "price_cop_thousands": 3.435,
+    "category": "varios-desechables",
+    "id": 400,
+    "search_name": "papel hig nube básico 2h 12 pqt x 4 r  19 2 m"
+  },
+  {
+    "name": "PAPEL HIG MEGA NUBE 3H 4 PQT X 12 R (30 M)",
+    "presentation": "",
+    "price_cop_thousands": 19.212,
+    "category": "varios-desechables",
+    "id": 401,
+    "search_name": "papel hig mega nube 3h 4 pqt x 12 r  30 m"
+  },
+  {
+    "name": "PAPEL HIG MAX NUBE 3H 4 PQT X 12 R (22 M) ECONÓ",
+    "presentation": "",
+    "price_cop_thousands": 13.71,
+    "category": "varios-desechables",
+    "id": 402,
+    "search_name": "papel hig max nube 3h 4 pqt x 12 r  22 m  econó"
+  },
+  {
+    "name": "PAPEL HIG MAX NUBE 3H 4 PQT X 18 R (22M)",
+    "presentation": "",
+    "price_cop_thousands": 20.643,
+    "category": "varios-desechables",
+    "id": 403,
+    "search_name": "papel hig max nube 3h 4 pqt x 18 r  22m"
+  },
+  {
+    "name": "PALILLOS LARGOS TIPO HAMBURGUESA FESTIVAL",
+    "presentation": "",
+    "price_cop_thousands": 13.5,
+    "category": "varios-desechables",
+    "id": 404,
+    "search_name": "palillos largos tipo hamburguesa festival"
+  },
+  {
+    "name": "PALILLO REDONDO DE DIENTES PANDA",
+    "presentation": "",
+    "price_cop_thousands": 7.083,
+    "category": "varios-desechables",
+    "id": 405,
+    "search_name": "palillo redondo de dientes panda"
+  },
+  {
+    "name": "PALILLO REDONDO EMP INDIVIDUAL FESTIVAL DISPENSADOR",
+    "presentation": "",
+    "price_cop_thousands": 6.783,
+    "category": "varios-desechables",
+    "id": 406,
+    "search_name": "palillo redondo emp individual festival dispensador"
+  },
+  {
+    "name": "PALOS DE ESCOBA DE MADERA 1,2 M",
+    "presentation": "",
+    "price_cop_thousands": 2.571,
+    "category": "varios-desechables",
+    "id": 407,
+    "search_name": "palos de escoba de madera 1 2 m"
+  },
+  {
+    "name": "PALOS DE ESCOBA METÁLICO FORRADO 1,2 M",
+    "presentation": "",
+    "price_cop_thousands": 6.5,
+    "category": "varios-desechables",
+    "id": 408,
+    "search_name": "palos de escoba metálico forrado 1 2 m"
+  },
+  {
+    "name": "PALOS DE ESCOBA METÁLICO FORRADO 1,4 M",
+    "presentation": "",
+    "price_cop_thousands": 9.786,
+    "category": "varios-desechables",
+    "id": 409,
+    "search_name": "palos de escoba metálico forrado 1 4 m"
+  },
+  {
+    "name": "PALOS LARGO PARA PALETA X 1000 U PANDA",
+    "presentation": "",
+    "price_cop_thousands": 15.764,
+    "category": "varios-desechables",
+    "id": 410,
+    "search_name": "palos largo para paleta x 1000 u panda"
+  },
+  {
+    "name": "PALOS CORTO PARA PALETA X 1000 U PANDA",
+    "presentation": "",
+    "price_cop_thousands": 13.317,
+    "category": "varios-desechables",
+    "id": 411,
+    "search_name": "palos corto para paleta x 1000 u panda"
+  },
+  {
+    "name": "PALOS CORTO PARA PALETA X 100 U PANDA",
+    "presentation": "",
+    "price_cop_thousands": 1.722,
+    "category": "varios-desechables",
+    "id": 412,
+    "search_name": "palos corto para paleta x 100 u panda"
+  },
+  {
+    "name": "PALO PINCHO 15 CM X 100 U FESTIVAL",
+    "presentation": "",
+    "price_cop_thousands": 1.752,
+    "category": "varios-desechables",
+    "id": 413,
+    "search_name": "palo pincho 15 cm x 100 u festival"
+  },
+  {
+    "name": "PALO PINCHO 20*100 FESTIVAL",
+    "presentation": "",
+    "price_cop_thousands": 1.604,
+    "category": "varios-desechables",
+    "id": 414,
+    "search_name": "palo pincho 20 100 festival"
+  },
+  {
+    "name": "PALO PINCHO 25 CM X 100 U FESTIVAL",
+    "presentation": "",
+    "price_cop_thousands": 1.833,
+    "category": "varios-desechables",
+    "id": 415,
+    "search_name": "palo pincho 25 cm x 100 u festival"
+  },
+  {
+    "name": "PALO PINCHO 30*100",
+    "presentation": "",
+    "price_cop_thousands": 2.153,
+    "category": "varios-desechables",
+    "id": 416,
+    "search_name": "palo pincho 30 100"
+  },
+  {
+    "name": "PINCHUZO (GRUESO) 25 CM X 100 U FESTIVAL",
+    "presentation": "",
+    "price_cop_thousands": 2.839,
+    "category": "varios-desechables",
+    "id": 417,
+    "search_name": "pinchuzo  grueso  25 cm x 100 u festival"
+  },
+  {
+    "name": "PINCHUZO (GRUESO) 30 CM X 100 U FESTIVAL",
+    "presentation": "",
+    "price_cop_thousands": 3.4,
+    "category": "varios-desechables",
+    "id": 418,
+    "search_name": "pinchuzo  grueso  30 cm x 100 u festival"
+  },
+  {
+    "name": "PILAS AA POWER ONE",
+    "presentation": "",
+    "price_cop_thousands": 4.678,
+    "category": "varios-desechables",
+    "id": 419,
+    "search_name": "pilas aa power one"
+  },
+  {
+    "name": "PILAS AAA POWER ONE",
+    "presentation": "",
+    "price_cop_thousands": 4.678,
+    "category": "varios-desechables",
+    "id": 420,
+    "search_name": "pilas aaa power one"
+  },
+  {
+    "name": "PITILLO EMPAQ INDIV 0,47 g X 500 U 25cm",
+    "presentation": "",
+    "price_cop_thousands": 10.389,
+    "category": "varios-desechables",
+    "id": 421,
+    "search_name": "pitillo empaq indiv 0 47 g x 500 u 25cm"
+  },
+  {
+    "name": "PLATO ICOPOR 12 CM",
+    "presentation": "",
+    "price_cop_thousands": 1.786,
+    "category": "varios-desechables",
+    "id": 422,
+    "search_name": "plato icopor 12 cm"
+  },
+  {
+    "name": "PLATO ICOPOR 15.5 CM",
+    "presentation": "",
+    "price_cop_thousands": 2.955,
+    "category": "varios-desechables",
+    "id": 423,
+    "search_name": "plato icopor 15 5 cm"
+  },
+  {
+    "name": "PLATO ICOPOR 18",
+    "presentation": "",
+    "price_cop_thousands": 4.021,
+    "category": "varios-desechables",
+    "id": 424,
+    "search_name": "plato icopor 18"
+  },
+  {
+    "name": "PLATO ICOPOR 20",
+    "presentation": "",
+    "price_cop_thousands": 5.332,
+    "category": "varios-desechables",
+    "id": 425,
+    "search_name": "plato icopor 20"
+  },
+  {
+    "name": "PLATO ICOPOR 23",
+    "presentation": "",
+    "price_cop_thousands": 6.833,
+    "category": "varios-desechables",
+    "id": 426,
+    "search_name": "plato icopor 23"
+  },
+  {
+    "name": "PLATO ICOPOR 26",
+    "presentation": "",
+    "price_cop_thousands": 9.366,
+    "category": "varios-desechables",
+    "id": 427,
+    "search_name": "plato icopor 26"
+  },
+  {
+    "name": "PLATO ICOPOR HONDO 5 OZ",
+    "presentation": "",
+    "price_cop_thousands": 1.786,
+    "category": "varios-desechables",
+    "id": 428,
+    "search_name": "plato icopor hondo 5 oz"
+  },
+  {
+    "name": "PLATO ICOPOR HONDO 12 OZ",
+    "presentation": "",
+    "price_cop_thousands": 3.96,
+    "category": "varios-desechables",
+    "id": 429,
+    "search_name": "plato icopor hondo 12 oz"
+  },
+  {
+    "name": "PLATO ICOPOR HONDO 16 OZ",
+    "presentation": "",
+    "price_cop_thousands": 4.632,
+    "category": "varios-desechables",
+    "id": 430,
+    "search_name": "plato icopor hondo 16 oz"
+  },
+  {
+    "name": "PLATO ICOPOR HONDO 25 OZ",
+    "presentation": "",
+    "price_cop_thousands": 6.69,
+    "category": "varios-desechables",
+    "id": 431,
+    "search_name": "plato icopor hondo 25 oz"
+  },
+  {
+    "name": "PLATO ICOPOR HONDO 30 OZ",
+    "presentation": "",
+    "price_cop_thousands": 8.361,
+    "category": "varios-desechables",
+    "id": 432,
+    "search_name": "plato icopor hondo 30 oz"
+  },
+  {
+    "name": "PORTA HAMBURGUESA IMPRESO GRUESO",
+    "presentation": "",
+    "price_cop_thousands": 7.945,
+    "category": "varios-desechables",
+    "id": 433,
+    "search_name": "porta hamburguesa impreso grueso"
+  },
+  {
+    "name": "PORTA PERRO IMPRESO GRUESO",
+    "presentation": "",
+    "price_cop_thousands": 7.945,
+    "category": "varios-desechables",
+    "id": 434,
+    "search_name": "porta perro impreso grueso"
+  },
+  {
+    "name": "PORTA PIZZA IMPRESO GRUESO CARA BLANCA",
+    "presentation": "",
+    "price_cop_thousands": 8.219,
+    "category": "varios-desechables",
+    "id": 435,
+    "search_name": "porta pizza impreso grueso cara blanca"
+  },
+  {
+    "name": "PORTA PIZZA IMPRESO GRUESO CARA KRAFP PLASTIFICADO",
+    "presentation": "",
+    "price_cop_thousands": 9.589,
+    "category": "varios-desechables",
+    "id": 436,
+    "search_name": "porta pizza impreso grueso cara krafp plastificado"
+  },
+  {
+    "name": "PORTA HAMBURGUESA GRUESO COD BARRAS PQT X 100",
+    "presentation": "",
+    "price_cop_thousands": 8.151,
+    "category": "varios-desechables",
+    "id": 437,
+    "search_name": "porta hamburguesa grueso cod barras pqt x 100"
+  },
+  {
+    "name": "PORTA PERRO IMPRESO GRUESO COD BARRAS PQT X 100",
+    "presentation": "",
+    "price_cop_thousands": 8.151,
+    "category": "varios-desechables",
+    "id": 438,
+    "search_name": "porta perro impreso grueso cod barras pqt x 100"
+  },
+  {
+    "name": "PORTA PIZZA IMPRESO GRUESO COD BARRAS PQT X 100",
+    "presentation": "",
+    "price_cop_thousands": 8.425,
+    "category": "varios-desechables",
+    "id": 439,
+    "search_name": "porta pizza impreso grueso cod barras pqt x 100"
+  },
+  {
+    "name": "PORTA AREPA",
+    "presentation": "",
+    "price_cop_thousands": 7.808,
+    "category": "varios-desechables",
+    "id": 440,
+    "search_name": "porta arepa"
+  },
+  {
+    "name": "PORTA AREPA COD BARRAS PQT X 100",
+    "presentation": "",
+    "price_cop_thousands": 8.014,
+    "category": "varios-desechables",
+    "id": 441,
+    "search_name": "porta arepa cod barras pqt x 100"
+  },
+  {
+    "name": "PORTACOMIDA ICOPOR C-1 X 200 U WAU",
+    "presentation": "",
+    "price_cop_thousands": 55.6,
+    "category": "varios-desechables",
+    "id": 442,
+    "search_name": "portacomida icopor c 1 x 200 u wau"
+  },
+  {
+    "name": "PORTACOMIDA ICOPOR C-1 X 20 U DARNEL",
+    "presentation": "",
+    "price_cop_thousands": 10.171,
+    "category": "varios-desechables",
+    "id": 443,
+    "search_name": "portacomida icopor c 1 x 20 u darnel"
+  },
+  {
+    "name": "PORTACOMIDA ICOPOR DARNEL C-1 X 500",
+    "presentation": "",
+    "price_cop_thousands": 135.343,
+    "category": "varios-desechables",
+    "id": 444,
+    "search_name": "portacomida icopor darnel c 1 x 500"
+  },
+  {
+    "name": "PORTACOMIDA J-1 ICOPOR *200",
+    "presentation": "",
+    "price_cop_thousands": 89.171,
+    "category": "varios-desechables",
+    "id": 445,
+    "search_name": "portacomida j 1 icopor  200"
+  },
+  {
+    "name": "PORTACOMIDA J-1 ICOPOR *200 WAU",
+    "presentation": "",
+    "price_cop_thousands": 89.171,
+    "category": "varios-desechables",
+    "id": 446,
+    "search_name": "portacomida j 1 icopor  200 wau"
+  },
+  {
+    "name": "PORTACOMIDA J-2 ICOPOR *200",
+    "presentation": "",
+    "price_cop_thousands": 89.171,
+    "category": "varios-desechables",
+    "id": 447,
+    "search_name": "portacomida j 2 icopor  200"
+  },
+  {
+    "name": "PORTACOMIDA P-I ICOPOR DARNEL* 200",
+    "presentation": "",
+    "price_cop_thousands": 98.691,
+    "category": "varios-desechables",
+    "id": 448,
+    "search_name": "portacomida p i icopor darnel  200"
+  },
+  {
+    "name": "PORTACOMIDA P-I ICOPOR WAU * 200",
+    "presentation": "",
+    "price_cop_thousands": 100.133,
+    "category": "varios-desechables",
+    "id": 449,
+    "search_name": "portacomida p i icopor wau   200"
+  },
+  {
+    "name": "PORTACOMIDA P-3 ICOPOR * 200",
+    "presentation": "",
+    "price_cop_thousands": 98.691,
+    "category": "varios-desechables",
+    "id": 450,
+    "search_name": "portacomida p 3 icopor   200"
+  },
+  {
+    "name": "PORTACOMIDA J -1 X 20",
+    "presentation": "",
+    "price_cop_thousands": 10.473,
+    "category": "varios-desechables",
+    "id": 451,
+    "search_name": "portacomida j  1 x 20"
+  },
+  {
+    "name": "PORTACOMIDA J -2 X 20",
+    "presentation": "",
+    "price_cop_thousands": 10.473,
+    "category": "varios-desechables",
+    "id": 452,
+    "search_name": "portacomida j  2 x 20"
+  },
+  {
+    "name": "PORTACOMIDA P -1 X 20",
+    "presentation": "",
+    "price_cop_thousands": 10.678,
+    "category": "varios-desechables",
+    "id": 453,
+    "search_name": "portacomida p  1 x 20"
+  },
+  {
+    "name": "PORTACOMIDA P -3 X 20",
+    "presentation": "",
+    "price_cop_thousands": 11.218,
+    "category": "varios-desechables",
+    "id": 454,
+    "search_name": "portacomida p  3 x 20"
+  },
+  {
+    "name": "RECOGEDOR CON BANDA PLÁSTICA ECONÓMICO",
+    "presentation": "",
+    "price_cop_thousands": 4.11,
+    "category": "varios-desechables",
+    "id": 455,
+    "search_name": "recogedor con banda plástica económico"
+  },
+  {
+    "name": "RECOGEDOR CON BANDA PLÁSTICA PLUS",
+    "presentation": "",
+    "price_cop_thousands": 5.137,
+    "category": "varios-desechables",
+    "id": 456,
+    "search_name": "recogedor con banda plástica plus"
+  },
+  {
+    "name": "SERVILLETA NUBE CORTADA PQT X 300 U",
+    "presentation": "",
+    "price_cop_thousands": 4.456,
+    "category": "varios-desechables",
+    "id": 457,
+    "search_name": "servilleta nube cortada pqt x 300 u"
+  },
+  {
+    "name": "SERVILLETA MIA CORTADA PQT X 200 U",
+    "presentation": "",
+    "price_cop_thousands": 2.76,
+    "category": "varios-desechables",
+    "id": 458,
+    "search_name": "servilleta mia cortada pqt x 200 u"
+  },
+  {
+    "name": "SERVILLETA NUBE CORTAD PQT X 150 U DISPENSAD",
+    "presentation": "",
+    "price_cop_thousands": 2.318,
+    "category": "varios-desechables",
+    "id": 459,
+    "search_name": "servilleta nube cortad pqt x 150 u dispensad"
+  },
+  {
+    "name": "SERVILLETA NUBE PQT X 100 U B. DISPENSADORA",
+    "presentation": "",
+    "price_cop_thousands": 1.988,
+    "category": "varios-desechables",
+    "id": 460,
+    "search_name": "servilleta nube pqt x 100 u b  dispensadora"
+  },
+  {
+    "name": "SERVILLETA NUBE CAFETERIA PQT X 100 U",
+    "presentation": "",
+    "price_cop_thousands": 2.533,
+    "category": "varios-desechables",
+    "id": 461,
+    "search_name": "servilleta nube cafeteria pqt x 100 u"
+  },
+  {
+    "name": "SERVILLETA NUBE DOBLADA X 4 PQT X 100 U",
+    "presentation": "",
+    "price_cop_thousands": 2.965,
+    "category": "varios-desechables",
+    "id": 462,
+    "search_name": "servilleta nube doblada x 4 pqt x 100 u"
+  },
+  {
+    "name": "SERVILLETA SOFTEX NATURAL D4 X 100 U",
+    "presentation": "",
+    "price_cop_thousands": 3.719,
+    "category": "varios-desechables",
+    "id": 463,
+    "search_name": "servilleta softex natural d4 x 100 u"
+  },
+  {
+    "name": "TAPA 1/2 - 1 OZ ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 3.422,
+    "category": "varios-desechables",
+    "id": 464,
+    "search_name": "tapa 1 2   1 oz acmeleon"
+  },
+  {
+    "name": "TAPA 1,5 - 2 - 3 OZ ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 4.963,
+    "category": "varios-desechables",
+    "id": 465,
+    "search_name": "tapa 1 5   2   3 oz acmeleon"
+  },
+  {
+    "name": "TAPA LISA 9 - 12 OZ ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 5.037,
+    "category": "varios-desechables",
+    "id": 466,
+    "search_name": "tapa lisa 9   12 oz acmeleon"
+  },
+  {
+    "name": "TAPA PITILLERA 9 - 12 OZ ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 5.375,
+    "category": "varios-desechables",
+    "id": 467,
+    "search_name": "tapa pitillera 9   12 oz acmeleon"
+  },
+  {
+    "name": "TAPA 3,5 A 7 WAU",
+    "presentation": "",
+    "price_cop_thousands": 4.338,
+    "category": "varios-desechables",
+    "id": 468,
+    "search_name": "tapa 3 5 a 7 wau"
+  },
+  {
+    "name": "TAPA VASO 9 A 12 WAU",
+    "presentation": "",
+    "price_cop_thousands": 5.56,
+    "category": "varios-desechables",
+    "id": 469,
+    "search_name": "tapa vaso 9 a 12 wau"
+  },
+  {
+    "name": "TAPA VASO 13 A 16 WAU",
+    "presentation": "",
+    "price_cop_thousands": 7.027,
+    "category": "varios-desechables",
+    "id": 470,
+    "search_name": "tapa vaso 13 a 16 wau"
+  },
+  {
+    "name": "TAPA VASO 6 OZ DARNEL",
+    "presentation": "",
+    "price_cop_thousands": 17.247,
+    "category": "varios-desechables",
+    "id": 471,
+    "search_name": "tapa vaso 6 oz darnel"
+  },
+  {
+    "name": "TAPA VASO 8 OZ DARNEL",
+    "presentation": "",
+    "price_cop_thousands": 15.926,
+    "category": "varios-desechables",
+    "id": 472,
+    "search_name": "tapa vaso 8 oz darnel"
+  },
+  {
+    "name": "TAPA PARA VASO DE CARTÓN 6 OZ",
+    "presentation": "",
+    "price_cop_thousands": 6.164,
+    "category": "varios-desechables",
+    "id": 473,
+    "search_name": "tapa para vaso de cartón 6 oz"
+  },
+  {
+    "name": "TAPA PARA VASO DE CARTÓN 9 OZ",
+    "presentation": "",
+    "price_cop_thousands": 6.164,
+    "category": "varios-desechables",
+    "id": 474,
+    "search_name": "tapa para vaso de cartón 9 oz"
+  },
+  {
+    "name": "TAPABOCA EMPAQ INDIV 50 U AZUL - BLANCO",
+    "presentation": "",
+    "price_cop_thousands": 8.857,
+    "category": "varios-desechables",
+    "id": 475,
+    "search_name": "tapaboca empaq indiv 50 u azul   blanco"
+  },
+  {
+    "name": "TAPABOCA EMPAQ INDIV 50 U NEGRO",
+    "presentation": "",
+    "price_cop_thousands": 11.143,
+    "category": "varios-desechables",
+    "id": 476,
+    "search_name": "tapaboca empaq indiv 50 u negro"
+  },
+  {
+    "name": "TOALLA ABSORB MULTIU REUTILIZAB SCOTT",
+    "presentation": "",
+    "price_cop_thousands": 10.97,
+    "category": "varios-desechables",
+    "id": 477,
+    "search_name": "toalla absorb multiu reutilizab scott"
+  },
+  {
+    "name": "TOALLA ABSORB MULTIU REUTILIZAB E BRAND",
+    "presentation": "",
+    "price_cop_thousands": 11.918,
+    "category": "varios-desechables",
+    "id": 478,
+    "search_name": "toalla absorb multiu reutilizab e brand"
+  },
+  {
+    "name": "TOALLA ABSORB MULTIU REUTILIZAB NUBE",
+    "presentation": "",
+    "price_cop_thousands": 8.385,
+    "category": "varios-desechables",
+    "id": 479,
+    "search_name": "toalla absorb multiu reutilizab nube"
+  },
+  {
+    "name": "TOALLA COCINA PAPEL ABSORBEN 2H X 150 H NUBE E I",
+    "presentation": "",
+    "price_cop_thousands": 5.624,
+    "category": "varios-desechables",
+    "id": 480,
+    "search_name": "toalla cocina papel absorben 2h x 150 h nube e i"
+  },
+  {
+    "name": "TOALLA COCINA PAPEL ABSORBEN 3H X 120 H NUBE E I",
+    "presentation": "",
+    "price_cop_thousands": 9.188,
+    "category": "varios-desechables",
+    "id": 481,
+    "search_name": "toalla cocina papel absorben 3h x 120 h nube e i"
+  },
+  {
+    "name": "TOALLA COCINA PAPEL ABSORBEN 2H X 50 H BIO NATUR E I",
+    "presentation": "",
+    "price_cop_thousands": 1.841,
+    "category": "varios-desechables",
+    "id": 482,
+    "search_name": "toalla cocina papel absorben 2h x 50 h bio natur e i"
+  },
+  {
+    "name": "TOALLA COCINA PAPEL ABSORBEN 2H X 50 H NUBE E I",
+    "presentation": "",
+    "price_cop_thousands": 2.419,
+    "category": "varios-desechables",
+    "id": 483,
+    "search_name": "toalla cocina papel absorben 2h x 50 h nube e i"
+  },
+  {
+    "name": "TOALLA COCINA PAPEL ABSORBEN 2H X 50 H NUBE X 3 R",
+    "presentation": "",
+    "price_cop_thousands": 7.712,
+    "category": "varios-desechables",
+    "id": 484,
+    "search_name": "toalla cocina papel absorben 2h x 50 h nube x 3 r"
+  },
+  {
+    "name": "TOALLA MANOS Z BLANCA X 24 PQT X 150 H NUBE",
+    "presentation": "",
+    "price_cop_thousands": 7.168,
+    "category": "varios-desechables",
+    "id": 485,
+    "search_name": "toalla manos z blanca x 24 pqt x 150 h nube"
+  },
+  {
+    "name": "TOALLA MANOS Z NATURAL X 24 PQT X 150 H NUBE",
+    "presentation": "",
+    "price_cop_thousands": 6.437,
+    "category": "varios-desechables",
+    "id": 486,
+    "search_name": "toalla manos z natural x 24 pqt x 150 h nube"
+  },
+  {
+    "name": "TOALLA MANOS V NATURAL X 24 PQT X 150 H MIA",
+    "presentation": "",
+    "price_cop_thousands": 5.281,
+    "category": "varios-desechables",
+    "id": 487,
+    "search_name": "toalla manos v natural x 24 pqt x 150 h mia"
+  },
+  {
+    "name": "TOALLA MANOS ROLLO CENTER PULL NAT X 100 M",
+    "presentation": "",
+    "price_cop_thousands": 38.822,
+    "category": "varios-desechables",
+    "id": 488,
+    "search_name": "toalla manos rollo center pull nat x 100 m"
+  },
+  {
+    "name": "TOALLA MANOS ROLLO MULTIPROPÓS NAT X 100 M",
+    "presentation": "",
+    "price_cop_thousands": 42.147,
+    "category": "varios-desechables",
+    "id": 489,
+    "search_name": "toalla manos rollo multipropós nat x 100 m"
+  },
+  {
+    "name": "TRAPEADOR REF 500",
+    "presentation": "",
+    "price_cop_thousands": 6.164,
+    "category": "varios-desechables",
+    "id": 490,
+    "search_name": "trapeador ref 500"
+  },
+  {
+    "name": "TRAPEADOR REF 800",
+    "presentation": "",
+    "price_cop_thousands": 7.078,
+    "category": "varios-desechables",
+    "id": 491,
+    "search_name": "trapeador ref 800"
+  },
+  {
+    "name": "TRAPEADOR REF 1000",
+    "presentation": "",
+    "price_cop_thousands": 8.219,
+    "category": "varios-desechables",
+    "id": 492,
+    "search_name": "trapeador ref 1000"
+  },
+  {
+    "name": "TRAPEADOR REF 1200",
+    "presentation": "",
+    "price_cop_thousands": 10.16,
+    "category": "varios-desechables",
+    "id": 493,
+    "search_name": "trapeador ref 1200"
+  },
+  {
+    "name": "VASO 3,3 COLOR MIX",
+    "presentation": "",
+    "price_cop_thousands": 1.532,
+    "category": "varios-desechables",
+    "id": 494,
+    "search_name": "vaso 3 3 color mix"
+  },
+  {
+    "name": "VASO 3.5 TRANSP WAU",
+    "presentation": "",
+    "price_cop_thousands": 2.683,
+    "category": "varios-desechables",
+    "id": 495,
+    "search_name": "vaso 3 5 transp wau"
+  },
+  {
+    "name": "VASO 5 OZ TRANSP WAU",
+    "presentation": "",
+    "price_cop_thousands": 2.329,
+    "category": "varios-desechables",
+    "id": 496,
+    "search_name": "vaso 5 oz transp wau"
+  },
+  {
+    "name": "VASO 5 OZ BLANCO WAU",
+    "presentation": "",
+    "price_cop_thousands": 2.329,
+    "category": "varios-desechables",
+    "id": 497,
+    "search_name": "vaso 5 oz blanco wau"
+  },
+  {
+    "name": "VASO 5 BLANCO MIX",
+    "presentation": "",
+    "price_cop_thousands": 2.055,
+    "category": "varios-desechables",
+    "id": 498,
+    "search_name": "vaso 5 blanco mix"
+  },
+  {
+    "name": "VASO 5 BLANCO TUC",
+    "presentation": "",
+    "price_cop_thousands": 2.123,
+    "category": "varios-desechables",
+    "id": 499,
+    "search_name": "vaso 5 blanco tuc"
+  },
+  {
+    "name": "VASO 5 BLANCO VACAN",
+    "presentation": "",
+    "price_cop_thousands": 2.169,
+    "category": "varios-desechables",
+    "id": 500,
+    "search_name": "vaso 5 blanco vacan"
+  },
+  {
+    "name": "VASO 5 OZ COLERO BLANCO WAU",
+    "presentation": "",
+    "price_cop_thousands": 2.249,
+    "category": "varios-desechables",
+    "id": 501,
+    "search_name": "vaso 5 oz colero blanco wau"
+  },
+  {
+    "name": "VASO 5 NEGRO DEL BUENO",
+    "presentation": "",
+    "price_cop_thousands": 1.781,
+    "category": "varios-desechables",
+    "id": 502,
+    "search_name": "vaso 5 negro del bueno"
+  },
+  {
+    "name": "VASO 5 NEGRO MIX",
+    "presentation": "",
+    "price_cop_thousands": 1.963,
+    "category": "varios-desechables",
+    "id": 503,
+    "search_name": "vaso 5 negro mix"
+  },
+  {
+    "name": "VASO 5 COLOR LÍDER",
+    "presentation": "",
+    "price_cop_thousands": 1.986,
+    "category": "varios-desechables",
+    "id": 504,
+    "search_name": "vaso 5 color líder"
+  },
+  {
+    "name": "VASO 5 NEGRO ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 2.584,
+    "category": "varios-desechables",
+    "id": 505,
+    "search_name": "vaso 5 negro acmeleon"
+  },
+  {
+    "name": "VASO 5,5 BICOLOR ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 3.507,
+    "category": "varios-desechables",
+    "id": 506,
+    "search_name": "vaso 5 5 bicolor acmeleon"
+  },
+  {
+    "name": "VASO 7 OZ BLANCO WAU",
+    "presentation": "",
+    "price_cop_thousands": 2.329,
+    "category": "varios-desechables",
+    "id": 507,
+    "search_name": "vaso 7 oz blanco wau"
+  },
+  {
+    "name": "VASO 7 OZ BLANCO TUC",
+    "presentation": "",
+    "price_cop_thousands": 2.123,
+    "category": "varios-desechables",
+    "id": 508,
+    "search_name": "vaso 7 oz blanco tuc"
+  },
+  {
+    "name": "VASO 7 OZ TRANSP WAU",
+    "presentation": "",
+    "price_cop_thousands": 2.329,
+    "category": "varios-desechables",
+    "id": 509,
+    "search_name": "vaso 7 oz transp wau"
+  },
+  {
+    "name": "VASO 7 OZ TRANSP VACAN",
+    "presentation": "",
+    "price_cop_thousands": 2.169,
+    "category": "varios-desechables",
+    "id": 510,
+    "search_name": "vaso 7 oz transp vacan"
+  },
+  {
+    "name": "VASO 7 OZ TRANSP TUC",
+    "presentation": "",
+    "price_cop_thousands": 2.123,
+    "category": "varios-desechables",
+    "id": 511,
+    "search_name": "vaso 7 oz transp tuc"
+  },
+  {
+    "name": "VASO 7 OZ TRANSP SICODÉLICO",
+    "presentation": "",
+    "price_cop_thousands": 1.638,
+    "category": "varios-desechables",
+    "id": 512,
+    "search_name": "vaso 7 oz transp sicodélico"
+  },
+  {
+    "name": "VASO 9 OZ TRANSP WAU",
+    "presentation": "",
+    "price_cop_thousands": 4.014,
+    "category": "varios-desechables",
+    "id": 513,
+    "search_name": "vaso 9 oz transp wau"
+  },
+  {
+    "name": "VASO 9 OZ TRANSP BINGO ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 5.494,
+    "category": "varios-desechables",
+    "id": 514,
+    "search_name": "vaso 9 oz transp bingo acmeleon"
+  },
+  {
+    "name": "VASO 9 OZ TRANSP VACAN",
+    "presentation": "",
+    "price_cop_thousands": 3.288,
+    "category": "varios-desechables",
+    "id": 515,
+    "search_name": "vaso 9 oz transp vacan"
+  },
+  {
+    "name": "VASO 9 OZ TRANSP SICODÉLICO",
+    "presentation": "",
+    "price_cop_thousands": 2.853,
+    "category": "varios-desechables",
+    "id": 516,
+    "search_name": "vaso 9 oz transp sicodélico"
+  },
+  {
+    "name": "VASO 10 OZ TRANSP WAU",
+    "presentation": "",
+    "price_cop_thousands": 4.452,
+    "category": "varios-desechables",
+    "id": 517,
+    "search_name": "vaso 10 oz transp wau"
+  },
+  {
+    "name": "VASO 10 OZ TRANSP BINGO ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 5.922,
+    "category": "varios-desechables",
+    "id": 518,
+    "search_name": "vaso 10 oz transp bingo acmeleon"
+  },
+  {
+    "name": "VASO 12 OZ TRANSP WAU",
+    "presentation": "",
+    "price_cop_thousands": 5.466,
+    "category": "varios-desechables",
+    "id": 519,
+    "search_name": "vaso 12 oz transp wau"
+  },
+  {
+    "name": "VASO 12 OZ TRANSP BINGO ACMELEON",
+    "presentation": "",
+    "price_cop_thousands": 7.436,
+    "category": "varios-desechables",
+    "id": 520,
+    "search_name": "vaso 12 oz transp bingo acmeleon"
+  },
+  {
+    "name": "VASO 12 OZ TRANSP VACAN",
+    "presentation": "",
+    "price_cop_thousands": NaN,
+    "category": "varios-desechables",
+    "id": 521,
+    "search_name": "vaso 12 oz transp vacan"
+  },
+  {
+    "name": "VASO 13 OZ TRANSP WAU",
+    "presentation": "",
+    "price_cop_thousands": 3.425,
+    "category": "varios-desechables",
+    "id": 522,
+    "search_name": "vaso 13 oz transp wau"
+  },
+  {
+    "name": "VASO 14 OZ TRANSP WAU",
+    "presentation": "",
+    "price_cop_thousands": 3.813,
+    "category": "varios-desechables",
+    "id": 523,
+    "search_name": "vaso 14 oz transp wau"
+  },
+  {
+    "name": "VASO 16 OZ TRASP WAU",
+    "presentation": "",
+    "price_cop_thousands": 4.221,
+    "category": "varios-desechables",
+    "id": 524,
+    "search_name": "vaso 16 oz trasp wau"
+  },
+  {
+    "name": "VASO CARTÓN 4 OZ",
+    "presentation": "",
+    "price_cop_thousands": 3.63,
+    "category": "varios-desechables",
+    "id": 525,
+    "search_name": "vaso cartón 4 oz"
+  },
+  {
+    "name": "VASO CARTÓN 5 OZ",
+    "presentation": "",
+    "price_cop_thousands": 4.178,
+    "category": "varios-desechables",
+    "id": 526,
+    "search_name": "vaso cartón 5 oz"
+  },
+  {
+    "name": "VASO CARTÓN 6 OZ",
+    "presentation": "",
+    "price_cop_thousands": 4.315,
+    "category": "varios-desechables",
+    "id": 527,
+    "search_name": "vaso cartón 6 oz"
+  },
+  {
+    "name": "VASO CARTÓN 7 OZ SALID",
+    "presentation": "",
+    "price_cop_thousands": 4.795,
+    "category": "varios-desechables",
+    "id": 528,
+    "search_name": "vaso cartón 7 oz salid"
+  },
+  {
+    "name": "VASO CARTÓN 9 OZ ALASKA",
+    "presentation": "",
+    "price_cop_thousands": 5.822,
+    "category": "varios-desechables",
+    "id": 529,
+    "search_name": "vaso cartón 9 oz alaska"
+  },
+  {
+    "name": "VASO CARTÓN 9 OZ JC JAZ",
+    "presentation": "",
+    "price_cop_thousands": 5.822,
+    "category": "varios-desechables",
+    "id": 530,
+    "search_name": "vaso cartón 9 oz jc jaz"
+  },
+  {
+    "name": "VASO CARTÓN 12 OZ HOUSE",
+    "presentation": "",
+    "price_cop_thousands": 10.959,
+    "category": "varios-desechables",
+    "id": 531,
+    "search_name": "vaso cartón 12 oz house"
+  },
+  {
+    "name": "VASO ICOPOR DARNEL 4 OZ X 2000 U",
+    "presentation": "",
+    "price_cop_thousands": 4.188,
+    "category": "varios-desechables",
+    "id": 532,
+    "search_name": "vaso icopor darnel 4 oz x 2000 u"
+  },
+  {
+    "name": "VASO ICOPOR DARNEL 6 OZ X 2000 U",
+    "presentation": "",
+    "price_cop_thousands": 4.237,
+    "category": "varios-desechables",
+    "id": 533,
+    "search_name": "vaso icopor darnel 6 oz x 2000 u"
+  },
+  {
+    "name": "VASO ICOPOR DARNEL 8 OZ X 2000U",
+    "presentation": "",
+    "price_cop_thousands": 4.485,
+    "category": "varios-desechables",
+    "id": 534,
+    "search_name": "vaso icopor darnel 8 oz x 2000u"
+  },
+  {
+    "name": "VASO WHISKY",
+    "presentation": "",
+    "price_cop_thousands": 9.931,
+    "category": "varios-desechables",
+    "id": 535,
+    "search_name": "vaso whisky"
+  },
+  {
+    "name": "VINIPEL 20 MTS",
+    "presentation": "",
+    "price_cop_thousands": 1.918,
+    "category": "varios-desechables",
+    "id": 536,
+    "search_name": "vinipel 20 mts"
+  },
+  {
+    "name": "VINIPEL 50 MTS",
+    "presentation": "",
+    "price_cop_thousands": 2.877,
+    "category": "varios-desechables",
+    "id": 537,
+    "search_name": "vinipel 50 mts"
+  },
+  {
+    "name": "VINIPEL 100 MTS",
+    "presentation": "",
+    "price_cop_thousands": 4.726,
+    "category": "varios-desechables",
+    "id": 538,
+    "search_name": "vinipel 100 mts"
+  },
+  {
+    "name": "VINIPEL 200 MTS",
+    "presentation": "",
+    "price_cop_thousands": 8.767,
+    "category": "varios-desechables",
+    "id": 539,
+    "search_name": "vinipel 200 mts"
+  },
+  {
+    "name": "VINIPEL 300 MTS",
+    "presentation": "",
+    "price_cop_thousands": 12.192,
+    "category": "varios-desechables",
+    "id": 540,
+    "search_name": "vinipel 300 mts"
+  },
+  {
+    "name": "VINIPEL 500 MTS",
+    "presentation": "",
+    "price_cop_thousands": 17.808,
+    "category": "varios-desechables",
+    "id": 541,
+    "search_name": "vinipel 500 mts"
+  },
+  {
+    "name": "VINIPEL VASO ANGOSTO 6 PULG X 100 M",
+    "presentation": "",
+    "price_cop_thousands": 2.808,
+    "category": "varios-desechables",
+    "id": 542,
+    "search_name": "vinipel vaso angosto 6 pulg x 100 m"
+  },
+  {
+    "name": "VINIPEL VASO ANGOSTO 6 PULG X 200 M",
+    "presentation": "",
+    "price_cop_thousands": 4.932,
+    "category": "varios-desechables",
+    "id": 543,
+    "search_name": "vinipel vaso angosto 6 pulg x 200 m"
+  },
+  {
+    "name": "VINIPEL VASO ANGOSTO 6 PULG X 300 M",
+    "presentation": "",
+    "price_cop_thousands": 8.904,
+    "category": "varios-desechables",
+    "id": 544,
+    "search_name": "vinipel vaso angosto 6 pulg x 300 m"
+  },
+  {
+    "name": "VINIPEL VASO ANGOSTO 6 PULG X 500 M",
+    "presentation": "",
+    "price_cop_thousands": 10.548,
+    "category": "varios-desechables",
+    "id": 545,
+    "search_name": "vinipel vaso angosto 6 pulg x 500 m"
+  },
+  {
+    "name": "VINIPEL FAMA TABACO X 6 KG ROLLO GRANDE",
+    "presentation": "",
+    "price_cop_thousands": 91.37,
+    "category": "varios-desechables",
+    "id": 546,
+    "search_name": "vinipel fama tabaco x 6 kg rollo grande"
+  },
+  {
+    "name": "VINIPEL FAMA TABACO X 7 KG ROLLO GRANDE",
+    "presentation": "",
+    "price_cop_thousands": 106.438,
+    "category": "varios-desechables",
+    "id": 547,
+    "search_name": "vinipel fama tabaco x 7 kg rollo grande"
+  },
+  {
+    "name": "VINIPEL FAMA ROSADO X 6 KG ROLLO GRANDE",
+    "presentation": "",
+    "price_cop_thousands": 91.37,
+    "category": "varios-desechables",
+    "id": 548,
+    "search_name": "vinipel fama rosado x 6 kg rollo grande"
+  },
+  {
+    "name": "VINIPEL FAMA ROSADO X 7 KG ROLLO GRANDE",
+    "presentation": "",
+    "price_cop_thousands": 106.438,
+    "category": "varios-desechables",
+    "id": 549,
+    "search_name": "vinipel fama rosado x 7 kg rollo grande"
+  },
+  {
+    "name": "VINIPEL NEGRO 50MT",
+    "presentation": "",
+    "price_cop_thousands": 2.877,
+    "category": "varios-desechables",
+    "id": 550,
+    "search_name": "vinipel negro 50mt"
+  },
+  {
+    "name": "VINIPEL NEGRO 100 MT",
+    "presentation": "",
+    "price_cop_thousands": 4.726,
+    "category": "varios-desechables",
+    "id": 551,
+    "search_name": "vinipel negro 100 mt"
+  },
+  {
+    "name": "VINIPEL NEGRO 200 MTS",
+    "presentation": "",
+    "price_cop_thousands": 8.767,
+    "category": "varios-desechables",
+    "id": 552,
+    "search_name": "vinipel negro 200 mts"
+  },
+  {
+    "name": "VINIPEL NEGRO 300 MTS",
+    "presentation": "",
+    "price_cop_thousands": 12.192,
+    "category": "varios-desechables",
+    "id": 553,
+    "search_name": "vinipel negro 300 mts"
+  },
+  {
+    "name": "VINIPEL NEGRO 500 MTS",
+    "presentation": "",
+    "price_cop_thousands": 17.808,
+    "category": "varios-desechables",
+    "id": 554,
+    "search_name": "vinipel negro 500 mts"
+  }
+]

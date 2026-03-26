@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catálogo comercial</title>
-  <meta name="description" content="Catálogo comercial con detergentes líquidos, varios y desechables." />
+  <title>Catálogo y pedidos</title>
+  <meta name="description" content="Catálogo comercial de detergentes líquidos y varios y desechables." />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#inicio" class="brand" id="brandLink">
-        <span class="brand-tag">Distribución comercial</span>
-        <strong>Catálogo</strong>
-      </a>
+      <button class="brand-button" id="goHomeBtn" type="button">
+        <span class="brand-kicker">Catálogo comercial</span>
+        <strong>Detergentes líquidos · Varios y desechables</strong>
+      </button>
 
       <nav class="main-nav">
-        <a href="#inicio" data-home-link="inicio">Inicio</a>
-        <a href="#categorias" data-home-link="categorias">Secciones</a>
-        <a href="#informacion" data-home-link="informacion">Información</a>
-        <a href="#compras" data-home-link="compras">Compras</a>
+        <button type="button" data-home-link="inicio">Inicio</button>
+        <button type="button" data-home-link="categorias">Categorías</button>
+        <button type="button" data-home-link="compras">Compras</button>
       </nav>
     </div>
   </header>
@@ -28,12 +27,37 @@
     <section id="inicio" class="hero home-section">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <span class="hero-pill">Catálogo actualizado</span>
-          <h1>Detergentes líquidos, varios y desechables.</h1>
+          <span class="hero-pill">Atención comercial</span>
+          <h1>Encuentra precios rápido y resuelve dudas con el asistente.</h1>
           <p>
-            Una web simple, moderna y pensada primero para celular. Explora las dos secciones
-            principales, revisa los productos con sus precios y contáctanos por WhatsApp para compras o información.
+            Consulta nuestras dos líneas principales, revisa productos y usa el asistente virtual para
+            resolver dudas, orientarte y armar una cotización preliminar.
           </p>
+          <div class="hero-actions">
+            <button class="primary-btn" type="button" data-home-link="categorias">Ver categorías</button>
+            <button class="ghost-btn" type="button" id="openBotBtnHero">Abrir asistente</button>
+          </div>
+        </div>
+
+        <div class="hero-robot-card">
+          <div class="bot-standalone" aria-hidden="true">
+            <div class="bot-bottle-cap"></div>
+            <div class="bot-bottle-face">
+              <span class="eye"></span>
+              <span class="eye"></span>
+            </div>
+            <div class="bot-bottle-body">
+              <div class="bot-label"></div>
+            </div>
+            <div class="bot-arms">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="hero-robot-copy">
+            <span>Asistente virtual</span>
+            <strong>Responde dudas sobre productos, precios y entregas.</strong>
+          </div>
         </div>
       </div>
     </section>
@@ -41,32 +65,30 @@
     <section id="categorias" class="section home-section">
       <div class="container">
         <div class="section-head">
-          <span class="section-tag">Secciones principales</span>
-          <h2>Elige una línea para ver sus productos</h2>
-          <p>Al tocar una sección verás el listado completo con precios.</p>
+          <span class="section-tag">Categorías</span>
+          <h2>Explora las líneas principales</h2>
+          <p>Toca una categoría para ver productos y precios.</p>
         </div>
 
-        <div class="category-grid two-up">
-          <button class="category-card detergentes" data-category="detergentes" type="button">
+        <div class="category-grid">
+          <button class="category-card detergentes" data-category="detergentes-liquidos" type="button">
             <div class="category-visual">
-              <div class="illustration droplets"></div>
               <span>🧴</span>
             </div>
             <div class="category-content">
               <h3>Detergentes líquidos</h3>
-              <p>Lavado, blanqueadores, limpiadores, suavizantes, ambientadores y más.</p>
+              <p>Blanqueadores, limpiadores, desengrasantes, ambientadores y más.</p>
               <strong>Ver productos</strong>
             </div>
           </button>
 
-          <button class="category-card varios" data-category="varios" type="button">
+          <button class="category-card varios" data-category="varios-desechables" type="button">
             <div class="category-visual">
-              <div class="illustration plates"></div>
-              <span>🍽️</span>
+              <span>📦</span>
             </div>
             <div class="category-content">
               <h3>Varios y desechables</h3>
-              <p>Café, azúcar, servilletas, empaques, vasos, vinipel, icopor y muchas otras referencias.</p>
+              <p>Empaques, vasos, icopor, servilletas y otras referencias.</p>
               <strong>Ver productos</strong>
             </div>
           </button>
@@ -74,42 +96,18 @@
       </div>
     </section>
 
-    <section id="informacion" class="section section-soft home-section">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">Información</span>
-          <h2>Una experiencia directa y clara</h2>
-        </div>
-
-        <div class="info-grid">
-          <article class="info-card">
-            <h3>Catálogo ordenado</h3>
-            <p>Las referencias están separadas por línea para que sea más fácil consultar.</p>
-          </article>
-          <article class="info-card">
-            <h3>Precios visibles</h3>
-            <p>Cada producto aparece con su valor para revisar rápido desde el celular.</p>
-          </article>
-          <article class="info-card">
-            <h3>Compra por WhatsApp</h3>
-            <p>Cuando el cliente ya sabe lo que necesita, solo queda escribir y cerrar la venta.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="compras" class="section home-section">
+    <section id="compras" class="section section-soft home-section">
       <div class="container">
         <div class="cta-box">
           <div class="cta-copy">
-            <span class="section-tag">Compras y contacto</span>
-            <h2>¿Quieres pedir o cotizar?</h2>
-            <p>Escríbenos por WhatsApp para resolver dudas, confirmar disponibilidad y avanzar con tu pedido.</p>
+            <span class="section-tag">Compras y pedidos</span>
+            <h2>Resuelve primero tus dudas y luego pasa a compra.</h2>
+            <p>
+              El asistente te orienta con productos, precios y estimados de entrega. Después podrás cerrar la compra
+              por el canal de atención que definas.
+            </p>
           </div>
-
-          <a id="mainWhatsappLink" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer">
-            Escribir por WhatsApp
-          </a>
+          <button class="primary-btn" type="button" id="openBotBtnCta">Hablar con el asistente</button>
         </div>
       </div>
     </section>
@@ -120,194 +118,77 @@
 
         <div class="category-view-head">
           <div id="categoryBadge" class="category-view-badge">🧴</div>
-          <div class="category-view-copy">
-            <span class="section-tag" id="categoryTag">Sección</span>
+          <div>
+            <span class="section-tag" id="categoryTag">Categoría</span>
             <h2 id="categoryTitle">Detergentes líquidos</h2>
-            <p id="categoryDescription">Consulta rápida de productos y precios.</p>
+            <p id="categoryDescription">Productos organizados para consulta rápida.</p>
           </div>
         </div>
 
-        <div class="toolbar">
-          <div class="search-wrap">
-            <input id="searchInput" type="text" placeholder="Buscar dentro de esta sección..." />
-          </div>
-          <div class="result-pill" id="resultCount">0 productos</div>
+        <div class="category-toolbar">
+          <input id="categorySearch" type="text" placeholder="Buscar dentro de esta categoría..." />
+          <span id="categoryCount" class="category-count"></span>
         </div>
 
         <div id="productsList" class="products-list"></div>
-
-        <div id="emptyState" class="empty-state hidden">
-          No se encontraron productos con ese término.
-        </div>
       </div>
     </section>
   </main>
 
+  <button class="assistant-launcher" id="assistantLauncher" type="button" aria-label="Abrir asistente virtual">
+    <div class="mini-bot" aria-hidden="true">
+      <div class="mini-cap"></div>
+      <div class="mini-face">
+        <span></span><span></span>
+      </div>
+    </div>
+    <div class="assistant-launcher-copy">
+      <strong>Asistente</strong>
+      <span>Pregúntame</span>
+    </div>
+  </button>
+
+  <section class="chat-panel hidden" id="chatPanel" aria-live="polite">
+    <div class="chat-header">
+      <div class="chat-header-left">
+        <div class="chat-bot-avatar">
+          <div class="mini-bot large" aria-hidden="true">
+            <div class="mini-cap"></div>
+            <div class="mini-face">
+              <span></span><span></span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <strong>Asistente virtual</strong>
+          <p>Precios, productos y entregas</p>
+        </div>
+      </div>
+      <button class="chat-close" id="chatCloseBtn" type="button" aria-label="Cerrar">×</button>
+    </div>
+
+    <div class="chat-quick-actions" id="chatQuickActions">
+      <button type="button" data-question="¿Qué manejan en detergentes líquidos?">Detergentes</button>
+      <button type="button" data-question="¿Qué tienen en varios y desechables?">Desechables</button>
+      <button type="button" data-question="Quiero cotizar un pedido.">Cotizar</button>
+      <button type="button" data-question="¿Cómo calculan la entrega?">Entrega</button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <form class="chat-form" id="chatForm">
+      <input id="chatInput" type="text" placeholder="Escribe tu pregunta..." autocomplete="off" />
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Catálogo comercial</p>
-      <p>Versión inicial para web y celular</p>
+      <p>Diseño web + asistente virtual fase 1</p>
     </div>
   </footer>
 
-  <script>
-    const WHATSAPP_NUMBER = "573000000000";
-
-    const categoryInfo = {
-      detergentes: {
-        title: "Detergentes líquidos",
-        tag: "Sección detergentes",
-        badge: "🧴",
-        description: "Lavado, blanqueadores, limpiadores, suavizantes, ambientadores y otras referencias líquidas."
-      },
-      varios: {
-        title: "Varios y desechables",
-        tag: "Sección varios",
-        badge: "🍽️",
-        description: "Café, azúcar, servilletas, vasos, empaques, vinipel, icopor y otras referencias."
-      }
-    };
-
-    const products = {
-      detergentes: [{"name": "BLANQUEADOR", "presentation": "500 ML", "price": 2.332}, {"name": "HOGAR: hipoclorito al 3%", "presentation": "1000 ML", "price": 3.71}, {"name": "HOGAR: hipoclorito al 3%", "presentation": "2000 ML", "price": 5.618}, {"name": "HOGAR: hipoclorito al 3%", "presentation": "3800 ML", "price": 8.639}, {"name": "HOGAR: hipoclorito al 3%", "presentation": "20 LT", "price": 36.04}, {"name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%", "presentation": "500 ML", "price": 2.65}, {"name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%", "presentation": "1000 ML", "price": 4.452}, {"name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%", "presentation": "2000 ML", "price": 6.996}, {"name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%", "presentation": "3800 ML", "price": 11.236}, {"name": "BLANQUEADOR INDUSTRIAL: hipoclorito al 5,25%", "presentation": "20 LT", "price": 48.23}, {"name": "DESMANCHADOR", "presentation": "1000 ML", "price": 4.028}, {"name": "ROPA COLOR SIN CLORO", "presentation": "2000 ML", "price": 6.148}, {"name": "ROPA COLOR SIN CLORO", "presentation": "3800 ML", "price": 9.752}, {"name": "ROPA COLOR SIN CLORO", "presentation": "20 LT", "price": 41.34}, {"name": "LIMPIADOR", "presentation": "1000 ML", "price": 5.088}, {"name": "AROMATIZANTE ANTIBACTERIAL:", "presentation": "2000 ML", "price": 8.586}, {"name": "LAVANDA - FLORAL -", "presentation": "3750 ML", "price": 15.37}, {"name": "CANELA-LIMÓN-", "presentation": "5000 ML", "price": 19.08}, {"name": "CANELA-LIMÓN-", "presentation": "20 LT", "price": 64.66}, {"name": "LIMPIAVIDRIOS", "presentation": "500 ML T ROSCA", "price": 4.028}, {"name": "LIMPIAVIDRIOS", "presentation": "500 ML PISTOLA", "price": 2.65}, {"name": "LIMPIAVIDRIOS", "presentation": "00 ML DUO: TR + PISTOL", "price": 6.36}, {"name": "LIMPIAVIDRIOS", "presentation": "1000 ML PISTOLA", "price": 5.3}, {"name": "LIMPIAVIDRIOS", "presentation": "1000 ML T ROSCA", "price": 4.028}, {"name": "LIMPIAVIDRIOS", "presentation": "2000 ML", "price": 6.36}, {"name": "LIMPIAVIDRIOS", "presentation": "3750 ML", "price": 9.54}, {"name": "LIMPIAVIDRIOS", "presentation": "20 LT", "price": 40.81}, {"name": "DESENGRASANTE HOGAR - VERDE", "presentation": "500 ML T ROSCA", "price": 3.18}, {"name": "DESENGRASANTE HOGAR - VERDE", "presentation": "500 ML T PISTOLA", "price": 4.134}, {"name": "DESENGRASANTE HOGAR - VERDE", "presentation": "1000 ML PISTOLA", "price": 5.3}, {"name": "DESENGRASANTE HOGAR - VERDE", "presentation": "1000 ML T ROSCA", "price": 4.24}, {"name": "DESENGRASANTE HOGAR - VERDE", "presentation": "2000 ML", "price": 6.36}, {"name": "DESENGRASANTE HOGAR - VERDE", "presentation": "3750 ML", "price": 9.54}, {"name": "DESENGRASANTE HOGAR - VERDE", "presentation": "20 LT", "price": 38.16}, {"name": "DESENGRASANTE INDUSTRIAL", "presentation": "500 ML T ROSCA", "price": 3.18}, {"name": "DESENGRASANTE INDUSTRIAL", "presentation": "500 ML DOSIFICADOR", "price": 3.922}, {"name": "DESENGRASANTE INDUSTRIAL", "presentation": "1000 ML T ROSCA", "price": 4.982}, {"name": "DESENGRASANTE INDUSTRIAL", "presentation": "1000 ML DOSIFICADOR", "price": 5.83}, {"name": "DESENGRASANTE INDUSTRIAL", "presentation": "2000 ML", "price": 8.268}, {"name": "DESENGRASANTE INDUSTRIAL", "presentation": "3750 ML", "price": 13.78}, {"name": "DESENGRASANTE INDUSTRIAL", "presentation": "20 LT", "price": 56.18}, {"name": "DESENGRASANTE INDUSTRIAL FUERTE", "presentation": "500 ML T. ROSCA", "price": 3.71}, {"name": "DESENGRASANTE INDUSTRIAL FUERTE", "presentation": "500 ML DOSIFICADOR", "price": 3.975}, {"name": "DESENGRASANTE INDUSTRIAL FUERTE", "presentation": "1000 ML T. ROSCA", "price": 5.3}, {"name": "DESENGRASANTE INDUSTRIAL FUERTE", "presentation": "1000 ML DOSIFICADOR", "price": 6.36}, {"name": "DESENGRASANTE INDUSTRIAL FUERTE", "presentation": "2000 ML", "price": 9.01}, {"name": "DESENGRASANTE INDUSTRIAL FUERTE", "presentation": "3750 ML", "price": 14.84}, {"name": "DESENGRASANTE INDUSTRIAL FUERTE", "presentation": "20 LT", "price": 63.6}, {"name": "JABÓN LIQ MANOS ANTIBACTERIAL:", "presentation": "300 ML PUSH PULL", "price": 2.968}, {"name": "AVENA - VAINILLA -", "presentation": "500 ML CREMERA", "price": 4.028}, {"name": "FRUTOS ROJOS -", "presentation": "500 ML PUSH PULL", "price": 3.604}, {"name": "MANZANA", "presentation": "500 ML T. ROSCA", "price": 3.286}, {"name": "MANZANA", "presentation": "1000 ML CREMERA", "price": 6.095}, {"name": "MANZANA", "presentation": "1000 ML PUSH PULL", "price": 5.671}, {"name": "MANZANA", "presentation": "1000 ML T. ROSCA", "price": 5.406}, {"name": "MANZANA", "presentation": "2000 ML CREMERA", "price": 10.07}, {"name": "MANZANA", "presentation": "2000 ML T ROSCA", "price": 9.222}, {"name": "MANZANA", "presentation": "3000 ML", "price": 13.038}, {"name": "MANZANA", "presentation": "3750 ML", "price": 15.37}, {"name": "MANZANA", "presentation": "20 LT", "price": 66.78}, {"name": "JABÓN LIQ  LAVALOZA", "presentation": "500 ML CREMERA", "price": 3.922}, {"name": "JABÓN LIQ  LAVALOZA", "presentation": "500 ML PUSH PULL", "price": 3.392}, {"name": "JABÓN LIQ  LAVALOZA", "presentation": "500 ML T ROSCA", "price": 3.392}, {"name": "JABÓN LIQ  LAVALOZA", "presentation": "1000 ML CREMERA", "price": 5.83}, {"name": "JABÓN LIQ  LAVALOZA", "presentation": "1000 ML PUSH PULL", "price": 5.512}, {"name": "ANTIBACTERIAL LIMÓN", "presentation": "1000 ML T ROSCA", "price": 5.3}, {"name": "ANTIBACTERIAL LIMÓN", "presentation": "2000 ML T ROSCA", "price": 9.01}, {"name": "ANTIBACTERIAL LIMÓN", "presentation": "2000 ML CREMERA", "price": 9.54}, {"name": "ANTIBACTERIAL LIMÓN", "presentation": "3750 ML", "price": 14.84}, {"name": "ANTIBACTERIAL LIMÓN", "presentation": "20 LT", "price": 63.6}, {"name": "JABÓN LIQ", "presentation": "500 ML PUSH PULL", "price": 4.24}, {"name": "LAVALOZA -", "presentation": "500 ML T ROSCA", "price": 3.71}, {"name": "INDUSTRIAL", "presentation": "1000 ML T ROSCA", "price": 6.36}, {"name": "ANTIBACTERIAL", "presentation": "1000 ML PUSH PULL", "price": 6.678}, {"name": "ANTIBACTERIAL", "presentation": "1000 ML CREMERA", "price": 6.996}, {"name": "ANTIBACTERIAL", "presentation": "2000 ML T ROSCA", "price": 9.54}, {"name": "ANTIBACTERIAL", "presentation": "2000 ML CREMERA", "price": 10.282}, {"name": "ANTIBACTERIAL", "presentation": "3750 ML", "price": 16.96}, {"name": "ANTIBACTERIAL", "presentation": "20 LT", "price": 79.5}, {"name": "DETERGENTE LIQUIDO", "presentation": "1000 MLT MEDIDORA", "price": 8.48}, {"name": "LAVADORA", "presentation": "2000 ML T MEDIDORA", "price": 13.78}, {"name": "CONCENTRADO", "presentation": "37500 ML", "price": 16.96}, {"name": "CONCENTRADO", "presentation": "4000 ML", "price": 22.26}, {"name": "CONCENTRADO", "presentation": "20 LT", "price": 74.2}, {"name": "J LÍQUIDO TIPO REY", "presentation": "1000 ML T MEDIDORA", "price": 8.056}, {"name": "J LÍQUIDO TIPO REY", "presentation": "2000 ML T MEDIDORA", "price": 13.038}, {"name": "J LÍQUIDO TIPO REY", "presentation": "3750 ML", "price": 15.37}, {"name": "J LÍQUIDO TIPO REY", "presentation": "4000 ML", "price": 21.73}, {"name": "J LÍQUIDO TIPO REY", "presentation": "20 LT", "price": 69.96}, {"name": "DETERGENTE LIQUIDO MULTIUSOS", "presentation": "500 ML MULTIMODAL", "price": 4.028}, {"name": "DETERGENTE LIQUIDO MULTIUSOS", "presentation": "1000 ML MULTIMODAL", "price": 7.208}, {"name": "DETERGENTE LIQUIDO MULTIUSOS", "presentation": "2000 ML", "price": 9.858}, {"name": "DETERGENTE LIQUIDO MULTIUSOS", "presentation": "3750 ML", "price": 15.9}, {"name": "DETERGENTE LIQUIDO MULTIUSOS", "presentation": "20 LT", "price": 69.96}, {"name": "SUAVIZANTE PARA ROPA", "presentation": "1000 ML T. MEDIDORA", "price": 6.996}, {"name": "SUAVIZANTE PARA ROPA", "presentation": "2000 ML T. MEDIDORA", "price": 11.236}, {"name": "SUAVIZANTE PARA ROPA", "presentation": "3750 ML", "price": 12.72}, {"name": "SUAVIZANTE PARA ROPA", "presentation": "4000 ML", "price": 17.49}, {"name": "SUAVIZANTE PARA ROPA", "presentation": "20LT", "price": 56.18}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "300 ML T ROSCA", "price": 4.24}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "500 ML PISTOLA", "price": 6.89}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "500 ML T ROSCA", "price": 5.724}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "1000 ML PISTOLA", "price": 11.66}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "1000 ML T ROSCA", "price": 10.176}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "2000 ML T ROSCA", "price": 18.974}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "3000 ML", "price": 27.454}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "3800 ML", "price": 35.192}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "5000 ML", "price": 56.18}, {"name": "ALCOHOL ANTISÉPTICO AL 70 %", "presentation": "20 LT", "price": 153.7}, {"name": "GEL ANTIBACTERIAL", "presentation": "300 ML PUSH PULL", "price": 4.982}, {"name": "GEL ANTIBACTERIAL", "presentation": "500 ML V. DOSIFICADOR", "price": 7.42}, {"name": "GEL ANTIBACTERIAL", "presentation": "500 ML V. PUSH PULL", "price": 6.89}, {"name": "GEL ANTIBACTERIAL", "presentation": "500 ML T. ROSCA", "price": 6.572}, {"name": "GEL ANTIBACTERIAL", "presentation": "1000 ML V. DOSIFICADO", "price": 12.19}, {"name": "GEL ANTIBACTERIAL", "presentation": "1000 ML V. PUSH PULL", "price": 11.66}, {"name": "GEL ANTIBACTERIAL", "presentation": "1000 ML T. ROSCA", "price": 11.66}, {"name": "GEL ANTIBACTERIAL", "presentation": "2000 ML T ROSCA", "price": 20.67}, {"name": "GEL ANTIBACTERIAL", "presentation": "3800 ML T ROSCA", "price": 37.1}, {"name": "GEL ANTIBACTERIAL", "presentation": "20LT", "price": 180.2}],
-      varios: [{"name": "AL. AROMÁTICA PANELA INSTANTÁ HyH SANTANDER HERBAR", "price": 4.672}, {"name": "AL. AROMÁTICA TISANA - YERBAS HyH SANTANDER HERBAR", "price": 2.311}, {"name": "AL. AROMÁTICA PANELA INSTANTÁ ZUIN", "price": 3.819}, {"name": "AL. AROMÁTICA PANELA INSTANTÁ ZUIN x KILO", "price": 18.75}, {"name": "AL. AROMÁTICA PANELA INSTANTÁ ZUIN PQT X 50 U", "price": 4.861}, {"name": "AL. PANELA PULVERIZADA SOBRECITOS", "price": 5.417}, {"name": "AL. AZÚCAR  SOBRECITO", "price": 5.833}, {"name": "AL. AZÚCAR TUBITO", "price": 6.597}, {"name": "AL. BICARBONATO DE SODIO 500 GR MAXSODA", "price": 4.077}, {"name": "AL. SOPA MR NOODLES SOBRE 85 GR", "price": 2.478}, {"name": "AL. CAFÉ TOSTADO Y MOLIDO UNO A 500 GR", "price": 18.409}, {"name": "AL. CAFÉ TOSTADO Y MOLIDO UNO A 250 GR", "price": 9.545}, {"name": "AL. CAFÉ TOSTADO Y MOLIDO UNO A 125 GR", "price": 5.0}, {"name": "AL. CAFÉ TOSTADO Y MOLIDO UNO A  2500 GR", "price": 97.955}, {"name": "AL. CAFÉ TOSTADO EN GRANO EXCELSO 2500 GR", "price": 136.364}, {"name": "AL. CAFÉ TOSTADO EN GRANO EXCELSO 500 GR", "price": 34.091}, {"name": "AL. CAFÉ TOSTADO MOLIDO EXCELSO 500 GR", "price": 3.409}, {"name": "AL. CAFÉ TOSTADO CONSUMO GRANO GRANEL", "price": 25.0}, {"name": "AL. CAFÉ TOSTADO MOLIDO AL GRANEL", "price": 18.75}, {"name": "AL. TÉ CHAI LATTE DOYPACK 380 GR", "price": 28.097}, {"name": "B. PAPEL PARA CUBIERTOS UNIBOL", "price": 20.407}, {"name": "B. PAPEL PAN BAGUETTE IMPRESA UNIBOL", "price": 14.62}, {"name": "B.PAPEL KRAFT  1/2 LB 100*100", "price": 12.38}, {"name": "B.PAPEL KRAFT 1 LB 80*100", "price": 15.106}, {"name": "B.PAPEL KRAFT 2 LB 60*100", "price": 20.141}, {"name": "B.PAPEL KRAFT 3 LB 50*100", "price": 24.54}, {"name": "B.PAPEL KRAPF 4 LB 40*100", "price": 30.868}, {"name": "B.PAPEL KRAFT 6 LB 30*100", "price": 41.775}, {"name": "B.PAPEL KRAFT 12 LB 20* 100", "price": 61.413}, {"name": "B.PAPEL KRAFT 6 LB FONDO CUADRADO", "price": 10.32}, {"name": "B.PAPEL KRAFT 12 LB FONDO CUADRADO", "price": 15.153}, {"name": "B. PAPEL DOMICILIOS PREMIUM REF BIO 35", "price": 27.728}, {"name": "B. PAPEL DOMICILIOS PREMIUM REF BIO 60", "price": 31.997}, {"name": "B. PAPEL DOMICILIOS MANIGUETA # 30 (25+12x32)cm", "price": 36.848}, {"name": "B. PAPEL DOMICILIOS MANIGUETA # 35 (25,5+17x35)cm", "price": 38.681}, {"name": "B. PAPEL DOMICILIOS MANIGUETA # 40 (33+17x33)cm", "price": 43.139}, {"name": "B. PAPEL DOMICILIOS MANIGUETA # 60 (30+18x42,5)", "price": 41.65}, {"name": "B. PAPEL DOMICILIOS MANIGUETA # 65 (30+23x40,5)cm", "price": 47.604}, {"name": "B. PAPEL DOMICILIOS MANIGUETA # 75 (36+25x41,5)cm", "price": 39.573}, {"name": "BANDEJA ICOPOR No 1 X 500U", "price": 47.931}, {"name": "BANDEJA ICOPOR No 3  X 500U", "price": 60.988}, {"name": "BANDEJA ICOPOR No 7  X 500U", "price": 91.068}, {"name": "BANDEJA ICOPOR No 17  X 500U", "price": 74.375}, {"name": "BOLSA ALUMINIO P-25", "price": 4.236}, {"name": "BOLSA ALUMINIO R-17   (15x15) cm", "price": 1.778}, {"name": "BOLSA ALUMINIO R-19   (17,5x20) cm", "price": 2.854}, {"name": "BOLSA ALUMINIO R-21   (17,5x25) cm", "price": 3.569}, {"name": "BOLSA ALUMINIO R-23   (20x25) cm", "price": 3.847}, {"name": "BOLSA ALUMINIO R-25   (22,5x30) cm", "price": 5.583}, {"name": "BOLSA ALUMINIO R-35   (28x35,5)cm", "price": 7.924}, {"name": "BOLSA BASURA PAPELERA NEGRA 16 X 24", "price": 1.111}, {"name": "BOLSA BASURA PAPELERA COLORES y BLANCA 16 X 24", "price": 1.319}, {"name": "BOLSA BASURA NEGRA PEQUEÑA 22x30", "price": 1.667}, {"name": "BOLSA BASURA BLANCA PEQUEÑA 22x30", "price": 2.639}, {"name": "BOLSA BASURA NEGRA MEDIANA 26X36", "price": 1.667}, {"name": "BOLSA BASURA NEGRA MEDIANA 28X39", "price": 2.083}, {"name": "BOLSA BASURA BLANCA MEDIANA 28X39", "price": 2.847}, {"name": "BOLSA BASURA NEGRA GRANDE 32X42", "price": 3.125}, {"name": "BOLSA BASURA NEGRA JUMBO 39X50", "price": 5.833}, {"name": "BOLSA BASURA 26 X 36 BLANCA", "price": 2.639}, {"name": "BOLSA BASURA 26 X 36 GRIS -VDE- ROJA- AZUL", "price": 2.639}, {"name": "BOLSA BASURA 32 X 44 BLANCA", "price": 4.375}, {"name": "BOLSA BASURA 32 X 44 GRIS -VDE- ROJA- AZUL", "price": 4.375}, {"name": "BOLSA BASURA JUMB 39X50 GRIS -VDE- ROJ- AZU - BCA", "price": 6.25}, {"name": "BOLSA BASURA DE COLORES Y BLANCA X KILO", "price": 9.722}, {"name": "BOLSA BASURA NEGRA EN PQTS X KILO", "price": 7.222}, {"name": "BOLSA BASURA NEGR AL GRANEL X KILO", "price": 6.806}, {"name": "BOLSA BASURA NEGRA EN ROLLO PRECORTE", "price": 7.917}, {"name": "BOLSA BASURA BLANCA Y COLOR ROLLO PRECOR", "price": 9.722}, {"name": "BOLSA MANIJA BIODEGR 1.5 KG BCA -RAY-NEGR-BEIG", "price": 2.264}, {"name": "BOLSA MANIJA BIODEGR 2 KG BCA -RAY-NEGR-BEIG", "price": 2.764}, {"name": "BOLSA MANIJA BIODEGR 3 KG BCA -RAY-NEGR-BEIG", "price": 3.292}, {"name": "BOLSA MANIJA BIODEGR 5 KG BCA -RAY-NEGR-BEIG", "price": 4.688}, {"name": "BOLSA MANIJA BIODEGR 10 KG BCA -RAY-NEGR-BEIG", "price": 6.215}, {"name": "BOLSA MANIJA BIODEGR 15 KG BCA -RAY-NEGR-BEIG", "price": 7.326}, {"name": "BOLSA MANIJA BIODEGR 20 KG BCA -RAY-NEGR-BEIG", "price": 9.389}, {"name": "BOLSA MANIJA BIODEGR 25 KG BCA -RAY-NEGR-BEIG", "price": 11.146}, {"name": "BOLSA MANIJA BIODEGR 30 KG BCA-NEGR-BEIG", "price": 16.681}, {"name": "BOLSA TRANSPARENTE PE  3X10 CUBIERTOS", "price": 1.042}, {"name": "BOLSA TRANSPARENTE PE  4X8 = 1/2 LB", "price": 1.042}, {"name": "BOLSA TRANSPARENTE PE  3 1/2 X 16 FRUVER", "price": 2.153}, {"name": "BOLSA TRANSPARENTE PE  4 X 16 FRUVER", "price": 2.222}, {"name": "BOLSA TRANSPARENTE PE  4 1/2 X 16 FRUVER", "price": 2.361}, {"name": "BOLSA TRANSPARENTE PE  5 X 16 FRUVER", "price": 2.5}, {"name": "BOLSA TRANSPARENTE PE  4X18 FRUVER", "price": 2.5}, {"name": "BOLSA TRANSPARENTE PE  5X9 = 1 LB", "price": 1.667}, {"name": "BOLSA TRANSPARENTE PE  5X18 = FRUTAS", "price": 3.194}, {"name": "BOLSA TRANSPARENTE PE  6X11 = 2 LB", "price": 2.292}, {"name": "BOLSA TRANSPARENTE PE  6X16", "price": 0.0}, {"name": "BOLSA TRANSPARENTE PE  7X14", "price": 0.0}, {"name": "BOLSA TRANSPARENTE PE  8X12 = 4 LB", "price": 3.611}, {"name": "BOLSA TRANSPARENTE PE  9X14 = 6 LB", "price": 4.375}, {"name": "BOLSA TRANSPARENTE PE  10X16 = 8 LB", "price": 5.208}, {"name": "BOLSA TRANSPARENTE PE  12X16 = 8 - 10 LB", "price": 6.25}, {"name": "BOLSA TRANSPARENTE PE  12X18", "price": 7.639}, {"name": "BOLSA TRANSPARENTE PE  14X20 DELGADA = 12 LB", "price": 11.806}, {"name": "BOLSA TRANSPARENTE PE  14X20 GRUESA", "price": 22.708}, {"name": "BOLSA TRANSPARENTE PE  16X24 DELGADA = 20 LB", "price": 13.194}, {"name": "BOLSA TRANSPARENTE PE  16X24 GRUESA = 25 LB", "price": 34.722}, {"name": "BOLSA PE TRANSPARENTE POR KG", "price": 12.5}, {"name": "BOLSA LECHOSA EMPACADA POR KG", "price": 13.194}, {"name": "BOLSA TRANSP PERFORADA PARA FRUVER 4X18", "price": 2.361}, {"name": "BOLSA TRANSP PERFORADA PARA FRUVER 5X18", "price": 2.917}, {"name": "BOLSA TRANSP PERFORADA PARA FRUVER 6X18", "price": 3.403}, {"name": "BOLSA TRANSP PERFORADA PARA FRUVER 7X18", "price": 3.958}, {"name": "BOLSA TRANSP PERFORADA PARA FRUVER X KG", "price": 13.611}, {"name": "BOLSA RESELLABLE ZIPLOC 14 X 14", "price": 6.944}, {"name": "BOLSA RESELLABLE ZIPLOC 18 X 14", "price": 8.333}, {"name": "BOLSA RESELLABLE ZIPLOC 22 X 14", "price": 9.375}, {"name": "BOLSA RESELLABLE ZIPLOC 22 X 18", "price": 12.222}, {"name": "BOLSA RESELLABLE ZIPLOC 24 X 20", "price": 15.972}, {"name": "BOLSA PE LECHOSA 4X8", "price": 764.0}, {"name": "BOLSA PE LECHOSA 5X9", "price": 903.0}, {"name": "BOLSA PE LECHOSA 7X10", "price": 1.472}, {"name": "BOLSA PE LECHOSA 8X12", "price": 1.806}, {"name": "BOLSA PE LECHOSA 9X14", "price": 2.639}, {"name": "BOLSA PE LECHOSA 10X16", "price": 2.917}, {"name": "BOLSA PRECORTE BCO LECHOSO ROLLO 7X10", "price": 10.0}, {"name": "BOLSA PRECORTE BCO LECHOSO ROLLO 8X12", "price": 10.0}, {"name": "BOLSA PRECORTE BCO LECHOSO ROLLO 9X14", "price": 10.0}, {"name": "BOLSA PRECORTE BCO LECHOSO ROLLO 10X16", "price": 10.0}, {"name": "BOLSA PRECORTE BCO LECHOSO ROLLO 12X18", "price": 10.0}, {"name": "BOLSA PRECORTE SP EN ROLLO 7X10", "price": 9.861}, {"name": "BOLSA PRECORTE SP EN ROLLO 9X14", "price": 9.861}, {"name": "BOLSA PRECORTE SP EN ROLLO 10X16", "price": 9.861}, {"name": "BOLSA PRECORTE SP EN ROLLO 12X18", "price": 9.861}, {"name": "BOLSA PRECORTE SP EN ROLLO 20X30", "price": 9.861}, {"name": "BOLSA PRECORTE PE TRANSP RECUP B 8X12", "price": 10.139}, {"name": "BOLSA PRECORTE PE TRANSP RECUP B 9X14", "price": 10.139}, {"name": "BOLSA PRECORTE PE TRANSP RECUP B 10X16", "price": 10.139}, {"name": "BOLSA PRECORTE PE TRANSP RECUP B 14X20", "price": 10.139}, {"name": "BOLSA PRECORTE PE TRANSP RECUP B 16X24", "price": 10.139}, {"name": "BOMBILLO LED 5 W STARLITE", "price": 13.785}, {"name": "BOMBILLO LED 7 W STARLITE", "price": 13.208}, {"name": "BOMBILLO LED 9 W STARLITE", "price": 29.306}, {"name": "BOMBILLO LED 12 W STARLITE", "price": 43.556}, {"name": "BOMBILLO LED 15 W STARLITE", "price": 53.847}, {"name": "CABUYA O HILO PARA AMARRAR x 1500 MTS", "price": 18.542}, {"name": "CEPILLO DE MANO T. PLANCHITA ECONÓMICO", "price": 2.315}, {"name": "CEPILLO DE MANO T. PLANCHITA RD", "price": 3.819}, {"name": "CEPILLO DE PISO", "price": 6.944}, {"name": "CEPILLO LAVA CARRO RD", "price": 15.625}, {"name": "CHUPA ECONÓMICA", "price": 3.819}, {"name": "CHUPA RD", "price": 5.208}, {"name": "CHURRUSCO PARA SANITARIO ECONÓMICO", "price": 4.861}, {"name": "CHURRUSCO PARA SANITARIO PLUS", "price": 5.324}, {"name": "CINTA ADHESIVA TRANSP 48 MM X 50 M AMAR - VERD", "price": 15.458}, {"name": "CINTA ADHESIVA TRANSP 48 MM X 100 M AMAR - VERD", "price": 28.333}, {"name": "CINTA ADHESIVA TRANSP 48 MM X 200 M AMAR - VERD", "price": 56.667}, {"name": "CINTA DE ENMASCARAR 24 MM X 30 M", "price": 39.0}, {"name": "CONTENEDOR ICOP. DARNEL 8 OZ  T.PLAST", "price": 12.448}, {"name": "CONTENEDOR ICOP. DARNEL  12 OZ T. PLAST", "price": 17.514}, {"name": "CONTENEDOR ICOP. DARNEL 16 OZ  T.PLAST", "price": 20.629}, {"name": "CONTENEDOR ICOP. DARNEL 16 OZ  T.ICOP", "price": 20.629}, {"name": "CONTENEDOR ICOP. DARNEL  24 OZ T. PLAST", "price": 24.46}, {"name": "CONTENEDOR ICOP. DARNEL 24 OZ  T. ICOP", "price": 24.468}, {"name": "CONTENEDOR ICOP. WAU 16 OZ  T.ICOP CJA X 400 U", "price": 13.086}, {"name": "CONTENEDOR ICOP. WAU 24 OZ  T.ICOP CJA X 300 U", "price": 11.99}, {"name": "CONTENEDOR TRANSPARENTE DELI OPAL 16 OZ  CJA X 225 U", "price": 18.131}, {"name": "CONTENEDOR TRANSPARENTE DELI OPAL 24 OZ  CJA X 225 U", "price": 23.744}, {"name": "CONTENEDOR TRANSPARENTE ACMELEON 16 OZ  CJA X 320 U", "price": 13.014}, {"name": "CONTENEDOR TRANSPARENTE ACMELEON 24 OZ  CJA X 320 U", "price": 14.386}, {"name": "COPA 1/2 ONZ TRANSP ACMELEON", "price": 2.253}, {"name": "COPA 1 OZ OPAL AGUARDIENTERA LÌDER", "price": 1.663}, {"name": "COPA 1 OZ  OPAL ACMELEON", "price": 2.286}, {"name": "COPA 1,5 TRANSP ACMELEON", "price": 2.922}, {"name": "COPA 2 TRANSP ACMELEON", "price": 2.971}, {"name": "COPA FLAUTA", "price": 12.778}, {"name": "CUBIERT CUCHARA SOPERA HONDA CUBI X 100", "price": 3.528}, {"name": "CUBIERT CUCHARA SOPERA PANDA CUBI X 100", "price": 3.472}, {"name": "CUBIERT CUCHILLO CUBI X 100", "price": 3.528}, {"name": "CUBIERT TENEDOR DURO CUBIX 100", "price": 3.528}, {"name": "CUBIERT CUCHARA CUDECOL X 100", "price": 3.694}, {"name": "CUBIERT CUCHILLO CUDECOL X 100", "price": 3.694}, {"name": "CUBIERT TENEDOR CUDECOLX 100", "price": 3.694}, {"name": "CUBIERT CUCHARA Colind  X 100", "price": 3.528}, {"name": "CUBIERT CUCHILLO Colind X 100", "price": 3.528}, {"name": "CUBIERT TENEDOR ColindX 100", "price": 3.528}, {"name": "CUBIERT CUCHARITA X 100", "price": 2.444}, {"name": "CUBIERT TENEDORCITO X 100", "price": 2.444}, {"name": "CUBIERT CUCHARA GDE X 20", "price": 1.075}, {"name": "CUBIERT CUCHILLO GDE X 20", "price": 1.075}, {"name": "CUBIERT TENEDOR GDE X 20", "price": 1.075}, {"name": "CUBIERTO CUCHARITA X 20", "price": 639.0}, {"name": "CUBIERT TENEDORCITO X 20", "price": 639.0}, {"name": "DELANTAL PLÁSTICO PE BCO", "price": 5.833}, {"name": "ESPONJILLA MULTIUSOS ACERADA PARRILLERA", "price": 1.538}, {"name": "ESPONJILLA  MULTIUSOS: COLORES Y ORO - PLATA", "price": 667.0}, {"name": "ESPONJILLA ACERO INOXIDABL ESPIRAL  MATRIX X 12 U", "price": 506.0}, {"name": "ESPONJILLA DOBLE USO ESPUMA - ABRASIVO", "price": 393.0}, {"name": "ESPONJILLA ABRASIVA VERDE TIPO SABRA", "price": 264.0}, {"name": "ESCOBA ZULIA ECONÓMICA; SUAVE Y DURA", "price": 6.019}, {"name": "ESCOBA SUPERIOR, SUAVE Y DURA", "price": 6.481}, {"name": "ESCOBA ZC SUAVE Y DURA", "price": 7.755}, {"name": "ESCOBA WM SUAVE Y DURA", "price": 8.681}, {"name": "ESCOBA ZULIA - ZULTANA SUAVE----", "price": 8.565}, {"name": "ESCOBA SUPERDANA SUAVE", "price": 10.301}, {"name": "ESCOBA ZAMORA", "price": 10.417}, {"name": "ESCURRIDOR Ó ARAGÁN 40 cm", "price": 8.797}, {"name": "ENCENDEDOR BENGALA TIPO RASTRILLO", "price": 17.778}, {"name": "ENCENDEDOR BENGALA TIPO RASTRILLO DISEÑOS", "price": 20.726}, {"name": "FÓSFORO BENGALA CERILLA PEQUEÑO DISPLAY 10 U", "price": 21.528}, {"name": "FÓSFORO BENGALA CERILLA DISPLAY 2 U", "price": 28.264}, {"name": "FÓSFORO BENGALA MADERA DISPLAY 2 U", "price": 28.431}, {"name": "FILTRO PARA CAFÉ PAPEL melitta CÓNICO # 2", "price": 6.546}, {"name": "FILTRO PARA CAFÉ PAPEL malitta CÓNICO # 4", "price": 7.868}, {"name": "FILTRO PARA CAFÉ PAPEL melitta CANASTA", "price": 13.222}, {"name": "GORRO TIPO ORUGA PQT X 100 UND HOUSE", "price": 12.615}, {"name": "GORRO MALLA INVISIBLE PARA EL CABELLO", "price": 30.769}, {"name": "GUANTE MANIPULAC  PE BAJA ARAPLAST", "price": 2.639}, {"name": "GTE DOMÉSTICO C. 20 AMAR-ROJ-AZUL VERDE LATEXQUIM", "price": 4.157}, {"name": "GTE DOMÉSTICO C.14 ECONÓ AMARARILLO - NEGRO", "price": 2.665}, {"name": "GTE NEGRO C. 25 LATEXQUIM", "price": 4.238}, {"name": "GTE NEGRO C. 35 LATEXQUIM", "price": 6.063}, {"name": "GTE NEGRO FORTEX C. 25", "price": 4.792}, {"name": "GTE NEGRO FORTEX C. 35", "price": 5.847}, {"name": "GUANTE NITRILO AZUL TS TM TL", "price": 23.611}, {"name": "GUANTE NITRILO NEGRO TS TM TL", "price": 23.611}, {"name": "GUANTE NITRILO HD C.12 AZUL TS TM TL", "price": 40.278}, {"name": "GUANTE NITRILO HD C.12 NEGRO TS TM TL", "price": 40.278}, {"name": "GUANTE CAUCHO SUPERFLEX C. 11 TS TM TL AZUL Y NEGRO", "price": 44.625}, {"name": "JABÓN EN POLVO TIPO AK", "price": 5.0}, {"name": "LIMPIADOR DE VIDRIOS CON MANGO CORTO", "price": 5.556}, {"name": "MEZCLADOR  BAMBÚ REDONDO FESTIVAL 11 CM", "price": 4.382}, {"name": "MEZCLADORES  PALITOS MADERA FESTIVAL 11 CM", "price": 4.46}, {"name": "MEZCLADORES PALITOS MADERA FESTIVAL  14 CM", "price": 5.042}, {"name": "MEZCLADOR PLÁSTICO BIODEGRADABLE", "price": 1.667}, {"name": "MOLDE LAGSAÑA JUNIOR 8 OZ EMP X 20  =    236 ML", "price": 4.566}, {"name": "MOLDE LAGSAÑA NORMAL 16 OZ  EMP X 20  =    474 ML", "price": 5.566}, {"name": "MOLDE ESPAGUETTI 24 OZ EMPX 20  =    711 ML", "price": 7.94}, {"name": "MOLDE ALUMINIO 64 OZ EMP X 20    =     1896 ML", "price": 30.163}, {"name": "MOLDE ALUMINIO 104 OZ EMP X 2O  =    3081 ML", "price": 39.236}, {"name": "TAPA MOLDE LAGSAÑA 16 OZ TRANSPARENTE AL GRANEL", "price": 289.0}, {"name": "OXÍGENO ACTIVO HYH", "price": 5.147}, {"name": "OXÍGENO ACTIVO HYH", "price": 9.632}, {"name": "OXÍGENO ACTIVO PREMIUM HYH", "price": 10.221}, {"name": "PASTILLAS DE CLORO 20 GR HYH", "price": 6.618}, {"name": "PASTILLAS DE CLORO 20 GR HYH", "price": 12.794}, {"name": "P.ALUMINIO 7MT EN CAJITA BLUE", "price": 3.334}, {"name": "P.ALUMINIO 7MT EN ROLLO BLUE", "price": 2.431}, {"name": "P.ALUMINIO 16MT EN CAJITA BLUE", "price": 5.514}, {"name": "P.ALUMINIO 16MT EN ROLLO BLUE", "price": 4.549}, {"name": "P.ALUMINIO 40MT EN CAJITA BLUE", "price": 11.736}, {"name": "P.ALUMINIO 40MT EN ROLLO BLUE", "price": 10.653}, {"name": "P.ALUMINIO 100 MT EN CAJA BLUE", "price": 27.25}, {"name": "P.ALUMINIO 300MT EN CAJA BLUE", "price": 78.333}, {"name": "P.ALUMINIO 300MT EN CAJA VIMOTT", "price": 79.167}, {"name": "P.ALUMINIO 300MT EN CAJA REPUESTO VIMOTT", "price": 77.083}, {"name": "P. ALMINIO 100 MT SALID", "price": 26.389}, {"name": "P. ALMINIO 300 MT SALID", "price": 76.25}, {"name": "PAPEL SULFITO PARA ENVOLVER", "price": 9.195}, {"name": "PAPEL PARAFINADO EN ROLLO 20 M", "price": 5.556}, {"name": "PAPEL PARAFINADO EN ROLLO 50 M", "price": 10.417}, {"name": "PAPEL PARAFINADO EN ROLLO 100 M", "price": 17.222}, {"name": "PAPEL PARAFINADO LÁMINA 30X30", "price": 9.722}, {"name": "PAPEL PARAFINADO LÁMINA 30X40", "price": 11.111}, {"name": "PAPEL PLASTIFICAD OXOBIOD CÓMID RÁPIDAS 30X30", "price": 9.028}, {"name": "PAPEL PLASTIFICAD OXOBIOD CÓMID RÁPIDAS 30X40", "price": 9.722}, {"name": "PAPEL HIG JUMBO NUBE BCO 2H 250 M", "price": 24.599}, {"name": "PAPEL HIG JUMBO MIO BCO 2H 250 M", "price": 11.711}, {"name": "PAPEL HIG MAX NUBE ECONOM 2H (27 M) EMP IND", "price": 16.9}, {"name": "PAPEL HIG MEGA NUBE 3H  48 R (30 M) EMP. IND.", "price": 23.558}, {"name": "PAPEL HIG MEGA NUBE 3H 12 PQT X 4 R (30 M)", "price": 7.61}, {"name": "PAPEL HIG NUBE BÁSICO 2H 12 PQT X 4 R (19,2 M)", "price": 3.435}, {"name": "PAPEL HIG MEGA NUBE 3H 4 PQT X 12 R (30 M)", "price": 19.212}, {"name": "PAPEL HIG MAX NUBE 3H 4 PQT X 12 R (22 M) ECONÓ", "price": 13.71}, {"name": "PAPEL HIG MAX NUBE 3H 4 PQT X 18 R (22M)", "price": 20.643}, {"name": "PALILLOS LARGOS TIPO HAMBURGUESA  FESTIVAL", "price": 13.5}, {"name": "PALILLO REDONDO DE DIENTES PANDA", "price": 7.083}, {"name": "PALILLO REDONDO EMP INDIVIDUAL FESTIVAL DISPENSADOR", "price": 6.783}, {"name": "PALOS DE ESCOBA DE MADERA 1,2 M", "price": 2.571}, {"name": "PALOS DE ESCOBA METÁLICO FORRADO 1,2 M", "price": 6.5}, {"name": "PALOS DE ESCOBA METÁLICO FORRADO 1,4 M", "price": 9.786}, {"name": "PALOS LARGO PARA PALETA X 1000 U PANDA", "price": 15.764}, {"name": "PALOS CORTO PARA PALETA X 1000 U PANDA", "price": 13.317}, {"name": "PALOS CORTO PARA PALETA X 100 U PANDA", "price": 1.722}, {"name": "PALO PINCHO 15 CM X 100 U FESTIVAL", "price": 1.752}, {"name": "PALO PINCHO 20*100 FESTIVAL", "price": 1.604}, {"name": "PALO PINCHO 25 CM X 100 U FESTIVAL", "price": 1.833}, {"name": "PALO PINCHO 30*100", "price": 2.153}, {"name": "PINCHUZO (GRUESO) 25 CM X 100 U FESTIVAL", "price": 2.839}, {"name": "PINCHUZO (GRUESO) 30 CM X 100 U FESTIVAL", "price": 3.4}, {"name": "PILAS AA POWER ONE", "price": 4.678}, {"name": "PILAS AAA POWER ONE", "price": 4.678}, {"name": "PITILLO EMPAQ INDIV 0,47 g X 500 U 25cm", "price": 10.389}, {"name": "PLATO ICOPOR 12 CM", "price": 1.786}, {"name": "PLATO ICOPOR 15.5  CM", "price": 2.955}, {"name": "PLATO ICOPOR 18", "price": 4.021}, {"name": "PLATO ICOPOR 20", "price": 5.332}, {"name": "PLATO ICOPOR 23", "price": 6.833}, {"name": "PLATO ICOPOR 26", "price": 9.366}, {"name": "PLATO ICOPOR HONDO 5 OZ", "price": 1.786}, {"name": "PLATO ICOPOR HONDO 12 OZ", "price": 3.96}, {"name": "PLATO ICOPOR HONDO 16 OZ", "price": 4.632}, {"name": "PLATO ICOPOR HONDO 25 OZ", "price": 6.69}, {"name": "PLATO ICOPOR HONDO 30 OZ", "price": 8.361}, {"name": "PORTA HAMBURGUESA IMPRESO GRUESO", "price": 7.945}, {"name": "PORTA PERRO IMPRESO GRUESO", "price": 7.945}, {"name": "PORTA PIZZA  IMPRESO GRUESO CARA BLANCA", "price": 8.219}, {"name": "PORTA PIZZA  IMPRESO GRUESO CARA KRAFP PLASTIFICADO", "price": 9.589}, {"name": "PORTA HAMBURGUESA GRUESO COD BARRAS PQT X 100", "price": 8.151}, {"name": "PORTA PERRO IMPRESO GRUESO COD BARRAS PQT X 100", "price": 8.151}, {"name": "PORTA PIZZA  IMPRESO GRUESO COD BARRAS PQT X 100", "price": 8.425}, {"name": "PORTA AREPA", "price": 7.808}, {"name": "PORTA AREPA COD BARRAS PQT X 100", "price": 8.014}, {"name": "PORTACOMIDA ICOPOR C-1 X 200 U WAU", "price": 55.6}, {"name": "PORTACOMIDA ICOPOR C-1 X 20 U DARNEL", "price": 10.171}, {"name": "PORTACOMIDA ICOPOR DARNEL C-1  X 500", "price": 135.343}, {"name": "PORTACOMIDA J-1 ICOPOR  *200", "price": 89.171}, {"name": "PORTACOMIDA J-1 ICOPOR  *200 WAU", "price": 89.171}, {"name": "PORTACOMIDA J-2 ICOPOR *200", "price": 89.171}, {"name": "PORTACOMIDA P-I ICOPOR  DARNEL* 200", "price": 98.691}, {"name": "PORTACOMIDA P-I ICOPOR WAU * 200", "price": 100.133}, {"name": "PORTACOMIDA P-3 ICOPOR * 200", "price": 98.691}, {"name": "PORTACOMIDA J -1 X 20", "price": 10.473}, {"name": "PORTACOMIDA J -2 X 20", "price": 10.473}, {"name": "PORTACOMIDA P -1 X 20", "price": 10.678}, {"name": "PORTACOMIDA P -3 X 20", "price": 11.218}, {"name": "RECOGEDOR CON BANDA PLÁSTICA ECONÓMICO", "price": 4.11}, {"name": "RECOGEDOR CON BANDA PLÁSTICA PLUS", "price": 5.137}, {"name": "SERVILLETA NUBE CORTADA PQT X 300 U", "price": 4.456}, {"name": "SERVILLETA MIA CORTADA PQT X 200 U", "price": 2.76}, {"name": "SERVILLETA NUBE CORTAD PQT X 150 U DISPENSAD", "price": 2.318}, {"name": "SERVILLETA NUBE PQT X 100 U B. DISPENSADORA", "price": 1.988}, {"name": "SERVILLETA NUBE CAFETERIA PQT X 100 U", "price": 2.533}, {"name": "SERVILLETA NUBE DOBLADA X 4 PQT X 100 U", "price": 2.965}, {"name": "SERVILLETA SOFTEX NATURAL D4 X 100 U", "price": 3.719}, {"name": "TAPA  1/2 - 1 OZ ACMELEON", "price": 3.422}, {"name": "TAPA 1,5 - 2 - 3 OZ ACMELEON", "price": 4.963}, {"name": "TAPA LISA 9 - 12 OZ ACMELEON", "price": 5.037}, {"name": "TAPA PITILLERA  9 - 12 OZ ACMELEON", "price": 5.375}, {"name": "TAPA 3,5 A 7 WAU", "price": 4.338}, {"name": "TAPA VASO 9 A 12 WAU", "price": 5.56}, {"name": "TAPA VASO 13 A 16 WAU", "price": 7.027}, {"name": "TAPA VASO 6 OZ DARNEL", "price": 17.247}, {"name": "TAPA VASO 8 OZ DARNEL", "price": 15.926}, {"name": "TAPA PARA VASO DE CARTÓN 6 OZ", "price": 6.164}, {"name": "TAPA PARA VASO DE CARTÓN 9 OZ", "price": 6.164}, {"name": "TAPABOCA EMPAQ INDIV 50 U AZUL - BLANCO", "price": 8.857}, {"name": "TAPABOCA EMPAQ INDIV 50 U NEGRO", "price": 11.143}, {"name": "TOALLA ABSORB MULTIU REUTILIZAB SCOTT", "price": 10.97}, {"name": "TOALLA ABSORB MULTIU REUTILIZAB E BRAND", "price": 11.918}, {"name": "TOALLA ABSORB MULTIU REUTILIZAB NUBE", "price": 8.385}, {"name": "TOALLA COCINA PAPEL ABSORBEN 2H X 150 H NUBE E I", "price": 5.624}, {"name": "TOALLA COCINA PAPEL ABSORBEN 3H X 120 H NUBE E I", "price": 9.188}, {"name": "TOALLA COCINA PAPEL ABSORBEN 2H X 50 H BIO NATUR E I", "price": 1.841}, {"name": "TOALLA COCINA PAPEL ABSORBEN 2H X 50 H NUBE E I", "price": 2.419}, {"name": "TOALLA COCINA PAPEL ABSORBEN 2H X 50 H NUBE X 3 R", "price": 7.712}, {"name": "TOALLA MANOS Z BLANCA X 24 PQT X 150 H  NUBE", "price": 7.168}, {"name": "TOALLA MANOS Z NATURAL X 24 PQT X 150 H  NUBE", "price": 6.437}, {"name": "TOALLA MANOS V NATURAL X 24 PQT X 150 H  MIA", "price": 5.281}, {"name": "TOALLA MANOS ROLLO CENTER PULL NAT X 100 M", "price": 38.822}, {"name": "TOALLA MANOS ROLLO MULTIPROPÓS NAT  X 100 M", "price": 42.147}, {"name": "TRAPEADOR REF 500", "price": 6.164}, {"name": "TRAPEADOR REF 800", "price": 7.078}, {"name": "TRAPEADOR REF 1000", "price": 8.219}, {"name": "TRAPEADOR REF 1200", "price": 10.16}, {"name": "VASO 3,3 COLOR MIX", "price": 1.532}, {"name": "VASO 3.5 TRANSP WAU", "price": 2.683}, {"name": "VASO 5 OZ TRANSP WAU", "price": 2.329}, {"name": "VASO 5 OZ BLANCO WAU", "price": 2.329}, {"name": "VASO 5 BLANCO MIX", "price": 2.055}, {"name": "VASO 5 BLANCO TUC", "price": 2.123}, {"name": "VASO 5 BLANCO VACAN", "price": 2.169}, {"name": "VASO 5 OZ COLERO BLANCO WAU", "price": 2.249}, {"name": "VASO 5 NEGRO DEL BUENO", "price": 1.781}, {"name": "VASO 5 NEGRO MIX", "price": 1.963}, {"name": "VASO 5 COLOR LÍDER", "price": 1.986}, {"name": "VASO 5 NEGRO ACMELEON", "price": 2.584}, {"name": "VASO 5,5 BICOLOR  ACMELEON", "price": 3.507}, {"name": "VASO 7 OZ BLANCO WAU", "price": 2.329}, {"name": "VASO 7 OZ BLANCO TUC", "price": 2.123}, {"name": "VASO 7 OZ TRANSP WAU", "price": 2.329}, {"name": "VASO 7 OZ TRANSP VACAN", "price": 2.169}, {"name": "VASO 7 OZ TRANSP TUC", "price": 2.123}, {"name": "VASO 7 OZ TRANSP SICODÉLICO", "price": 1.638}, {"name": "VASO 9 OZ TRANSP WAU", "price": 4.014}, {"name": "VASO 9 OZ TRANSP BINGO ACMELEON", "price": 5.494}, {"name": "VASO 9 OZ TRANSP VACAN", "price": 3.288}, {"name": "VASO 9 OZ TRANSP SICODÉLICO", "price": 2.853}, {"name": "VASO 10 OZ TRANSP WAU", "price": 4.452}, {"name": "VASO 10 OZ  TRANSP BINGO ACMELEON", "price": 5.922}, {"name": "VASO 12 OZ TRANSP WAU", "price": 5.466}, {"name": "VASO 12 OZ TRANSP BINGO ACMELEON", "price": 7.436}, {"name": "VASO 13 OZ TRANSP WAU", "price": 3.425}, {"name": "VASO 14 OZ TRANSP WAU", "price": 3.813}, {"name": "VASO 16 OZ TRASP WAU", "price": 4.221}, {"name": "VASO CARTÓN 4 OZ", "price": 3.63}, {"name": "VASO CARTÓN 5 OZ", "price": 4.178}, {"name": "VASO CARTÓN 6 OZ", "price": 4.315}, {"name": "VASO CARTÓN 7 OZ SALID", "price": 4.795}, {"name": "VASO CARTÓN 9 OZ  ALASKA", "price": 5.822}, {"name": "VASO CARTÓN 9 OZ JC JAZ", "price": 5.822}, {"name": "VASO CARTÓN 12 OZ HOUSE", "price": 10.959}, {"name": "VASO ICOPOR DARNEL 4 OZ  X 2000 U", "price": 4.188}, {"name": "VASO ICOPOR DARNEL 6 OZ  X 2000 U", "price": 4.237}, {"name": "VASO ICOPOR DARNEL 8 OZ  X 2000U", "price": 4.485}, {"name": "VASO WHISKY", "price": 9.931}, {"name": "VINIPEL 20 MTS", "price": 1.918}, {"name": "VINIPEL 50 MTS", "price": 2.877}, {"name": "VINIPEL 100 MTS", "price": 4.726}, {"name": "VINIPEL 200 MTS", "price": 8.767}, {"name": "VINIPEL 300 MTS", "price": 12.192}, {"name": "VINIPEL 500 MTS", "price": 17.808}, {"name": "VINIPEL VASO ANGOSTO 6 PULG X 100 M", "price": 2.808}, {"name": "VINIPEL VASO ANGOSTO 6 PULG X 200 M", "price": 4.932}, {"name": "VINIPEL VASO ANGOSTO 6 PULG X 300 M", "price": 8.904}, {"name": "VINIPEL VASO ANGOSTO 6 PULG X 500 M", "price": 10.548}, {"name": "VINIPEL FAMA TABACO X 6 KG ROLLO GRANDE", "price": 91.37}, {"name": "VINIPEL FAMA TABACO X 7 KG ROLLO GRANDE", "price": 106.438}, {"name": "VINIPEL FAMA ROSADO X 6 KG ROLLO GRANDE", "price": 91.37}, {"name": "VINIPEL FAMA ROSADO X 7 KG ROLLO GRANDE", "price": 106.438}, {"name": "VINIPEL NEGRO 50MT", "price": 2.877}, {"name": "VINIPEL NEGRO 100 MT", "price": 4.726}, {"name": "VINIPEL NEGRO 200 MTS", "price": 8.767}, {"name": "VINIPEL NEGRO 300 MTS", "price": 12.192}, {"name": "VINIPEL NEGRO 500 MTS", "price": 17.808}]
-    };
-
-    let activeCategory = null;
-    let activeSearch = "";
-
-    const homeSections = document.querySelectorAll(".home-section");
-    const categoryView = document.getElementById("categoryView");
-    const productsList = document.getElementById("productsList");
-    const categoryTitle = document.getElementById("categoryTitle");
-    const categoryTag = document.getElementById("categoryTag");
-    const categoryDescription = document.getElementById("categoryDescription");
-    const categoryBadge = document.getElementById("categoryBadge");
-    const backHomeBtn = document.getElementById("backHomeBtn");
-    const categoryButtons = document.querySelectorAll("[data-category]");
-    const homeLinks = document.querySelectorAll("[data-home-link]");
-    const mainWhatsappLink = document.getElementById("mainWhatsappLink");
-    const brandLink = document.getElementById("brandLink");
-    const searchInput = document.getElementById("searchInput");
-    const resultCount = document.getElementById("resultCount");
-    const emptyState = document.getElementById("emptyState");
-
-    function buildWhatsAppLink(message) {
-      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    }
-
-    function formatPrice(value) {
-      const n = Number(value);
-      if (!Number.isFinite(n)) return "$0";
-      return "$" + n.toFixed(3).replace(/\.0+$/, ".000");
-    }
-
-    function setupWhatsapp() {
-      mainWhatsappLink.href = buildWhatsAppLink("Hola, quiero información sobre sus productos");
-    }
-
-    function showHome(targetId = "inicio") {
-      activeCategory = null;
-      activeSearch = "";
-      searchInput.value = "";
-      categoryView.classList.add("hidden");
-      homeSections.forEach((section) => section.classList.remove("hidden"));
-
-      requestAnimationFrame(() => {
-        const target = document.getElementById(targetId);
-        if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    }
-
-    function productMatches(item, term) {
-      const text = [
-        item.name || "",
-        item.presentation || ""
-      ].join(" ").toLowerCase();
-      return text.includes(term.toLowerCase());
-    }
-
-    function renderActiveProducts() {
-      const list = products[activeCategory] || [];
-      const filtered = activeSearch
-        ? list.filter((item) => productMatches(item, activeSearch))
-        : list;
-
-      productsList.innerHTML = "";
-
-      if (filtered.length === 0) {
-        emptyState.classList.remove("hidden");
-      } else {
-        emptyState.classList.add("hidden");
-      }
-
-      filtered.forEach((item) => {
-        const row = document.createElement("article");
-        row.className = "product-row";
-
-        const meta = item.presentation
-          ? `<p>${item.presentation}</p>`
-          : "";
-
-        row.innerHTML = `
-          <div class="product-copy">
-            <h3>${item.name}</h3>
-            ${meta}
-          </div>
-          <strong>${formatPrice(item.price)}</strong>
-        `;
-        productsList.appendChild(row);
-      });
-
-      resultCount.textContent = `${filtered.length} producto(s)`;
-    }
-
-    function renderCategory(categoryKey) {
-      activeCategory = categoryKey;
-      activeSearch = "";
-
-      const info = categoryInfo[categoryKey];
-      categoryTitle.textContent = info.title;
-      categoryTag.textContent = info.tag;
-      categoryDescription.textContent = info.description;
-      categoryBadge.textContent = info.badge;
-      searchInput.value = "";
-
-      renderActiveProducts();
-
-      homeSections.forEach((section) => section.classList.add("hidden"));
-      categoryView.classList.remove("hidden");
-      categoryView.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-
-    categoryButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        renderCategory(button.dataset.category);
-      });
-    });
-
-    backHomeBtn.addEventListener("click", () => {
-      showHome("categorias");
-    });
-
-    homeLinks.forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        showHome(link.dataset.homeLink);
-      });
-    });
-
-    brandLink.addEventListener("click", (e) => {
-      e.preventDefault();
-      showHome("inicio");
-    });
-
-    searchInput.addEventListener("input", (e) => {
-      activeSearch = e.target.value.trim();
-      renderActiveProducts();
-    });
-
-    setupWhatsapp();
-  </script>
+  <script src="./app.js" defer></script>
 </body>
 </html>

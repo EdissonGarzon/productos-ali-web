@@ -1,0 +1,54 @@
+[
+  {
+    "key": "bogota-norte",
+    "label": "Bogotá norte",
+    "areas": [
+      "usaquén",
+      "suba",
+      "chapinero",
+      "engativá norte"
+    ],
+    "estimate": "Entrega estimada: mismo día o siguiente día hábil.",
+    "delivery_fee_note": "El valor de entrega depende del monto y la zona exacta."
+  },
+  {
+    "key": "bogota-centro",
+    "label": "Bogotá centro",
+    "areas": [
+      "teusaquillo",
+      "barrios unidos",
+      "mártires",
+      "candelaria",
+      "puente aranda"
+    ],
+    "estimate": "Entrega estimada: mismo día o siguiente día hábil.",
+    "delivery_fee_note": "El valor de entrega depende del monto y la zona exacta."
+  },
+  {
+    "key": "bogota-sur",
+    "label": "Bogotá sur",
+    "areas": [
+      "kennedy",
+      "bosa",
+      "tunjuelito",
+      "ciudad bolívar",
+      "rafael uribe"
+    ],
+    "estimate": "Entrega estimada: siguiente día hábil en la mayoría de casos.",
+    "delivery_fee_note": "El valor de entrega depende del monto y la zona exacta."
+  },
+  {
+    "key": "sabana",
+    "label": "Sabana y municipios cercanos",
+    "areas": [
+      "soacha",
+      "chia",
+      "mosquera",
+      "funza",
+      "madrid",
+      "cota"
+    ],
+    "estimate": "Entrega estimada: 1 a 2 días hábiles según ruta.",
+    "delivery_fee_note": "El valor de entrega depende del monto y la zona exacta."
+  }
+]
