@@ -1,9 +1,11 @@
+const BOT_BASE_URL = "https://productos-ali-bot.aliedpuenteslozano.workers.dev";
+
 const state = {
   products: [],
   zones: [],
   currentCategory: null,
   chatHistory: [],
-  apiEndpoint: "https://productos-ali-bot.aliedpuenteslozano.workers.dev/api/chat"
+  apiEndpoint: `${BOT_BASE_URL}/api/chat`
 };
 
 const categoryInfo = {
@@ -56,6 +58,11 @@ async function loadCatalog() {
     fetch("./products.json"),
     fetch("./zones.json")
   ]);
+
+  if (!productsRes.ok || !zonesRes.ok) {
+    throw new Error("No se pudieron cargar products.json o zones.json");
+  }
+
   state.products = await productsRes.json();
   state.zones = await zonesRes.json();
 }
@@ -63,6 +70,8 @@ async function loadCatalog() {
 function renderCategory(categoryKey, search = "") {
   state.currentCategory = categoryKey;
   const info = categoryInfo[categoryKey];
+  if (!info) return;
+
   const normalizedSearch = normalize(search);
 
   categoryTitle.textContent = info.title;
@@ -136,7 +145,7 @@ function toggleChat(forceOpen) {
   const shouldOpen = typeof forceOpen === "boolean" ? forceOpen : chatPanel.classList.contains("hidden");
   chatPanel.classList.toggle("hidden", !shouldOpen);
   if (shouldOpen) {
-    setTimeout(() => chatInput.focus(), 60);
+    setTimeout(() => chatInput?.focus(), 60);
     if (!state.chatHistory.length) {
       addAssistantMessage("Hola. Soy tu asistente virtual.\nPuedo ayudarte con productos, precios y un estimado de entrega por zona.");
     }
@@ -148,7 +157,7 @@ function addMessage(role, content, isTyping = false) {
   box.className = `message ${role}`;
   box.innerHTML = isTyping
     ? `<span class="typing"><span></span><span></span><span></span></span>`
-    : escapeHtml(content);
+    : escapeHtml(content).replace(/\n/g, "<br>");
   chatMessages.appendChild(box);
   chatMessages.scrollTop = chatMessages.scrollHeight;
   return box;
@@ -167,6 +176,7 @@ function addUserMessage(text) {
 function findProducts(query, limit = 6) {
   const q = normalize(query);
   if (!q) return [];
+
   return state.products
     .map((product) => {
       const haystack = normalize([product.name, product.presentation, product.category].join(" "));
@@ -184,63 +194,66 @@ function findProducts(query, limit = 6) {
 
 function matchZone(message) {
   const msg = normalize(message);
-  return state.zones.find((zone) => zone.areas.some((area) => msg.includes(normalize(area))) || msg.includes(normalize(zone.label)));
+  return state.zones.find(
+    (zone) => zone.areas.some((area) => msg.includes(normalize(area))) || msg.includes(normalize(zone.label))
+  );
 }
 
 function localAssistantFallback(message) {
   const msg = normalize(message);
 
   if (!msg) {
-    return "Cuéntame qué necesitas y te ayudo a ubicar el producto o la categoría.";
+    return "[LOCAL] Cuéntame qué necesitas y te ayudo a ubicar el producto o la categoría.";
   }
 
   if (/(hola|buenas|buenos dias|buenas tardes|buenas noches)/.test(msg)) {
-    return "Hola. Puedes preguntarme por detergentes líquidos, varios y desechables, precios o estimados de entrega.";
+    return "[LOCAL] Hola. Puedes preguntarme por detergentes líquidos, varios y desechables, precios o estimados de entrega.";
   }
 
   if (msg.includes("detergente") || msg.includes("blanqueador") || msg.includes("limpiador")) {
     const matches = state.products.filter((p) => p.category === "detergentes-liquidos").slice(0, 5);
     const lines = matches.map((p) => `• ${p.name}${p.presentation ? " — " + p.presentation : ""} — ${formatCop(p.price_cop_thousands)}`);
-    return `En detergentes líquidos manejamos referencias como estas:\n${lines.join("\n")}\n\nSi quieres, dime el nombre o la presentación y te busco algo más preciso.`;
+    return `[LOCAL] En detergentes líquidos manejamos referencias como estas:\n${lines.join("\n")}\n\nSi quieres, dime el nombre o la presentación y te busco algo más preciso.`;
   }
 
   if (msg.includes("desechable") || msg.includes("vaso") || msg.includes("icopor") || msg.includes("servilleta") || msg.includes("empaque")) {
     const matches = state.products.filter((p) => p.category === "varios-desechables").slice(0, 5);
     const lines = matches.map((p) => `• ${p.name} — ${formatCop(p.price_cop_thousands)}`);
-    return `En varios y desechables tengo estas referencias como ejemplo:\n${lines.join("\n")}\n\nSi buscas algo puntual, escríbeme el nombre o una palabra clave.`;
+    return `[LOCAL] En varios y desechables tengo estas referencias como ejemplo:\n${lines.join("\n")}\n\nSi buscas algo puntual, escríbeme el nombre o una palabra clave.`;
   }
 
   if (msg.includes("precio") || msg.includes("valor") || msg.includes("cuanto")) {
     const matches = findProducts(message);
     if (matches.length) {
       const lines = matches.map((p) => `• ${p.name}${p.presentation ? " — " + p.presentation : ""} — ${formatCop(p.price_cop_thousands)}`);
-      return `Encontré estas coincidencias:\n${lines.join("\n")}\n\nSi quieres, dime cuál te interesa y seguimos.`;
+      return `[LOCAL] Encontré estas coincidencias:\n${lines.join("\n")}\n\nSi quieres, dime cuál te interesa y seguimos.`;
     }
   }
 
   if (msg.includes("entrega") || msg.includes("domicilio") || msg.includes("barrio") || msg.includes("zona")) {
     const zone = matchZone(message);
     if (zone) {
-      return `${zone.label}: ${zone.estimate} ${zone.delivery_fee_note}`;
+      return `[LOCAL] ${zone.label}: ${zone.estimate} ${zone.delivery_fee_note}`;
     }
-    return "Puedo darte un estimado de entrega. Dime tu barrio, localidad o ciudad para orientarte mejor.";
+    return "[LOCAL] Puedo darte un estimado de entrega. Dime tu barrio, localidad o ciudad para orientarte mejor.";
   }
 
   if (msg.includes("cotizar") || msg.includes("cotizacion") || msg.includes("pedido")) {
-    return "Claro. Para una cotización preliminar necesito:\n• producto o productos\n• cantidad\n• zona o barrio\n\nEnvíame eso y te ayudo a organizarlo.";
+    return "[LOCAL] Claro. Para una cotización preliminar necesito:\n• producto o productos\n• cantidad\n• zona o barrio\n\nEnvíame eso y te ayudo a organizarlo.";
   }
 
   const matches = findProducts(message);
   if (matches.length) {
     const lines = matches.slice(0, 5).map((p) => `• ${p.name}${p.presentation ? " — " + p.presentation : ""} — ${formatCop(p.price_cop_thousands)}`);
-    return `Estas son las coincidencias más cercanas que encontré:\n${lines.join("\n")}`;
+    return `[LOCAL] Estas son las coincidencias más cercanas que encontré:\n${lines.join("\n")}`;
   }
 
-  return "Puedo ayudarte con productos, precios y entrega. Prueba algo como:\n• ¿Qué manejan en detergentes líquidos?\n• ¿Cuánto vale cierto producto?\n• Quiero cotizar un pedido.\n• Estoy en Kennedy, ¿qué tiempo de entrega hay?";
+  return "[LOCAL] Puedo ayudarte con productos, precios y entrega. Prueba algo como:\n• ¿Qué manejan en detergentes líquidos?\n• ¿Cuánto vale cierto producto?\n• Quiero cotizar un pedido.\n• Estoy en Kennedy, ¿qué tiempo de entrega hay?";
 }
 
 async function askAssistant(message) {
   const typing = addMessage("assistant", "", true);
+
   try {
     const response = await fetch(state.apiEndpoint, {
       method: "POST",
@@ -252,11 +265,20 @@ async function askAssistant(message) {
       })
     });
 
-    if (!response.ok) throw new Error("API unavailable");
+    if (!response.ok) {
+      throw new Error(`API unavailable (${response.status})`);
+    }
+
     const data = await response.json();
     typing.remove();
-    addAssistantMessage(data.reply || "No pude responder en este momento.");
+
+    const reply = typeof data.reply === "string" && data.reply.trim()
+      ? data.reply.trim()
+      : "[API] No pude responder en este momento.";
+
+    addAssistantMessage(reply.startsWith("[API]") || reply.startsWith("[LOCAL]") ? reply : `[API] ${reply}`);
   } catch (error) {
+    console.error("Fallo API, entra fallback local:", error);
     typing.remove();
     addAssistantMessage(localAssistantFallback(message));
   }
@@ -266,12 +288,12 @@ categoryButtons.forEach((button) => {
   button.addEventListener("click", () => renderCategory(button.dataset.category));
 });
 
-categorySearch.addEventListener("input", (event) => {
+categorySearch?.addEventListener("input", (event) => {
   if (state.currentCategory) renderCategory(state.currentCategory, event.target.value);
 });
 
-backHomeBtn.addEventListener("click", () => {
-  categorySearch.value = "";
+backHomeBtn?.addEventListener("click", () => {
+  if (categorySearch) categorySearch.value = "";
   showHome("categorias");
 });
 
@@ -279,25 +301,25 @@ homeLinkButtons.forEach((button) => {
   button.addEventListener("click", () => showHome(button.dataset.homeLink));
 });
 
-goHomeBtn.addEventListener("click", () => showHome("inicio"));
-
-assistantLauncher.addEventListener("click", () => toggleChat());
-chatCloseBtn.addEventListener("click", () => toggleChat(false));
-openBotBtnHero.addEventListener("click", () => toggleChat(true));
-openBotBtnCta.addEventListener("click", () => toggleChat(true));
+goHomeBtn?.addEventListener("click", () => showHome("inicio"));
+assistantLauncher?.addEventListener("click", () => toggleChat());
+chatCloseBtn?.addEventListener("click", () => toggleChat(false));
+openBotBtnHero?.addEventListener("click", () => toggleChat(true));
+openBotBtnCta?.addEventListener("click", () => toggleChat(true));
 
 quickButtons.forEach((button) => {
   button.addEventListener("click", async () => {
     const question = button.dataset.question;
+    if (!question) return;
     toggleChat(true);
     addUserMessage(question);
     await askAssistant(question);
   });
 });
 
-chatForm.addEventListener("submit", async (event) => {
+chatForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
-  const text = chatInput.value.trim();
+  const text = chatInput?.value.trim();
   if (!text) return;
   chatInput.value = "";
   toggleChat(true);
@@ -307,5 +329,7 @@ chatForm.addEventListener("submit", async (event) => {
 
 loadCatalog().catch((error) => {
   console.error("No se pudo cargar el catálogo", error);
-  addAssistantMessage("No pude cargar el catálogo inicial. Revisa los archivos products.json y zones.json.");
+  if (chatMessages) {
+    addAssistantMessage("[LOCAL] No pude cargar el catálogo inicial. Revisa los archivos products.json y zones.json.");
+  }
 });
