@@ -82,7 +82,7 @@
   {
     "name": "HIPOCLORITO 13%",
     "presentation": "3800 ML",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 11,
     "search_name": "hipoclorito 13"
@@ -90,7 +90,7 @@
   {
     "name": "HIPOCLORITO 13%",
     "presentation": "10 LT",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 12,
     "search_name": "hipoclorito 13"
@@ -98,7 +98,7 @@
   {
     "name": "HIPOCLORITO 13%",
     "presentation": "20 LT",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 13,
     "search_name": "hipoclorito 13"
@@ -298,7 +298,7 @@
   {
     "name": "DESENGRASANTE",
     "presentation": "500 ML T ROSCA",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 38,
     "search_name": "desengrasante"
@@ -306,7 +306,7 @@
   {
     "name": "HOGAR - ESPESO",
     "presentation": "500 ML DOSIFICADOR",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 39,
     "search_name": "hogar   espeso"
@@ -314,7 +314,7 @@
   {
     "name": "BLANCO",
     "presentation": "1000 ML DOSIFICADOR",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 40,
     "search_name": "blanco"
@@ -322,7 +322,7 @@
   {
     "name": "BLANCO",
     "presentation": "1000 ML T ROSCA",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 41,
     "search_name": "blanco"
@@ -330,7 +330,7 @@
   {
     "name": "BLANCO",
     "presentation": "2000 ML",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 42,
     "search_name": "blanco"
@@ -338,7 +338,7 @@
   {
     "name": "BLANCO",
     "presentation": "3750 ML",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 43,
     "search_name": "blanco"
@@ -346,7 +346,7 @@
   {
     "name": "BLANCO",
     "presentation": "20 LT",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 44,
     "search_name": "blanco"
@@ -954,7 +954,7 @@
   {
     "name": "ALCOHOL AL 80 %",
     "presentation": "1000 ML TR",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 120,
     "search_name": "alcohol al 80"
@@ -962,7 +962,7 @@
   {
     "name": "ALCOHOL AL 80 %",
     "presentation": "3800 ML",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 121,
     "search_name": "alcohol al 80"
@@ -970,7 +970,7 @@
   {
     "name": "ALCOHOL AL 80 %",
     "presentation": "20 LT",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 122,
     "search_name": "alcohol al 80"
@@ -978,7 +978,7 @@
   {
     "name": "ALCOHOL INDUSTRIAL 96%",
     "presentation": "3800 ML",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 123,
     "search_name": "alcohol industrial 96"
@@ -986,7 +986,7 @@
   {
     "name": "ALCOHOL INDUSTRIAL 96%",
     "presentation": "20 LT",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "detergentes-liquidos",
     "id": 124,
     "search_name": "alcohol industrial 96"
@@ -2058,7 +2058,7 @@
   {
     "name": "BOLSA PRECORTE SP EN ROLLO 8X12",
     "presentation": "",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "varios-desechables",
     "id": 258,
     "search_name": "bolsa precorte sp en rollo 8x12"
@@ -2946,7 +2946,7 @@
   {
     "name": "TAPA MOLDE LAGSAÑA 16 OZ TRANSPARENT EMPAQ X 20",
     "presentation": "",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "varios-desechables",
     "id": 369,
     "search_name": "tapa molde lagsaña 16 oz transparent empaq x 20"
@@ -4162,7 +4162,7 @@
   {
     "name": "VASO 12 OZ TRANSP VACAN",
     "presentation": "",
-    "price_cop_thousands": NaN,
+    "price_cop_thousands": null,
     "category": "varios-desechables",
     "id": 521,
     "search_name": "vaso 12 oz transp vacan"
