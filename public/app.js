@@ -5,7 +5,7 @@ const state = {
   zones: [],
   currentCategory: null,
   chatHistory: [],
-  apiEndpoint: `${BOT_BASE_URL}/api/chat`
+  apiEndpoint: "https://productos-ali-bot.aliedpuenteslozano.workers.dev/api/chat"
 };
 
 const categoryInfo = {
