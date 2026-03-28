@@ -275,7 +275,7 @@ function ensureGreeting() {
   addMessage('assistant', options[index]);
 }
 
-async async function sendCurrentMessage() {
+async function sendCurrentMessage() {
   const raw = ui.chatInput?.value || '';
   const message = raw.trim();
   if (!message) return;
@@ -342,13 +342,10 @@ ${matches.map(item => {
       if (typeof item.price_cop_thousands === 'number') parts.push(formatPriceFromThousands(item.price_cop_thousands));
       else if (item.price) parts.push(item.price);
       return `• ${parts.join(' — ')}`;
-    }).join('
-')}`;
+    }).join('\n')}`;
 
     if (/precio|valor|cu[aá]nto vale|cu[aá]nto cuesta/i.test(message)) {
-      reply += '
-
-Si quieres, dime cantidad y luego la localidad para orientarte con la entrega.';
+      reply += '\n\nSi quieres, dime cantidad y luego la localidad para orientarte con la entrega.';
     }
 
     return reply;
