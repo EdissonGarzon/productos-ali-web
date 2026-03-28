@@ -1,452 +1,311 @@
-const BOT_API_URL = 'https://productos-ali-bot.aliedpuenteslozano.workers.dev/api/chat';
-const DATA_BASE_URL = 'https://productos-ali-web.aliedpuenteslozano.workers.dev';
-
 const state = {
   products: [],
   zones: [],
   currentCategory: null,
-  history: []
+  chatHistory: [],
+  apiEndpoint: "https://productos-ali-bot.aliedpuenteslozano.workers.dev/api/chat"
 };
 
-const ui = {
-  categoryGrid: null,
-  categoryTitle: null,
-  productList: null,
-  backButton: null,
-  homeSection: null,
-  categorySection: null,
-  chatPanel: null,
-  chatToggle: null,
-  chatClose: null,
-  chatMessages: null,
-  chatInput: null,
-  chatSend: null,
-  chatStatus: null
+const categoryInfo = {
+  "detergentes-liquidos": {
+    title: "Detergentes líquidos",
+    tag: "Línea principal",
+    badge: "🧴",
+    description: "Blanqueadores, limpiadores, desengrasantes, aromatizantes y más."
+  },
+  "varios-desechables": {
+    title: "Varios y desechables",
+    tag: "Línea principal",
+    badge: "📦",
+    description: "Empaques, icopor, vasos, servilletas y otras referencias."
+  }
 };
 
-document.addEventListener('DOMContentLoaded', async () => {
-  cacheDom();
-  bindChatEvents();
-  bindCatalogEvents();
-  await loadData();
-  renderCategories();
-  ensureGreeting();
-});
+const homeSections = document.querySelectorAll(".home-section");
+const categoryView = document.getElementById("categoryView");
+const productsList = document.getElementById("productsList");
+const categoryTitle = document.getElementById("categoryTitle");
+const categoryTag = document.getElementById("categoryTag");
+const categoryDescription = document.getElementById("categoryDescription");
+const categoryBadge = document.getElementById("categoryBadge");
+const categoryCount = document.getElementById("categoryCount");
+const categorySearch = document.getElementById("categorySearch");
+const backHomeBtn = document.getElementById("backHomeBtn");
+const categoryButtons = document.querySelectorAll("[data-category]");
+const homeLinkButtons = document.querySelectorAll("[data-home-link]");
+const goHomeBtn = document.getElementById("goHomeBtn");
 
-function cacheDom() {
-  ui.categoryGrid = pick([
-    '#categoryGrid',
-    '#categoriesGrid',
-    '[data-role="category-grid"]'
-  ]);
-  ui.categoryTitle = pick([
-    '#categoryTitle',
-    '[data-role="category-title"]'
-  ]);
-  ui.productList = pick([
-    '#productList',
-    '#productsList',
-    '[data-role="product-list"]'
-  ]);
-  ui.backButton = pick([
-    '#backToHome',
-    '#backButton',
-    '[data-action="back-home"]'
-  ]);
-  ui.homeSection = pick([
-    '#homeView',
-    '#homeSection',
-    '[data-view="home"]'
-  ]);
-  ui.categorySection = pick([
-    '#categoryView',
-    '#categorySection',
-    '[data-view="category"]'
-  ]);
-  ui.chatPanel = pick([
-    '#chatPanel',
-    '#chatbotPanel',
-    '.chat-panel',
-    '[data-role="chat-panel"]'
-  ]);
-  ui.chatToggle = pick([
-    '#chatToggle',
-    '#chatOpen',
-    '.chat-toggle',
-    '[data-action="open-chat"]'
-  ]);
-  ui.chatClose = pick([
-    '#chatClose',
-    '.chat-close',
-    '[data-action="close-chat"]'
-  ]);
-  ui.chatMessages = pick([
-    '#chatMessages',
-    '#messages',
-    '.chat-messages',
-    '[data-role="chat-messages"]'
-  ]);
-  ui.chatInput = pick([
-    '#chatInput',
-    '#userInput',
-    '.chat-input textarea',
-    '.chat-input input',
-    '[data-role="chat-input"]'
-  ]);
-  ui.chatSend = pick([
-    '#chatSend',
-    '#sendMessage',
-    '.chat-send',
-    '[data-action="send-chat"]'
-  ]);
-  ui.chatStatus = pick([
-    '#chatStatus',
-    '.chat-status',
-    '[data-role="chat-status"]'
-  ]);
+const assistantLauncher = document.getElementById("assistantLauncher");
+const chatPanel = document.getElementById("chatPanel");
+const chatMessages = document.getElementById("chatMessages");
+const chatForm = document.getElementById("chatForm");
+const chatInput = document.getElementById("chatInput");
+const chatCloseBtn = document.getElementById("chatCloseBtn");
+const quickButtons = document.querySelectorAll("[data-question]");
+const openBotBtnHero = document.getElementById("openBotBtnHero");
+const openBotBtnCta = document.getElementById("openBotBtnCta");
+
+function formatCop(value) {
+  const parts = String(value).split(".");
+  if (parts.length === 1) return `$${parts[0]}`;
+  return `$${parts[0]}.${parts[1].padEnd(3, "0").slice(0, 3)}`;
 }
 
-function bindChatEvents() {
-  if (ui.chatToggle && ui.chatPanel) {
-    ui.chatToggle.addEventListener('click', () => {
-      ui.chatPanel.classList.toggle('is-open');
+async function loadCatalog() {
+  const [productsRes, zonesRes] = await Promise.all([
+    fetch("./products.json"),
+    fetch("./zones.json")
+  ]);
+  state.products = await productsRes.json();
+  state.zones = await zonesRes.json();
+}
+
+function renderCategory(categoryKey, search = "") {
+  state.currentCategory = categoryKey;
+  const info = categoryInfo[categoryKey];
+  const normalizedSearch = normalize(search);
+
+  categoryTitle.textContent = info.title;
+  categoryTag.textContent = info.tag;
+  categoryDescription.textContent = info.description;
+  categoryBadge.textContent = info.badge;
+
+  const list = state.products.filter((product) => {
+    if (product.category !== categoryKey) return false;
+    const haystack = normalize([product.name, product.presentation].join(" "));
+    return !normalizedSearch || haystack.includes(normalizedSearch);
+  });
+
+  productsList.innerHTML = "";
+  categoryCount.textContent = `${list.length} producto(s)`;
+
+  if (!list.length) {
+    const empty = document.createElement("article");
+    empty.className = "product-row";
+    empty.innerHTML = `<div class="product-copy"><h3>No encontramos coincidencias</h3><p>Prueba otra palabra o limpia la búsqueda.</p></div>`;
+    productsList.appendChild(empty);
+  } else {
+    list.slice(0, 200).forEach((product) => {
+      const article = document.createElement("article");
+      article.className = "product-row";
+      article.innerHTML = `
+        <div class="product-copy">
+          <h3>${escapeHtml(product.name)}</h3>
+          <p>${escapeHtml(product.presentation || "Presentación por confirmar")}</p>
+        </div>
+        <strong>${formatCop(product.price_cop_thousands)}</strong>
+      `;
+      productsList.appendChild(article);
     });
   }
 
-  if (ui.chatClose && ui.chatPanel) {
-    ui.chatClose.addEventListener('click', () => {
-      ui.chatPanel.classList.remove('is-open');
-    });
-  }
-
-  if (ui.chatSend) {
-    ui.chatSend.addEventListener('click', sendCurrentMessage);
-  }
-
-  if (ui.chatInput) {
-    ui.chatInput.addEventListener('keydown', event => {
-      if (event.key === 'Enter' && !event.shiftKey) {
-        event.preventDefault();
-        sendCurrentMessage();
-      }
-    });
-  }
+  homeSections.forEach((section) => section.classList.add("hidden"));
+  categoryView.classList.remove("hidden");
+  categoryView.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-function bindCatalogEvents() {
-  if (ui.backButton) {
-    ui.backButton.addEventListener('click', goHome);
-  }
+function showHome(targetId = "inicio") {
+  categoryView.classList.add("hidden");
+  homeSections.forEach((section) => section.classList.remove("hidden"));
+  requestAnimationFrame(() => {
+    const target = document.getElementById(targetId);
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 }
 
-async function loadData() {
-  const [products, zones] = await Promise.all([
-    getJson(`${DATA_BASE_URL}/products.json`).catch(() => []),
-    getJson(`${DATA_BASE_URL}/zones.json`).catch(() => [])
-  ]);
-
-  state.products = normalizeProducts(products);
-  state.zones = normalizeZones(zones);
-}
-
-async function getJson(url) {
-  const response = await fetch(url, { headers: { Accept: 'application/json' } });
-  if (!response.ok) throw new Error(`No se pudo cargar ${url}`);
-  return response.json();
-}
-
-function normalizeProducts(raw) {
-  const source = Array.isArray(raw)
-    ? raw
-    : Array.isArray(raw?.products)
-      ? raw.products
-      : Array.isArray(raw?.items)
-        ? raw.items
-        : [];
-
-  return source
-    .map((item, index) => {
-      const name = pickFirst(item, ['name', 'producto', 'Producto', 'product']);
-      const reference = pickFirst(item, ['reference', 'referencia', 'Referencia', 'sku', 'SKU']);
-      const rawPrice = pickFirst(item, ['price', 'precio', 'Precio', 'valor', 'Valor', 'valor_un', 'Valor Un']);
-      const category = pickFirst(item, ['category', 'categoria', 'Categoría', 'section', 'seccion']) || inferCategory(name, reference);
-      const description = pickFirst(item, ['description', 'descripcion', 'Descripción']);
-
-      return {
-        id: item?.id || index + 1,
-        name: String(name || '').trim(),
-        reference: String(reference || '').trim(),
-        price: formatPrice(rawPrice),
-        category: String(category || 'Varios y desechables').trim(),
-        description: String(description || '').trim()
-      };
-    })
-    .filter(item => item.name);
-}
-
-function normalizeZones(raw) {
-  const source = Array.isArray(raw)
-    ? raw
-    : Array.isArray(raw?.zones)
-      ? raw.zones
-      : Array.isArray(raw?.items)
-        ? raw.items
-        : [];
-
-  return source
-    .map(item => ({
-      zone: String(pickFirst(item, ['zone', 'zona', 'Zona', 'name', 'nombre']) || '').trim(),
-      eta: String(pickFirst(item, ['eta', 'delivery_time', 'tiempo', 'Tiempo', 'estimado']) || '').trim(),
-      details: String(pickFirst(item, ['details', 'detalle', 'detalles', 'notes', 'notas']) || '').trim()
-    }))
-    .filter(item => item.zone);
-}
-
-function renderCategories() {
-  if (!ui.categoryGrid) return;
-
-  const categories = ['Detergentes líquidos', 'Varios y desechables'];
-  ui.categoryGrid.innerHTML = '';
-
-  for (const category of categories) {
-    const total = state.products.filter(item => item.category === category).length;
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'category-card';
-    button.innerHTML = `
-      <span class="category-card__title">${escapeHtml(category)}</span>
-      <span class="category-card__meta">${total} producto${total === 1 ? '' : 's'}</span>
-    `;
-    button.addEventListener('click', () => openCategory(category));
-    ui.categoryGrid.appendChild(button);
-  }
-}
-
-function openCategory(category) {
-  state.currentCategory = category;
-
-  if (ui.categoryTitle) {
-    ui.categoryTitle.textContent = category;
-  }
-
-  if (ui.productList) {
-    ui.productList.innerHTML = '';
-    const items = state.products.filter(item => item.category === category);
-
-    if (!items.length) {
-      ui.productList.innerHTML = '<p class="empty-state">No hay productos disponibles en esta categoría por ahora.</p>';
-    } else {
-      for (const item of items) {
-        const card = document.createElement('article');
-        card.className = 'product-card';
-        card.innerHTML = `
-          <h3 class="product-card__title">${escapeHtml(item.name)}</h3>
-          ${item.reference ? `<p class="product-card__ref">Ref: ${escapeHtml(item.reference)}</p>` : ''}
-          ${item.description ? `<p class="product-card__desc">${escapeHtml(item.description)}</p>` : ''}
-          ${item.price ? `<p class="product-card__price">${escapeHtml(item.price)}</p>` : ''}
-        `;
-        ui.productList.appendChild(card);
-      }
-    }
-  }
-
-  if (ui.homeSection) ui.homeSection.hidden = true;
-  if (ui.categorySection) ui.categorySection.hidden = false;
-}
-
-function goHome() {
-  state.currentCategory = null;
-  if (ui.homeSection) ui.homeSection.hidden = false;
-  if (ui.categorySection) ui.categorySection.hidden = true;
-}
-
-function ensureGreeting() {
-  if (!ui.chatMessages) return;
-  if (ui.chatMessages.children.length > 0) return;
-
-  addMessage('assistant', 'Hola. Te ayudo con productos, precios y entregas. Puedes preguntarme por un producto o decirme tu zona.');
-}
-
-async function sendCurrentMessage() {
-  const raw = ui.chatInput?.value || '';
-  const message = raw.trim();
-  if (!message) return;
-
-  addMessage('user', message);
-  if (ui.chatInput) ui.chatInput.value = '';
-  setStatus('Consultando...');
-
-  const zone = extractZoneFromText(message);
-  const historyForApi = state.history.slice(-8);
-
-  try {
-    const response = await fetch(BOT_API_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message, zone, history: historyForApi })
-    });
-
-    const data = await response.json().catch(() => ({}));
-
-    if (response.ok && data?.reply) {
-      addMessage('assistant', data.reply);
-      setStatus(data.source === 'api' ? 'Conectado con API' : 'Respuesta local');
-      return;
-    }
-
-    throw new Error(data?.error || 'La API no respondió correctamente');
-  } catch (error) {
-    const fallback = localFallback(message, zone);
-    addMessage('assistant', `[LOCAL] ${fallback}`);
-    setStatus('Respuesta local');
-    console.error('Fallo del bot remoto:', error);
-  }
-}
-
-function addMessage(role, text) {
-  if (!ui.chatMessages) return;
-
-  const item = document.createElement('div');
-  item.className = `chat-message chat-message--${role}`;
-  item.textContent = text;
-  ui.chatMessages.appendChild(item);
-  ui.chatMessages.scrollTop = ui.chatMessages.scrollHeight;
-
-  state.history.push({ role, content: text });
-  state.history = state.history.slice(-20);
-}
-
-function setStatus(text) {
-  if (ui.chatStatus) {
-    ui.chatStatus.textContent = text;
-  }
-}
-
-function localFallback(message, zone) {
-  const matches = findMatchingProducts(message).slice(0, 3);
-
-  if (matches.length) {
-    let reply = `Encontré esto en el catálogo: ${matches.map(item => {
-      const parts = [item.name];
-      if (item.reference) parts.push(`Ref: ${item.reference}`);
-      if (item.price) parts.push(`Precio: ${item.price}`);
-      return parts.join(' | ');
-    }).join(' ; ')}.`;
-
-    if (zone) {
-      const zoneInfo = state.zones.find(item => item.zone.toLowerCase() === zone.toLowerCase());
-      if (zoneInfo?.eta) {
-        reply += ` Para ${zoneInfo.zone}, el estimado es ${zoneInfo.eta}.`;
-      }
-    } else if (/envio|envío|entrega|domicilio|zona|barrio/i.test(message)) {
-      reply += ' Si me dices tu zona o barrio, te indico el estimado de entrega.';
-    }
-
-    return reply;
-  }
-
-  if (/precio|cu[aá]nto vale|valor/i.test(message)) {
-    return 'No encontré una coincidencia exacta. Escríbeme el nombre del producto o la referencia.';
-  }
-
-  if (/envio|envío|entrega|domicilio|zona|barrio/i.test(message)) {
-    if (zone) {
-      const zoneInfo = state.zones.find(item => item.zone.toLowerCase() === zone.toLowerCase());
-      if (zoneInfo?.eta) {
-        return `Para ${zoneInfo.zone}, el estimado de entrega es ${zoneInfo.eta}.`;
-      }
-    }
-    return 'Dime tu zona o barrio y reviso el estimado de entrega.';
-  }
-
-  return 'Puedo ayudarte con productos, precios y entregas. Escríbeme el nombre del producto o tu zona.';
-}
-
-function findMatchingProducts(message) {
-  const tokens = tokenize(message);
-  if (!tokens.length) return [];
-
-  return state.products
-    .map(item => {
-      const haystack = tokenize(`${item.name} ${item.reference} ${item.category} ${item.description}`);
-      const score = tokens.reduce((sum, token) => sum + (haystack.includes(token) ? 1 : 0), 0);
-      return { ...item, score };
-    })
-    .filter(item => item.score > 0)
-    .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'es'));
-}
-
-function extractZoneFromText(text) {
-  const lower = String(text || '').toLowerCase();
-  const match = state.zones.find(item => lower.includes(item.zone.toLowerCase()));
-  return match?.zone || '';
-}
-
-function pick(selectors) {
-  for (const selector of selectors) {
-    const node = document.querySelector(selector);
-    if (node) return node;
-  }
-  return null;
-}
-
-function pickFirst(obj, keys) {
-  for (const key of keys) {
-    if (obj && obj[key] !== undefined && obj[key] !== null && String(obj[key]).trim() !== '') {
-      return obj[key];
-    }
-  }
-  return '';
-}
-
-function inferCategory(name = '', reference = '') {
-  const text = `${name} ${reference}`.toLowerCase();
-  const detergentHints = [
-    'deterg', 'lavaloza', 'lavaplat', 'suavizante', 'cloro', 'desinfect',
-    'limpiador', 'jabon', 'jabón', 'multiusos', 'desengras', 'blanqueador'
-  ];
-
-  return detergentHints.some(hint => text.includes(hint))
-    ? 'Detergentes líquidos'
-    : 'Varios y desechables';
-}
-
-function formatPrice(value) {
-  if (value === null || value === undefined || value === '') return '';
-  const clean = String(value).replace(/[^\d.,-]/g, '').trim();
-  if (!clean) return String(value).trim();
-
-  const normalized = clean.includes(',') && clean.includes('.')
-    ? clean.replace(/\./g, '').replace(',', '.')
-    : clean.includes(',') && !clean.includes('.')
-      ? clean.replace(',', '.')
-      : clean;
-
-  const number = Number(normalized);
-  if (!Number.isFinite(number)) return String(value).trim();
-
-  return new Intl.NumberFormat('es-CO', {
-    style: 'currency',
-    currency: 'COP',
-    maximumFractionDigits: 0
-  }).format(number);
-}
-
-function tokenize(text) {
-  return String(text || '')
+function normalize(text) {
+  return (text || "")
     .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9\s]/g, ' ')
-    .split(/\s+/)
-    .filter(token => token.length > 1);
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9 ]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function escapeHtml(text) {
   return String(text)
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;');
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
+
+function toggleChat(forceOpen) {
+  const shouldOpen = typeof forceOpen === "boolean" ? forceOpen : chatPanel.classList.contains("hidden");
+  chatPanel.classList.toggle("hidden", !shouldOpen);
+  if (shouldOpen) {
+    setTimeout(() => chatInput.focus(), 60);
+    if (!state.chatHistory.length) {
+      addAssistantMessage("Hola. Soy tu asistente virtual.\nPuedo ayudarte con productos, precios y un estimado de entrega por zona.");
+    }
+  }
+}
+
+function addMessage(role, content, isTyping = false) {
+  const box = document.createElement("div");
+  box.className = `message ${role}`;
+  box.innerHTML = isTyping
+    ? `<span class="typing"><span></span><span></span><span></span></span>`
+    : escapeHtml(content);
+  chatMessages.appendChild(box);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+  return box;
+}
+
+function addAssistantMessage(text) {
+  state.chatHistory.push({ role: "assistant", content: text });
+  return addMessage("assistant", text);
+}
+
+function addUserMessage(text) {
+  state.chatHistory.push({ role: "user", content: text });
+  return addMessage("user", text);
+}
+
+function findProducts(query, limit = 6) {
+  const q = normalize(query);
+  if (!q) return [];
+  return state.products
+    .map((product) => {
+      const haystack = normalize([product.name, product.presentation, product.category].join(" "));
+      const score =
+        (haystack.includes(q) ? 3 : 0) +
+        (haystack.startsWith(q) ? 2 : 0) +
+        [...q.split(" ")].filter(Boolean).reduce((acc, term) => acc + (haystack.includes(term) ? 1 : 0), 0);
+      return { product, score };
+    })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((item) => item.product);
+}
+
+function matchZone(message) {
+  const msg = normalize(message);
+  return state.zones.find((zone) => zone.areas.some((area) => msg.includes(normalize(area))) || msg.includes(normalize(zone.label)));
+}
+
+function localAssistantFallback(message) {
+  const msg = normalize(message);
+
+  if (!msg) {
+    return "Cuéntame qué necesitas y te ayudo a ubicar el producto o la categoría.";
+  }
+
+  if (/(hola|buenas|buenos dias|buenas tardes|buenas noches)/.test(msg)) {
+    return "Hola. Puedes preguntarme por detergentes líquidos, varios y desechables, precios o estimados de entrega.";
+  }
+
+  if (msg.includes("detergente") || msg.includes("blanqueador") || msg.includes("limpiador")) {
+    const matches = state.products.filter((p) => p.category === "detergentes-liquidos").slice(0, 5);
+    const lines = matches.map((p) => `• ${p.name}${p.presentation ? " — " + p.presentation : ""} — ${formatCop(p.price_cop_thousands)}`);
+    return `En detergentes líquidos manejamos referencias como estas:\n${lines.join("\n")}\n\nSi quieres, dime el nombre o la presentación y te busco algo más preciso.`;
+  }
+
+  if (msg.includes("desechable") || msg.includes("vaso") || msg.includes("icopor") || msg.includes("servilleta") || msg.includes("empaque")) {
+    const matches = state.products.filter((p) => p.category === "varios-desechables").slice(0, 5);
+    const lines = matches.map((p) => `• ${p.name} — ${formatCop(p.price_cop_thousands)}`);
+    return `En varios y desechables tengo estas referencias como ejemplo:\n${lines.join("\n")}\n\nSi buscas algo puntual, escríbeme el nombre o una palabra clave.`;
+  }
+
+  if (msg.includes("precio") || msg.includes("valor") || msg.includes("cuanto")) {
+    const matches = findProducts(message);
+    if (matches.length) {
+      const lines = matches.map((p) => `• ${p.name}${p.presentation ? " — " + p.presentation : ""} — ${formatCop(p.price_cop_thousands)}`);
+      return `Encontré estas coincidencias:\n${lines.join("\n")}\n\nSi quieres, dime cuál te interesa y seguimos.`;
+    }
+  }
+
+  if (msg.includes("entrega") || msg.includes("domicilio") || msg.includes("barrio") || msg.includes("zona")) {
+    const zone = matchZone(message);
+    if (zone) {
+      return `${zone.label}: ${zone.estimate} ${zone.delivery_fee_note}`;
+    }
+    return "Puedo darte un estimado de entrega. Dime tu barrio, localidad o ciudad para orientarte mejor.";
+  }
+
+  if (msg.includes("cotizar") || msg.includes("cotizacion") || msg.includes("pedido")) {
+    return "Claro. Para una cotización preliminar necesito:\n• producto o productos\n• cantidad\n• zona o barrio\n\nEnvíame eso y te ayudo a organizarlo.";
+  }
+
+  const matches = findProducts(message);
+  if (matches.length) {
+    const lines = matches.slice(0, 5).map((p) => `• ${p.name}${p.presentation ? " — " + p.presentation : ""} — ${formatCop(p.price_cop_thousands)}`);
+    return `Estas son las coincidencias más cercanas que encontré:\n${lines.join("\n")}`;
+  }
+
+  return "Puedo ayudarte con productos, precios y entrega. Prueba algo como:\n• ¿Qué manejan en detergentes líquidos?\n• ¿Cuánto vale cierto producto?\n• Quiero cotizar un pedido.\n• Estoy en Kennedy, ¿qué tiempo de entrega hay?";
+}
+
+async function askAssistant(message) {
+  const typing = addMessage("assistant", "", true);
+  try {
+    const response = await fetch(state.apiEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message,
+        history: state.chatHistory.slice(-8),
+        channel: "web"
+      })
+    });
+
+    if (!response.ok) throw new Error("API unavailable");
+    const data = await response.json();
+    typing.remove();
+    addAssistantMessage(data.reply || "No pude responder en este momento.");
+  } catch (error) {
+    typing.remove();
+    addAssistantMessage(localAssistantFallback(message));
+  }
+}
+
+categoryButtons.forEach((button) => {
+  button.addEventListener("click", () => renderCategory(button.dataset.category));
+});
+
+categorySearch.addEventListener("input", (event) => {
+  if (state.currentCategory) renderCategory(state.currentCategory, event.target.value);
+});
+
+backHomeBtn.addEventListener("click", () => {
+  categorySearch.value = "";
+  showHome("categorias");
+});
+
+homeLinkButtons.forEach((button) => {
+  button.addEventListener("click", () => showHome(button.dataset.homeLink));
+});
+
+goHomeBtn.addEventListener("click", () => showHome("inicio"));
+
+assistantLauncher.addEventListener("click", () => toggleChat());
+chatCloseBtn.addEventListener("click", () => toggleChat(false));
+openBotBtnHero.addEventListener("click", () => toggleChat(true));
+openBotBtnCta.addEventListener("click", () => toggleChat(true));
+
+quickButtons.forEach((button) => {
+  button.addEventListener("click", async () => {
+    const question = button.dataset.question;
+    toggleChat(true);
+    addUserMessage(question);
+    await askAssistant(question);
+  });
+});
+
+chatForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const text = chatInput.value.trim();
+  if (!text) return;
+  chatInput.value = "";
+  toggleChat(true);
+  addUserMessage(text);
+  await askAssistant(text);
+});
+
+loadCatalog().catch((error) => {
+  console.error("No se pudo cargar el catálogo", error);
+  addAssistantMessage("No pude cargar el catálogo inicial. Revisa los archivos products.json y zones.json.");
+});
