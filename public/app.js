@@ -264,15 +264,7 @@ function ensureGreeting() {
   if (!ui.chatMessages) return;
   if (ui.chatMessages.children.length > 0) return;
 
-  const options = [
-    'Hola. ¿En qué te puedo ayudar hoy?',
-    '¡Hola! ¿Qué te gustaría consultar hoy?',
-    'Buen día. ¿Buscas producto, precio o entrega?',
-    'Hola. Con gusto te ayudo. ¿Qué necesitas revisar hoy?'
-  ];
-
-  const index = Math.floor(Math.random() * options.length);
-  addMessage('assistant', options[index]);
+  addMessage('assistant', 'Hola. Te ayudo con productos, precios y entregas. Puedes preguntarme por un producto o decirme tu zona.');
 }
 
 async function sendCurrentMessage() {
@@ -285,30 +277,29 @@ async function sendCurrentMessage() {
   setStatus('Consultando...');
 
   const zone = extractZoneFromText(message);
-  const historyForApi = state.history.slice(-10);
+  const historyForApi = state.history.slice(-8);
 
   try {
-    const data = await requestBotWithRetry({ message, zone, history: historyForApi }, 2);
+    const response = await fetch(BOT_API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message, zone, history: historyForApi })
+    });
 
-    if (data?.reply) {
+    const data = await response.json().catch(() => ({}));
+
+    if (response.ok && data?.reply) {
       addMessage('assistant', data.reply);
-      setStatus(data.source === 'api' || String(data.reply).startsWith('[API]') ? 'Conectado con API' : 'Respuesta local');
+      setStatus(data.source === 'api' ? 'Conectado con API' : 'Respuesta local');
       return;
     }
 
-    throw new Error('La API no respondió correctamente');
+    throw new Error(data?.error || 'La API no respondió correctamente');
   } catch (error) {
+    const fallback = localFallback(message, zone);
+    addMessage('assistant', `[LOCAL] ${fallback}`);
+    setStatus('Respuesta local');
     console.error('Fallo del bot remoto:', error);
-
-    if (canUseLocalFallback(message)) {
-      const fallback = localFallback(message, zone);
-      addMessage('assistant', `[LOCAL] ${fallback}`);
-      setStatus('Respuesta local');
-      return;
-    }
-
-    addMessage('assistant', 'Estoy teniendo una falla temporal para procesar toda la conversación. Si quieres, déjame producto, cantidad y localidad para dejar la solicitud lista.');
-    setStatus('Falla temporal de API');
   }
 }
 
@@ -332,34 +323,43 @@ function setStatus(text) {
 }
 
 function localFallback(message, zone) {
-  const matches = findMatchingProducts(message).slice(0, 5);
+  const matches = findMatchingProducts(message).slice(0, 3);
 
   if (matches.length) {
-    let reply = `Estas son las coincidencias más cercanas que encontré:
-${matches.map(item => {
+    let reply = `Encontré esto en el catálogo: ${matches.map(item => {
       const parts = [item.name];
-      if (item.presentation) parts.push(item.presentation);
-      if (typeof item.price_cop_thousands === 'number') parts.push(formatPriceFromThousands(item.price_cop_thousands));
-      else if (item.price) parts.push(item.price);
-      return `• ${parts.join(' — ')}`;
-    }).join('\n')}`;
+      if (item.reference) parts.push(`Ref: ${item.reference}`);
+      if (item.price) parts.push(`Precio: ${item.price}`);
+      return parts.join(' | ');
+    }).join(' ; ')}.`;
 
-    if (/precio|valor|cu[aá]nto vale|cu[aá]nto cuesta/i.test(message)) {
-      reply += '\n\nSi quieres, dime cantidad y luego la localidad para orientarte con la entrega.';
+    if (zone) {
+      const zoneInfo = state.zones.find(item => item.zone.toLowerCase() === zone.toLowerCase());
+      if (zoneInfo?.eta) {
+        reply += ` Para ${zoneInfo.zone}, el estimado es ${zoneInfo.eta}.`;
+      }
+    } else if (/envio|envío|entrega|domicilio|zona|barrio/i.test(message)) {
+      reply += ' Si me dices tu zona o barrio, te indico el estimado de entrega.';
     }
 
     return reply;
   }
 
   if (/precio|cu[aá]nto vale|valor/i.test(message)) {
-    return 'No encontré una coincidencia exacta. Escríbeme el nombre del producto o una palabra clave.';
+    return 'No encontré una coincidencia exacta. Escríbeme el nombre del producto o la referencia.';
   }
 
-  if (/envio|envío|entrega|domicilio|zona|barrio|localidad|cu[aá]nto se demora|cu[aá]nto tendr[ií]a que pagar/i.test(message)) {
-    return 'Estoy teniendo una falla temporal para revisar entrega o total. Déjame producto, cantidad y localidad para dejar la solicitud lista.';
+  if (/envio|envío|entrega|domicilio|zona|barrio/i.test(message)) {
+    if (zone) {
+      const zoneInfo = state.zones.find(item => item.zone.toLowerCase() === zone.toLowerCase());
+      if (zoneInfo?.eta) {
+        return `Para ${zoneInfo.zone}, el estimado de entrega es ${zoneInfo.eta}.`;
+      }
+    }
+    return 'Dime tu zona o barrio y reviso el estimado de entrega.';
   }
 
-  return 'Puedo ayudarte a buscar un producto del catálogo. Escríbeme el nombre o una palabra clave.';
+  return 'Puedo ayudarte con productos, precios y entregas. Escríbeme el nombre del producto o tu zona.';
 }
 
 function findMatchingProducts(message) {
