@@ -1,0 +1,90 @@
+[
+  {
+    "key": "delivery_general",
+    "triggers": [
+      "hacen domicilios",
+      "hacen entregas",
+      "si lo llevan",
+      "entregan",
+      "envian",
+      "envío",
+      "envio"
+    ],
+    "answer": "Sí hacemos entregas. Dime tu barrio, localidad o ciudad y te doy un estimado."
+  },
+  {
+    "key": "delivery_time_unknown_zone",
+    "triggers": [
+      "cuánto se demora",
+      "cuanto se demora",
+      "qué tiempo se demora",
+      "que tiempo se demora"
+    ],
+    "answer": "El tiempo depende de la zona exacta. Dime tu barrio, localidad o ciudad y te doy un estimado."
+  },
+  {
+    "key": "quote_general",
+    "triggers": [
+      "quiero cotizar",
+      "me cotizas",
+      "cotización",
+      "cotizacion",
+      "pedido"
+    ],
+    "answer": "Claro. Para cotizarte mejor necesito producto, cantidad y zona de entrega."
+  },
+  {
+    "key": "price_general",
+    "triggers": [
+      "precio",
+      "valor",
+      "cuánto vale",
+      "cuanto vale"
+    ],
+    "answer": "Puedo ayudarte con el precio. Dime la referencia o una palabra clave del producto."
+  },
+  {
+    "key": "business_hours",
+    "triggers": [
+      "horario",
+      "qué horario manejan",
+      "que horario manejan",
+      "a qué hora atienden",
+      "a que hora atienden"
+    ],
+    "answer": "Nuestro horario configurado es de lunes a viernes de 8:00 a 18:00 y sábado de 8:00 a 13:00. El domingo aparece como no hábil."
+  },
+  {
+    "key": "coverage_general",
+    "triggers": [
+      "cobertura",
+      "qué zonas manejan",
+      "que zonas manejan",
+      "a qué partes llevan",
+      "a que partes llevan"
+    ],
+    "answer": "Manejamos cobertura por zonas de Bogotá y municipios cercanos según configuración. Dime tu barrio, localidad o ciudad y te confirmo el estimado."
+  },
+  {
+    "key": "payment_methods",
+    "triggers": [
+      "cómo se paga",
+      "como se paga",
+      "medios de pago",
+      "formas de pago"
+    ],
+    "answer": "Aún no tengo los medios de pago configurados aquí. Te lo confirmamos al cerrar el pedido."
+  },
+  {
+    "key": "brand_origin",
+    "triggers": [
+      "qué marca es",
+      "que marca es",
+      "quién lo fabrica",
+      "quien lo fabrica",
+      "de qué marca son",
+      "de que marca son"
+    ],
+    "answer": "Puedo orientarte con referencia, presentación y precio. Si necesitas confirmar fabricante o marca exacta, te lo validamos."
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "timezone": "America/Bogota",
+  "weekly_schedule": {
+    "monday": {
+      "open": true,
+      "from": "08:00",
+      "to": "18:00"
+    },
+    "tuesday": {
+      "open": true,
+      "from": "08:00",
+      "to": "18:00"
+    },
+    "wednesday": {
+      "open": true,
+      "from": "08:00",
+      "to": "18:00"
+    },
+    "thursday": {
+      "open": true,
+      "from": "08:00",
+      "to": "18:00"
+    },
+    "friday": {
+      "open": true,
+      "from": "08:00",
+      "to": "18:00"
+    },
+    "saturday": {
+      "open": true,
+      "from": "08:00",
+      "to": "13:00"
+    },
+    "sunday": {
+      "open": false,
+      "from": null,
+      "to": null
+    }
+  },
+  "holiday_policy": {
+    "configured": false,
+    "reply": "En festivos el horario puede cambiar. Si tu pedido es para un festivo, te lo confirmamos."
+  },
+  "after_hours_behavior": {
+    "reply": "En este momento estamos fuera de horario. Déjame producto, cantidad y zona, y te respondemos en horario hábil.",
+    "accept_leads": true
+  },
+  "delivery_cutoffs": {
+    "same_day_possible_until": "14:00",
+    "note": "El mismo día depende de zona, disponibilidad y confirmación dentro de horario."
+  },
+  "response_guidelines": {
+    "when_open": "Si estamos dentro del horario, el bot puede decir que la atención está en horario hábil.",
+    "when_closed": "Si estamos fuera de horario, el bot no debe prometer atención inmediata; debe tomar los datos básicos."
+  }
+}
