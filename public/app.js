@@ -5,7 +5,8 @@ const state = {
   zones: [],
   currentCategory: null,
   chatHistory: [],
-  apiEndpoint: "https://productos-ali-bot.aliedpuenteslozano.workers.dev/api/chat"
+  apiEndpoint: `${BOT_BASE_URL}/api/chat`,
+  apiHealthy: null
 };
 
 const categoryInfo = {
@@ -53,18 +54,45 @@ function formatCop(value) {
   return `$${parts[0]}.${parts[1].padEnd(3, "0").slice(0, 3)}`;
 }
 
-async function loadCatalog() {
-  const [productsRes, zonesRes] = await Promise.all([
-    fetch("./products.json"),
-    fetch("./zones.json")
-  ]);
+async function fetchJsonWithRetry(url, attempts = 3, timeoutMs = 8000) {
+  let lastError = null;
 
-  if (!productsRes.ok || !zonesRes.ok) {
-    throw new Error("No se pudieron cargar products.json o zones.json");
+  for (let i = 1; i <= attempts; i++) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(new Error("timeout")), timeoutMs);
+    try {
+      const response = await fetch(url, { signal: controller.signal, cache: "no-store" });
+      clearTimeout(timeout);
+      if (!response.ok) throw new Error(`${url} -> ${response.status}`);
+      return await response.json();
+    } catch (error) {
+      clearTimeout(timeout);
+      lastError = error;
+      if (i < attempts) await sleep(350 * i);
+    }
   }
 
-  state.products = await productsRes.json();
-  state.zones = await zonesRes.json();
+  throw lastError || new Error(`No se pudo cargar ${url}`);
+}
+
+async function loadCatalog() {
+  const [products, zones] = await Promise.all([
+    fetchJsonWithRetry("./products.json", 3, 7000),
+    fetchJsonWithRetry("./zones.json", 3, 7000)
+  ]);
+
+  state.products = products;
+  state.zones = zones;
+}
+
+async function warmBotHealth() {
+  try {
+    const info = await fetchJsonWithRetry(`${BOT_BASE_URL}/health`, 2, 7000);
+    state.apiHealthy = Boolean(info?.ok);
+  } catch (error) {
+    console.warn("No se pudo verificar health del bot:", error);
+    state.apiHealthy = false;
+  }
 }
 
 function renderCategory(categoryKey, search = "") {
@@ -147,7 +175,7 @@ function toggleChat(forceOpen) {
   if (shouldOpen) {
     setTimeout(() => chatInput?.focus(), 60);
     if (!state.chatHistory.length) {
-      addAssistantMessage("Hola. Soy tu asistente virtual.\nPuedo ayudarte con productos, precios y un estimado de entrega por zona.");
+      addAssistantMessage("Hola. Soy tu asistente virtual. Puedo ayudarte con productos, precios, horarios y estimados de entrega por zona.");
     }
   }
 }
@@ -179,7 +207,7 @@ function findProducts(query, limit = 6) {
 
   return state.products
     .map((product) => {
-      const haystack = normalize([product.name, product.presentation, product.category].join(" "));
+      const haystack = normalize([product.name, product.presentation, product.category, product.search_name].join(" "));
       const score =
         (haystack.includes(q) ? 3 : 0) +
         (haystack.startsWith(q) ? 2 : 0) +
@@ -207,7 +235,23 @@ function localAssistantFallback(message) {
   }
 
   if (/(hola|buenas|buenos dias|buenas tardes|buenas noches)/.test(msg)) {
-    return "[LOCAL] Hola. Puedes preguntarme por detergentes líquidos, varios y desechables, precios o estimados de entrega.";
+    return "[LOCAL] Hola. Puedes preguntarme por productos, precios, horarios o estimados de entrega.";
+  }
+
+  if (/(entrega|domicilio|envio|envío|llevan|llevar|zona|barrio|localidad|ciudad)/.test(msg)) {
+    const zone = matchZone(message);
+    if (zone) {
+      return `[LOCAL] ${zone.label}: ${zone.estimate} ${zone.delivery_fee_note}`;
+    }
+    return "[LOCAL] Sí hacemos entregas. Dime tu barrio, localidad o ciudad y te doy un estimado.";
+  }
+
+  if (/(horario|atienden|abren|cierran)/.test(msg)) {
+    return "[LOCAL] El horario configurado es de lunes a viernes de 8:00 a 18:00 y sábado de 8:00 a 13:00.";
+  }
+
+  if (/(cotiz|pedido|cantidad|caja|docena|por mayor)/.test(msg)) {
+    return "[LOCAL] Claro. Para una cotización preliminar necesito producto, cantidad y zona de entrega.";
   }
 
   if (msg.includes("detergente") || msg.includes("blanqueador") || msg.includes("limpiador")) {
@@ -222,24 +266,12 @@ function localAssistantFallback(message) {
     return `[LOCAL] En varios y desechables tengo estas referencias como ejemplo:\n${lines.join("\n")}\n\nSi buscas algo puntual, escríbeme el nombre o una palabra clave.`;
   }
 
-  if (msg.includes("precio") || msg.includes("valor") || msg.includes("cuanto")) {
+  if (msg.includes("precio") || msg.includes("valor") || msg.includes("cuanto") || msg.includes("cuánto")) {
     const matches = findProducts(message);
     if (matches.length) {
       const lines = matches.map((p) => `• ${p.name}${p.presentation ? " — " + p.presentation : ""} — ${formatCop(p.price_cop_thousands)}`);
       return `[LOCAL] Encontré estas coincidencias:\n${lines.join("\n")}\n\nSi quieres, dime cuál te interesa y seguimos.`;
     }
-  }
-
-  if (msg.includes("entrega") || msg.includes("domicilio") || msg.includes("barrio") || msg.includes("zona")) {
-    const zone = matchZone(message);
-    if (zone) {
-      return `[LOCAL] ${zone.label}: ${zone.estimate} ${zone.delivery_fee_note}`;
-    }
-    return "[LOCAL] Puedo darte un estimado de entrega. Dime tu barrio, localidad o ciudad para orientarte mejor.";
-  }
-
-  if (msg.includes("cotizar") || msg.includes("cotizacion") || msg.includes("pedido")) {
-    return "[LOCAL] Claro. Para una cotización preliminar necesito:\n• producto o productos\n• cantidad\n• zona o barrio\n\nEnvíame eso y te ayudo a organizarlo.";
   }
 
   const matches = findProducts(message);
@@ -248,28 +280,19 @@ function localAssistantFallback(message) {
     return `[LOCAL] Estas son las coincidencias más cercanas que encontré:\n${lines.join("\n")}`;
   }
 
-  return "[LOCAL] Puedo ayudarte con productos, precios y entrega. Prueba algo como:\n• ¿Qué manejan en detergentes líquidos?\n• ¿Cuánto vale cierto producto?\n• Quiero cotizar un pedido.\n• Estoy en Kennedy, ¿qué tiempo de entrega hay?";
+  return "[LOCAL] Puedo ayudarte con productos, precios, horarios y entrega. Prueba algo como:\n• ¿Qué manejan en detergentes líquidos?\n• ¿Cuánto vale cierto producto?\n• Quiero cotizar un pedido.\n• Estoy en Kennedy, ¿qué tiempo de entrega hay?";
 }
 
 async function askAssistant(message) {
   const typing = addMessage("assistant", "", true);
 
   try {
-    const response = await fetch(state.apiEndpoint, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        message,
-        history: state.chatHistory.slice(-8),
-        channel: "web"
-      })
-    });
+    const data = await postJsonWithRetry(state.apiEndpoint, {
+      message,
+      history: state.chatHistory.slice(-8),
+      channel: "web"
+    }, 3, 12000);
 
-    if (!response.ok) {
-      throw new Error(`API unavailable (${response.status})`);
-    }
-
-    const data = await response.json();
     typing.remove();
 
     const reply = typeof data.reply === "string" && data.reply.trim()
@@ -278,10 +301,46 @@ async function askAssistant(message) {
 
     addAssistantMessage(reply.startsWith("[API]") || reply.startsWith("[LOCAL]") ? reply : `[API] ${reply}`);
   } catch (error) {
-    console.error("Fallo API, entra fallback local:", error);
+    console.error("Fallo API tras reintentos, entra fallback local:", error);
     typing.remove();
     addAssistantMessage(localAssistantFallback(message));
   }
+}
+
+async function postJsonWithRetry(url, payload, attempts = 3, timeoutMs = 12000) {
+  let lastError = null;
+
+  for (let i = 1; i <= attempts; i++) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(new Error("timeout")), timeoutMs);
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        signal: controller.signal,
+        cache: "no-store"
+      });
+      clearTimeout(timeout);
+
+      if (!response.ok) {
+        const text = await response.text().catch(() => "");
+        throw new Error(`API unavailable (${response.status}) ${text}`.trim());
+      }
+
+      return await response.json();
+    } catch (error) {
+      clearTimeout(timeout);
+      lastError = error;
+      if (i < attempts) await sleep(450 * i);
+    }
+  }
+
+  throw lastError || new Error("API unavailable");
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 categoryButtons.forEach((button) => {
@@ -327,9 +386,13 @@ chatForm?.addEventListener("submit", async (event) => {
   await askAssistant(text);
 });
 
-loadCatalog().catch((error) => {
-  console.error("No se pudo cargar el catálogo", error);
-  if (chatMessages) {
-    addAssistantMessage("[LOCAL] No pude cargar el catálogo inicial. Revisa los archivos products.json y zones.json.");
+Promise.allSettled([loadCatalog(), warmBotHealth()]).then((results) => {
+  const catalogResult = results[0];
+  if (catalogResult.status === "rejected") {
+    console.error("No se pudo cargar el catálogo", catalogResult.reason);
+  }
+  const healthResult = results[1];
+  if (healthResult.status === "rejected") {
+    console.warn("No se pudo verificar el bot al iniciar", healthResult.reason);
   }
 });
