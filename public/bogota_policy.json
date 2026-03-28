@@ -1,0 +1,144 @@
+{
+  "city": "Bogotá",
+  "country": "Colombia",
+  "only_bogota_initially": true,
+  "outside_city_reply": "Por ahora las entregas se manejan solo dentro de Bogotá.",
+  "ask_locality_reply": "Para darte un estimado más preciso, dime la localidad de Bogotá.",
+  "localities": [
+    {
+      "name": "Usaquén",
+      "aliases": [
+        "usaquen"
+      ]
+    },
+    {
+      "name": "Chapinero",
+      "aliases": []
+    },
+    {
+      "name": "Santa Fe",
+      "aliases": [
+        "santafe",
+        "santa fe"
+      ]
+    },
+    {
+      "name": "San Cristóbal",
+      "aliases": [
+        "san cristobal",
+        "san cristóbal"
+      ]
+    },
+    {
+      "name": "Usme",
+      "aliases": []
+    },
+    {
+      "name": "Tunjuelito",
+      "aliases": []
+    },
+    {
+      "name": "Bosa",
+      "aliases": []
+    },
+    {
+      "name": "Kennedy",
+      "aliases": []
+    },
+    {
+      "name": "Fontibón",
+      "aliases": [
+        "fontibon"
+      ]
+    },
+    {
+      "name": "Engativá",
+      "aliases": [
+        "engativa"
+      ]
+    },
+    {
+      "name": "Suba",
+      "aliases": []
+    },
+    {
+      "name": "Barrios Unidos",
+      "aliases": [
+        "barrios unidos"
+      ]
+    },
+    {
+      "name": "Teusaquillo",
+      "aliases": []
+    },
+    {
+      "name": "Los Mártires",
+      "aliases": [
+        "los martires",
+        "mártires",
+        "martires"
+      ]
+    },
+    {
+      "name": "Antonio Nariño",
+      "aliases": [
+        "antonio narino"
+      ]
+    },
+    {
+      "name": "Puente Aranda",
+      "aliases": [
+        "puente aranda"
+      ]
+    },
+    {
+      "name": "La Candelaria",
+      "aliases": [
+        "candelaria",
+        "la candelaria"
+      ]
+    },
+    {
+      "name": "Rafael Uribe Uribe",
+      "aliases": [
+        "rafael uribe"
+      ]
+    },
+    {
+      "name": "Ciudad Bolívar",
+      "aliases": [
+        "ciudad bolivar"
+      ]
+    },
+    {
+      "name": "Sumapaz",
+      "aliases": []
+    }
+  ],
+  "known_neighborhood_aliases": [
+    {
+      "name": "Lucero Bajo",
+      "aliases": [
+        "lucero bajo",
+        "el lucero bajo",
+        "lucero bjo"
+      ],
+      "suggested_locality": "Ciudad Bolívar"
+    },
+    {
+      "name": "Yomasa",
+      "aliases": [
+        "yomasa"
+      ],
+      "suggested_locality": "Usme"
+    },
+    {
+      "name": "Danubio",
+      "aliases": [
+        "danubio",
+        "nuevo danubio"
+      ],
+      "suggested_locality": "Usme"
+    }
+  ]
+}

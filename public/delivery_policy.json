@@ -1,0 +1,59 @@
+{
+  "timezone": "America/Bogota",
+  "payment_cutoff": {
+    "monday_to_friday": "13:00",
+    "saturday": "10:00",
+    "sunday": null
+  },
+  "payment_assumption_reply": "Tomando el pago confirmado en la fecha indicada como referencia.",
+  "zone_classes": {
+    "A": {
+      "label": "Bogotá zona A",
+      "before_cutoff_business_days": 1,
+      "after_cutoff_business_days": 2,
+      "provisional_delivery_fee_cop": 6000,
+      "localities": [
+        "Usaquén",
+        "Chapinero",
+        "Teusaquillo",
+        "Barrios Unidos",
+        "Engativá",
+        "Suba",
+        "Fontibón",
+        "Puente Aranda",
+        "Santa Fe",
+        "Los Mártires",
+        "La Candelaria",
+        "Antonio Nariño"
+      ]
+    },
+    "B": {
+      "label": "Bogotá zona B",
+      "before_cutoff_business_days": 2,
+      "after_cutoff_business_days": 3,
+      "provisional_delivery_fee_cop": 8000,
+      "localities": [
+        "Kennedy",
+        "Bosa",
+        "Tunjuelito",
+        "Rafael Uribe Uribe",
+        "San Cristóbal"
+      ]
+    },
+    "C": {
+      "label": "Bogotá zona C",
+      "before_cutoff_business_days": 3,
+      "after_cutoff_business_days": 4,
+      "provisional_delivery_fee_cop": 10000,
+      "localities": [
+        "Usme",
+        "Ciudad Bolívar",
+        "Sumapaz"
+      ]
+    }
+  },
+  "fallback_zone_class": "B",
+  "fee_note": "La entrega se maneja con valor provisional mientras definimos la tabla real del transportador.",
+  "unknown_locality_reply": "Sí hacemos entregas en Bogotá. Si me confirmas la localidad te doy una fecha estimada más precisa.",
+  "outside_bogota_reply": "Por ahora la cobertura está enfocada solo en Bogotá."
+}
